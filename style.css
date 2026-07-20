@@ -1,0 +1,738 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#f5f5f5;
+}
+
+.header{
+    text-align:center;
+    padding:35px 20px 20px;
+}
+
+.logo{
+    width:340px;
+    max-width:90%;
+    display:block;
+    margin:auto;
+}
+
+.slogan{
+    margin-top:12px;
+    color:#777;
+    font-size:18px;
+}
+
+.searchBox{
+    padding:20px;
+}
+
+.searchBox input{
+    width:100%;
+    padding:16px 18px;
+    border:none;
+    border-radius:16px;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    font-size:16px;
+    outline:none;
+}
+
+.title{
+    font-size:24px;
+    margin:35px 20px 20px;
+    color:#444;
+}
+
+.cards{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    padding:0 20px 20px;
+}
+
+.cards::-webkit-scrollbar{
+    display:none;
+}
+
+.card{
+    min-width:190px;
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    font-weight:600;
+    flex-shrink:0;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:18px;
+    padding:20px;
+}
+
+.category{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:18px;
+    background:#fff;
+    border-radius:20px;
+    padding:22px;
+    margin-bottom:16px;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.25s;
+    cursor:pointer;
+}
+
+.category:hover{
+    transform:translateY(-3px);
+}
+
+
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.urun-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+
+.urunKart:hover{
+    transform:translateY(-5px);
+}
+
+.urunKart img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    background:#f3f3f3;
+    display:block;
+}
+
+.urunKart{
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.25s;
+    border:1px solid #ece7dc;
+}
+
+.urunKart:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 28px rgba(0,0,0,.10);
+}
+
+.urunBaslik{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:14px;
+}
+
+.urunIsim{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex:1;
+}
+
+.urunIcon{
+    font-size:28px;
+    flex-shrink:0;
+}
+
+.urunIsim h3{
+    margin:0;
+    font-size:22px;
+    line-height:1.3;
+    color:#222;
+}
+
+.fiyat{
+    color:#c79b2e;
+    font-size:24px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.urunAciklama{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+.etiketler{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:15px;
+}
+
+.etiketler span{
+    background:#f3f3f3;
+    border-radius:30px;
+    padding:6px 12px;
+    font-size:13px;
+}
+
+.detayBtn{
+    width:100%;
+    margin-top:20px;
+    border:none;
+    border-radius:14px;
+    padding:14px;
+    background:#c79b2e;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.detayBtn:hover{
+    background:#b68d22;
+}
+
+@media(max-width:768px){
+
+    .logo{
+        width:260px;
+    }
+
+    .categories{
+        grid-template-columns:1fr;
+    }
+
+}
+.geriBtn{
+    border:none;
+    background:none;
+    font-size:18px;
+    font-weight:600;
+    color:#444;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+.geriBtn:hover{
+    color:#c79b2e;
+}
+
+.categoryInfo{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+
+.categoryTitle{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:4px;
+    text-align:left;
+}
+
+.categoryCount{
+    font-size:15px;
+    color:#888;
+    text-align:left;
+}
+
+.icon{
+    width:60px;
+    font-size:36px;
+    text-align:center;
+    flex-shrink:0;
+}
+
+#urunDetay{
+    max-width:760px;
+    margin:0 auto 40px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+
+#urunDetay .urunBilgi{
+    padding:30px;
+}
+
+#urunDetay h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+#urunDetay .fiyat{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+#urunDetay p{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+/* Premium UI placeholder: planned enhancements */
+
+/* Premium phase 2 */
+.card{
+transition:transform .25s, box-shadow .25s;
+cursor:pointer;
+}
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 35px rgba(0,0,0,.14);
+}
+.product-card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.25s;
+}
+.product-card:hover{
+transform:translateY(-4px);
+}
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    margin:4px 6px 0 0;
+}
+.skeleton{
+background:linear-gradient(90deg,#eee,#f5f5f5,#eee);
+background-size:200% 100%;
+animation:shine 1.2s infinite;
+border-radius:12px;
+}
+@keyframes shine{
+0%{background-position:200% 0}
+100%{background-position:-200% 0}
+}
+
+
+/* Phase3 enhancements */
+.urun-kart,.product-card,.card{
+transition:transform .25s ease,box-shadow .25s ease;
+border-radius:16px;
+overflow:hidden;
+}
+.urun-kart:hover,.product-card:hover,.card:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 24px rgba(0,0,0,.15);
+}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#ffb300;color:#222}
+.skeleton{background:linear-gradient(90deg,#eee,#f5f5f5,#eee);background-size:200% 100%;animation:sk 1.2s infinite}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+img{loading:auto}
+
+mark{
+    background:#ffe08a;
+    color:#222;
+    padding:0 2px;
+    border-radius:4px;
+    font-weight:600;
+}
+
+mark{
+    background:#FFD54F;
+    color:#222;
+    padding:0 3px;
+    border-radius:4px;
+    font-weight:700;
+}
+
+/* v2.0 Rev1 */
+:root{
+ --bg:#1f2125;
+ --surface:#2b2e34;
+ --gold:#d4af37;
+ --text:#f4f4f4;
+}
+body{background:var(--bg)!important;color:var(--text)!important;}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:64px;background:#222;border-top:1px solid #444;display:flex;justify-content:space-around;align-items:center;z-index:9999}
+.bottom-nav a{color:var(--gold);text-decoration:none;font-weight:600}
+
+
+/* v2 premium additions */
+:root{
+ --bg:#171717;
+ --card:#232323;
+ --gold:#d4af37;
+ --text:#f5f5f5;
+}
+body{background:var(--bg)!important;color:var(--text)!important;}
+.product-card,.card,.kategori-card{
+ background:var(--card)!important;
+ border:1px solid rgba(212,175,55,.25)!important;
+ border-radius:18px!important;
+ box-shadow:0 10px 24px rgba(0,0,0,.25)!important;
+ transition:.25s ease;
+}
+.product-card:hover,.card:hover,.kategori-card:hover{transform:translateY(-3px);}
+.bottom-nav{
+position:fixed;bottom:0;left:0;right:0;height:64px;
+background:#111;border-top:1px solid rgba(212,175,55,.3);
+display:flex;justify-content:space-around;align-items:center;z-index:9999;
+}
+.bottom-nav a{color:#ddd;text-decoration:none;font-size:14px}
+.bottom-nav a.active{color:var(--gold);font-weight:bold}
+
+
+/* Rev3 Premium Enhancements */
+:root{
+ --bg:#151515;
+ --card:#232323;
+ --gold:#d4af37;
+}
+body{background:var(--bg)!important;}
+.kategori-card,.product-card,.card{
+ background:var(--card)!important;
+ border:1px solid rgba(212,175,55,.18);
+ border-radius:18px;
+ box-shadow:0 8px 24px rgba(0,0,0,.22);
+ transition:.25s ease;
+}
+.kategori-card:hover,.product-card:hover,.card:hover{
+ transform:translateY(-4px);
+ border-color:var(--gold);
+}
+.bottom-nav{
+ position:fixed;left:0;right:0;bottom:0;
+ display:flex;justify-content:space-around;
+ background:#1b1b1b;
+ border-top:1px solid rgba(212,175,55,.2);
+ padding:10px 0;
+ z-index:999;
+}
+body{padding-bottom:72px!important;}
+
+
+.urunBilgi p,
+.urunAciklama{
+    font-size:16px;
+    line-height:1.9;
+    color:#333;
+    font-weight:400;
+}
+.urunKart .urunBilgi{
+    padding-top:4px;
+}
+
+.header{padding-bottom:30px}
+.slogan{color:#d4af37;font-weight:600}
+.title{color:#d4af37}
+.searchBox input{background:#1a1a1a;color:#fff;border:1px solid rgba(212,175,55,.2);box-shadow:none}
+.category,.card,.urunKart{background:#1a1a1a;color:#fff;border:1px solid rgba(212,175,55,.15);box-shadow:none}
+.category:hover,.urunKart:hover{border-color:#d4af37}
+.urunKart img{display:none}
+.urunKart p{font-size:16px;line-height:1.8;color:#ddd}
+
+
+/* v3 tweaks */
+.popular-section,.en-cok-tercih-edilenler,#popularProducts{display:none!important;}
+.product-image,.product-card img,.urun-resim{display:none!important;}
+.product-card,.urun-card,.detail-card,.product-detail-card{
+ max-width:680px;
+ margin:12px auto;
+ padding:18px!important;
+ border-radius:18px;
+ background:#1a1a1a!important;
+ color:#f5f5f5!important;
+ border:1px solid rgba(212,175,55,.18);
+}
+.product-detail-card,.detail-card{
+ max-width:620px;
+}
+.product-description,.urun-aciklama,.detail-description{
+ color:#d8d8d8!important;
+ font-size:16px!important;
+ line-height:1.8!important;
+}
+.price,.urun-fiyat{
+ color:#D4AF37!important;
+ font-weight:700;
+}
+
+
+/* v3 rev2 */
+body{background:#0d0d0d!important;color:#f5f5f5;}
+.title,.categoryTitle,.urunIsim h3,#urunDetay h1{color:#f5f5f5!important}
+.card,.category,.urunKart,#urunDetay{
+background:#181818!important;
+border:1px solid rgba(212,175,55,.18)!important;
+box-shadow:none!important;
+}
+.category{color:#f5f5f5!important}
+.category span,.categoryCount,.urunAciklama,#urunDetay p,.slogan{color:#cfcfcf!important}
+.searchBox input{background:#1f1f1f!important;color:#fff;border:1px solid rgba(212,175,55,.2)}
+.urunKart img{display:none!important}
+.urunKart{padding:18px!important}
+.urunAciklama{font-size:16px!important;line-height:1.8!important}
+#urunDetay{max-width:560px!important;padding:18px!important}
+#urunDetay .urunBilgi{padding:10px!important}
+#urunDetay h1{font-size:26px!important}
+#urunDetay .fiyat{font-size:24px!important}
+
+/* Rev3 overrides */
+.search-result img,.product-image,.card img,.result img{display:none!important;}
+.bottom-nav{position:fixed!important;left:0;right:0;bottom:0;z-index:9999;}
+body{padding-bottom:90px;}
+.detail-card,.urun-detay,.product-detail{max-width:680px;margin:16px auto;background:#1a1a1a!important;color:#f5f5f5!important;border:1px solid rgba(212,175,55,.18);border-radius:18px;padding:18px;}
+.badge,.tag,.chip,.info-chip{
+background:#242424!important;
+color:#f5f5f5!important;
+border:1px solid rgba(212,175,55,.2)!important;
+}
+
+
+/* Rev4 updates */
+.bottom-nav{position:fixed!important;left:0;right:0;bottom:0;z-index:9999}
+body{padding-bottom:90px!important}
+.product-detail .tag,.detail-tags .tag,.nutrition-tag,.badge{
+background:#242424!important;
+color:#f4f4f4!important;
+border:1px solid rgba(212,175,55,.2)!important;
+}
+.search-result img,.search-results img,.product-thumb,.product-image,.card img{
+display:none!important;
+}
+.search-result,.search-item{
+grid-template-columns:1fr!important;
+}
+
+
+/* Rev4.1 Gold info badges */
+.etiketler span,
+.badge,
+.rozetler .badge{
+    background:#D4AF37 !important;
+    color:#1A1A1A !important;
+    border:1px solid #E7C25A !important;
+    border-radius:999px !important;
+    padding:7px 14px !important;
+    font-weight:700 !important;
+    box-shadow:0 2px 8px rgba(212,175,55,.25);
+}
+
+
+/* Rev5 fixed bottom navigation */
+body{padding-bottom:90px;}
+.header{padding-top:20px;}
+.logo{width:400px;max-width:92%;}
+.bottom-nav{
+position:fixed;
+left:0;right:0;bottom:0;
+height:72px;
+background:#111;
+border-top:1px solid #D4AF37;
+display:flex;
+justify-content:space-around;
+align-items:center;
+z-index:9999;
+padding-bottom:env(safe-area-inset-bottom);
+}
+.bottom-nav a{
+color:#bbb;
+text-decoration:none;
+font-size:13px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:4px;
+font-weight:600;
+}
+.bottom-nav a.active,.bottom-nav a:hover{color:#D4AF37;}
+.badge{
+background:#D4AF37;
+color:#111;
+border-radius:999px;
+padding:1px 6px;
+font-size:10px;
+margin-left:2px;
+}
+.favorites-empty{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:40vh;
+color:#999;
+font-size:18px;
+text-align:center;
+}
+
+
+/* ===== REV6 PREMIUM CARD ===== */
+
+.premiumCard{
+    background:#181818;
+    border:1px solid rgba(212,175,55,.18);
+    border-radius:18px;
+    margin-bottom:18px;
+    overflow:hidden;
+    transition:.25s;
+}
+
+.premiumCard:hover{
+    border-color:#D4AF37;
+}
+
+.premiumRight{
+    padding:18px;
+}
+
+.premiumCard{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    padding:18px;
+}
+
+.premiumLeft{
+    width:80px;
+    flex:0 0 80px;
+}
+
+.premiumLeft img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+}
+
+.premiumRight{
+    flex:1;
+    padding:0;
+}
+
+.premiumTop{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    align-items:flex-start;
+}
+
+.premiumTop h3{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.kisaAciklama{
+    color:#cfcfcf;
+    line-height:1.7;
+    margin-bottom:16px;
+}
+
+.fiyat{
+    color:#D4AF37;
+    font-size:24px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.rozetler{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:18px;
+}
+
+.rozetler .badge{
+    background:#D4AF37;
+    color:#111;
+    border-radius:999px;
+    padding:7px 13px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.accordionBtn{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#242424;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:14px 18px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+.accordionContent{
+    display:none;
+    margin-top:14px;
+    padding-top:14px;
+    border-top:1px solid rgba(212,175,55,.2);
+}
+
+.premiumCard.open .accordionContent{
+    display:block;
+}
+
+.accordionContent h4{
+    color:#D4AF37;
+    margin:14px 0 6px;
+}
+
+.accordionContent p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .premiumLeft img{
+        height:180px;
+    }
+
+    .premiumTop{
+        flex-direction:column;
+    }
+
+    .fiyat{
+        font-size:22px;
+    }
+
+}
+
+/* Rev7 mobile tweaks */
+@media (max-width:600px){
+.product-card,.urun-card,.card{padding:14px!important;min-height:auto!important}
+.product-card img,.urun-card img{width:72px!important;height:72px!important}
+.bottom-nav{grid-template-columns:repeat(4,1fr)!important}
+}
