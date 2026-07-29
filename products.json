@@ -3,12 +3,14 @@
     "id": 1,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
-    "isim": "Espresso",
+    "isim": "EspressoTEST",
     "fiyat": 115,
     "resim": "images/espresso.webp",
     "aciklama": "Yoğun aromalı tek shot espresso.",
     "kalori": 2,
-    "icerik": ["Arabica Kahve"],
+    "icerik": [
+      "Arabica Kahve"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -23,7 +25,9 @@
     "resim": "images/double-espresso.webp",
     "aciklama": "İki shot espresso.",
     "kalori": 4,
-    "icerik": ["Arabica Kahve"],
+    "icerik": [
+      "Arabica Kahve"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -38,7 +42,10 @@
     "resim": "images/americano.webp",
     "aciklama": "Espresso ve sıcak su.",
     "kalori": 5,
-    "icerik": ["Espresso", "Sıcak Su"],
+    "icerik": [
+      "Espresso",
+      "Sıcak Su"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -53,7 +60,9 @@
     "resim": "images/filter-coffee.webp",
     "aciklama": "Taze demlenmiş filtre kahve.",
     "kalori": 5,
-    "icerik": ["Filtre Kahve"],
+    "icerik": [
+      "Filtre Kahve"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -68,8 +77,13 @@
     "resim": "images/cappuccino.webp",
     "aciklama": "Bol süt köpüklü cappuccino.",
     "kalori": 185,
-    "icerik": ["Espresso", "Süt Köpüğü"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt Köpüğü"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -83,8 +97,13 @@
     "resim": "images/latte.webp",
     "aciklama": "Yumuşak içimli espresso ve süt.",
     "kalori": 210,
-    "icerik": ["Espresso", "Süt"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -98,8 +117,14 @@
     "resim": "images/caramel-latte.webp",
     "aciklama": "Karamel şuruplu latte.",
     "kalori": 245,
-    "icerik": ["Espresso", "Süt", "Karamel Şurubu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Karamel Şurubu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": true
@@ -113,8 +138,14 @@
     "resim": "images/vanilla-latte.webp",
     "aciklama": "Vanilya aromalı latte.",
     "kalori": 255,
-    "icerik": ["Espresso", "Süt", "Vanilya Şurubu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Vanilya Şurubu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -128,8 +159,14 @@
     "resim": "images/strawberry-latte.webp",
     "aciklama": "Çilek aromalı latte.",
     "kalori": 260,
-    "icerik": ["Espresso", "Süt", "Çilek Şurubu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çilek Şurubu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -143,8 +180,14 @@
     "resim": "images/chocolate-mocha.webp",
     "aciklama": "Çikolatalı mocha.",
     "kalori": 295,
-    "icerik": ["Espresso", "Süt", "Çikolata Sosu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çikolata Sosu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -158,8 +201,14 @@
     "resim": "images/white-chocolate-mocha.webp",
     "aciklama": "Beyaz çikolatalı mocha.",
     "kalori": 300,
-    "icerik": ["Espresso", "Süt", "Beyaz Çikolata Sosu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Beyaz Çikolata Sosu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -173,7 +222,11 @@
     "resim": "images/iced-americano.webp",
     "aciklama": "Buzlu americano.",
     "kalori": 5,
-    "icerik": ["Espresso", "Su", "Buz"],
+    "icerik": [
+      "Espresso",
+      "Su",
+      "Buz"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -188,8 +241,14 @@
     "resim": "images/iced-latte.webp",
     "aciklama": "Buzlu latte.",
     "kalori": 210,
-    "icerik": ["Espresso", "Süt", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -203,8 +262,15 @@
     "resim": "images/vanilla-iced-latte.webp",
     "aciklama": "Vanilya aromalı buzlu latte.",
     "kalori": 245,
-    "icerik": ["Espresso", "Süt", "Vanilya Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Vanilya Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -218,8 +284,15 @@
     "resim": "images/caramel-iced-latte.webp",
     "aciklama": "Karamelli buzlu latte.",
     "kalori": 250,
-    "icerik": ["Espresso", "Süt", "Karamel Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Karamel Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -233,8 +306,15 @@
     "resim": "images/strawberry-iced-latte.webp",
     "aciklama": "Çilek aromalı buzlu latte.",
     "kalori": 255,
-    "icerik": ["Espresso", "Süt", "Çilek Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çilek Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -248,8 +328,15 @@
     "resim": "images/chocolate-iced-latte.webp",
     "aciklama": "Çikolatalı buzlu latte.",
     "kalori": 285,
-    "icerik": ["Espresso", "Süt", "Çikolata Sosu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çikolata Sosu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -263,8 +350,15 @@
     "resim": "images/white-chocolate-iced-latte.webp",
     "aciklama": "Beyaz çikolatalı buzlu latte.",
     "kalori": 290,
-    "icerik": ["Espresso", "Süt", "Beyaz Çikolata Sosu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Beyaz Çikolata Sosu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -278,7 +372,9 @@
     "resim": "images/turk-kahvesi.webp",
     "aciklama": "Geleneksel Türk kahvesi.",
     "kalori": 7,
-    "icerik": ["Türk Kahvesi"],
+    "icerik": [
+      "Türk Kahvesi"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -293,7 +389,9 @@
     "resim": "images/double-turk-kahvesi.webp",
     "aciklama": "Çift porsiyon Türk kahvesi.",
     "kalori": 12,
-    "icerik": ["Türk Kahvesi"],
+    "icerik": [
+      "Türk Kahvesi"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -308,13 +406,20 @@
     "resim": "images/strawberry-milkshake.webp",
     "aciklama": "Çilek aromalı yoğun kıvamlı milkshake.",
     "kalori": 420,
-    "icerik": ["Süt", "Frappe Powder", "Çilek Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Çilek Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true
-    },
-    {
+  },
+  {
     "id": 22,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
@@ -323,8 +428,15 @@
     "resim": "images/caramel-milkshake.webp",
     "aciklama": "Karamel aromalı yoğun kıvamlı milkshake.",
     "kalori": 435,
-    "icerik": ["Süt", "Frappe Powder", "Karamel Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Karamel Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -338,8 +450,15 @@
     "resim": "images/vanilla-milkshake.webp",
     "aciklama": "Vanilya aromalı milkshake.",
     "kalori": 425,
-    "icerik": ["Süt", "Frappe Powder", "Vanilya Şurubu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Vanilya Şurubu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -353,8 +472,15 @@
     "resim": "images/chocolate-milkshake.webp",
     "aciklama": "Çikolatalı milkshake.",
     "kalori": 445,
-    "icerik": ["Süt", "Frappe Powder", "Çikolata Sosu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Çikolata Sosu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -368,8 +494,15 @@
     "resim": "images/white-chocolate-milkshake.webp",
     "aciklama": "Beyaz çikolatalı milkshake.",
     "kalori": 455,
-    "icerik": ["Süt", "Frappe Powder", "Beyaz Çikolata Sosu", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Beyaz Çikolata Sosu",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -383,8 +516,16 @@
     "resim": "images/oreo-milkshake.webp",
     "aciklama": "Oreo parçacıklı milkshake.",
     "kalori": 490,
-    "icerik": ["Süt", "Frappe Powder", "Oreo Bisküvi", "Buz"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Süt",
+      "Frappe Powder",
+      "Oreo Bisküvi",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true
@@ -398,8 +539,15 @@
     "resim": "images/frappe.webp",
     "aciklama": "Soğuk kahve bazlı frappe.",
     "kalori": 260,
-    "icerik": ["Espresso", "Süt", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -413,8 +561,16 @@
     "resim": "images/caramel-frappe.webp",
     "aciklama": "Karamel aromalı frappe.",
     "kalori": 310,
-    "icerik": ["Espresso", "Süt", "Karamel Şurubu", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Karamel Şurubu",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -428,8 +584,16 @@
     "resim": "images/vanilla-frappe.webp",
     "aciklama": "Vanilya aromalı frappe.",
     "kalori": 305,
-    "icerik": ["Espresso", "Süt", "Vanilya Şurubu", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Vanilya Şurubu",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -443,8 +607,16 @@
     "resim": "images/strawberry-frappe.webp",
     "aciklama": "Çilek aromalı frappe.",
     "kalori": 315,
-    "icerik": ["Espresso", "Süt", "Çilek Şurubu", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çilek Şurubu",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -458,8 +630,16 @@
     "resim": "images/mocha-frappe.webp",
     "aciklama": "Çikolatalı mocha frappe.",
     "kalori": 340,
-    "icerik": ["Espresso", "Süt", "Çikolata Sosu", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Çikolata Sosu",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -473,8 +653,16 @@
     "resim": "images/white-chocolate-frappe.webp",
     "aciklama": "Beyaz çikolatalı frappe.",
     "kalori": 355,
-    "icerik": ["Espresso", "Süt", "Beyaz Çikolata Sosu", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Beyaz Çikolata Sosu",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -488,8 +676,17 @@
     "resim": "images/oreo-frappe.webp",
     "aciklama": "Oreo parçacıklı frappe.",
     "kalori": 365,
-    "icerik": ["Espresso", "Süt", "Oreo Bisküvi", "Frappe Powder", "Buz"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Espresso",
+      "Süt",
+      "Oreo Bisküvi",
+      "Frappe Powder",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
@@ -503,7 +700,11 @@
     "resim": "images/strawberry-frozen.webp",
     "aciklama": "Ferahlatıcı çilek frozen.",
     "kalori": 210,
-    "icerik": ["Çilek Püresi", "Buz", "Su"],
+    "icerik": [
+      "Çilek Püresi",
+      "Buz",
+      "Su"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -518,7 +719,11 @@
     "resim": "images/mango-frozen.webp",
     "aciklama": "Ferahlatıcı mango frozen.",
     "kalori": 215,
-    "icerik": ["Mango Püresi", "Buz", "Su"],
+    "icerik": [
+      "Mango Püresi",
+      "Buz",
+      "Su"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -533,8 +738,14 @@
     "resim": "images/strawberry-smoothie.webp",
     "aciklama": "Çilekli smoothie.",
     "kalori": 235,
-    "icerik": ["Süt", "Çilek Püresi", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Çilek Püresi",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -548,8 +759,14 @@
     "resim": "images/mango-smoothie.webp",
     "aciklama": "Mangolu smoothie.",
     "kalori": 240,
-    "icerik": ["Süt", "Mango Püresi", "Buz"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Mango Püresi",
+      "Buz"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -563,7 +780,9 @@
     "resim": "images/anne-corbasi.webp",
     "aciklama": "Günün ev yapımı çorbası.",
     "kalori": 180,
-    "icerik": ["Günün Çorbası"],
+    "icerik": [
+      "Günün Çorbası"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
@@ -578,7 +797,10 @@
     "resim": "images/gunun-etli-yemegi.webp",
     "aciklama": "Günün etli ana yemeği.",
     "kalori": 650,
-    "icerik": ["Et", "Yan Ürünler"],
+    "icerik": [
+      "Et",
+      "Yan Ürünler"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
@@ -593,7 +815,10 @@
     "resim": "images/gunun-kiymali-yemegi.webp",
     "aciklama": "Günün kıymalı yemeği.",
     "kalori": 610,
-    "icerik": ["Kıyma", "Yan Ürünler"],
+    "icerik": [
+      "Kıyma",
+      "Yan Ürünler"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
@@ -608,7 +833,10 @@
     "resim": "images/gunun-tavuklu-yemegi.webp",
     "aciklama": "Günün tavuklu ana yemeği.",
     "kalori": 560,
-    "icerik": ["Tavuk", "Yan Ürünler"],
+    "icerik": [
+      "Tavuk",
+      "Yan Ürünler"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
@@ -623,13 +851,15 @@
     "resim": "images/gunun-sebzeli-yemegi.webp",
     "aciklama": "Günün sebzeli yemeği.",
     "kalori": 430,
-    "icerik": ["Mevsim Sebzeleri"],
+    "icerik": [
+      "Mevsim Sebzeleri"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
   },
-    {
+  {
     "id": 43,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
@@ -638,8 +868,13 @@
     "resim": "images/sade-pilav.webp",
     "aciklama": "Tereyağlı sade pilav.",
     "kalori": 340,
-    "icerik": ["Pirinç", "Tereyağı"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Pirinç",
+      "Tereyağı"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -653,8 +888,14 @@
     "resim": "images/sade-makarna.webp",
     "aciklama": "Tereyağlı sade makarna.",
     "kalori": 390,
-    "icerik": ["Makarna", "Tereyağı"],
-    "alerjen": ["Gluten", "Süt"],
+    "icerik": [
+      "Makarna",
+      "Tereyağı"
+    ],
+    "alerjen": [
+      "Gluten",
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -668,8 +909,16 @@
     "resim": "images/nesliga-paylasim-tabagi.webp",
     "aciklama": "Paylaşmalık zengin atıştırmalık tabağı.",
     "kalori": 980,
-    "icerik": ["Çıtır Tavuk", "Patates", "Nugget","Soğan Halkası", "Soslar"],
-    "alerjen": ["Gluten"],
+    "icerik": [
+      "Çıtır Tavuk",
+      "Patates",
+      "Nugget",
+      "Soğan Halkası",
+      "Soslar"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false
@@ -683,8 +932,15 @@
     "resim": "images/citir-tavuk.webp",
     "aciklama": "Patates kızartması ile servis edilen çıtır tavuk.",
     "kalori": 720,
-    "icerik": ["Tavuk", "Pane Harcı", "Patates", "Soslar"],
-    "alerjen": ["Gluten"],
+    "icerik": [
+      "Tavuk",
+      "Pane Harcı",
+      "Patates",
+      "Soslar"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true
@@ -698,8 +954,20 @@
     "resim": "images/atistirma-tabagi.webp",
     "aciklama": "Karışık sıcak atıştırmalık tabağı.",
     "kalori": 760,
-    "icerik": ["Patates", "Çıtır Tavuk", "Nugget", "Soğan Halkası"], "soslar": ["Barbekü Sos", "Acı Sos", "Mayonez"],
-    "alerjen": ["Gluten"],
+    "icerik": [
+      "Patates",
+      "Çıtır Tavuk",
+      "Nugget",
+      "Soğan Halkası"
+    ],
+    "soslar": [
+      "Barbekü Sos",
+      "Acı Sos",
+      "Mayonez"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false
@@ -713,7 +981,10 @@
     "resim": "images/kofte-pilav.webp",
     "aciklama": "Izgara köfte ve tereyağlı pilav.",
     "kalori": 780,
-    "icerik": ["Köfte", "Pilav"],
+    "icerik": [
+      "Köfte",
+      "Pilav"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
@@ -728,7 +999,9 @@
     "resim": "images/patates-kizartmasi.webp",
     "aciklama": "Çıtır patates kızartması.",
     "kalori": 430,
-    "icerik": ["Patates"],
+    "icerik": [
+      "Patates"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -743,8 +1016,14 @@
     "resim": "images/kasarli-tost.webp",
     "aciklama": "Bol kaşarlı tost.",
     "kalori": 470,
-    "icerik": ["Kaşar Peyniri", "Tost Ekmeği"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Kaşar Peyniri",
+      "Tost Ekmeği"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -758,8 +1037,15 @@
     "resim": "images/kasarli-sucuklu-tost.webp",
     "aciklama": "Kaşarlı sucuklu tost.",
     "kalori": 620,
-    "icerik": ["Kaşar", "Sucuk", "Tost Ekmeği"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Kaşar",
+      "Sucuk",
+      "Tost Ekmeği"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false
@@ -773,8 +1059,14 @@
     "resim": "images/kasarli-gozleme.webp",
     "aciklama": "İnce hamurlu kaşarlı gözleme.",
     "kalori": 520,
-    "icerik": ["Kaşar", "Yufka"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Kaşar",
+      "Yufka"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -788,8 +1080,15 @@
     "resim": "images/sucuklu-kasarli-gozleme.webp",
     "aciklama": "Sucuk ve kaşarlı gözleme.",
     "kalori": 690,
-    "icerik": ["Sucuk", "Kaşar", "Yufka"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Sucuk",
+      "Kaşar",
+      "Yufka"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false
@@ -803,8 +1102,12 @@
     "resim": "images/yogurt.webp",
     "aciklama": "Orta boy yoğurt.",
     "kalori": 120,
-    "icerik": ["Yoğurt"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Yoğurt"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -818,8 +1121,13 @@
     "resim": "images/mini-tavuk-menu.webp",
     "aciklama": "Çocuklara özel çıtır tavuk menüsü.",
     "kalori": 540,
-    "icerik": ["Çıtır Tavuk", "Patates" ],
-    "alerjen": ["Gluten"],
+    "icerik": [
+      "Çıtır Tavuk",
+      "Patates"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false
@@ -833,8 +1141,13 @@
     "resim": "images/mini-kofte-menu.webp",
     "aciklama": "Çocuklara özel köfte menüsü.",
     "kalori": 610,
-    "icerik": ["Köfte", "Patates"],
-    "alerjen": ["Gluten"],
+    "icerik": [
+      "Köfte",
+      "Patates"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true
@@ -848,8 +1161,14 @@
     "resim": "images/mini-tost-menu.webp",
     "aciklama": "Kaşarlı tost menüsü.",
     "kalori": 480,
-    "icerik": ["Kaşar Peyniri", "Tost Ekmeği"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Kaşar Peyniri",
+      "Tost Ekmeği"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -863,8 +1182,13 @@
     "resim": "images/babyccino.webp",
     "aciklama": "Çocuklara özel süt köpüğü içeceği.",
     "kalori": 90,
-    "icerik": ["Süt Köpüğü", "Kakao"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt Köpüğü",
+      "Kakao"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -878,8 +1202,13 @@
     "resim": "images/kids-strawberry-milk.webp",
     "aciklama": "Çilek aromalı çocuk sütü.",
     "kalori": 180,
-    "icerik": ["Süt", "Çilek Şurubu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Çilek Şurubu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -893,8 +1222,13 @@
     "resim": "images/kids-chocolate-milk.webp",
     "aciklama": "Çikolatalı çocuk sütü.",
     "kalori": 190,
-    "icerik": ["Süt", "Çikolata Sosu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Çikolata Sosu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -908,8 +1242,16 @@
     "resim": "images/cikolatali-waffle.webp",
     "aciklama": "Belçika waffle üzerine çikolata sosu.",
     "kalori": 690,
-    "icerik": ["Waffle Hamuru", "Çikolata Sosu", "çilek", "muz"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Waffle Hamuru",
+      "Çikolata Sosu",
+      "çilek",
+      "muz"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true
@@ -923,8 +1265,16 @@
     "resim": "images/beyaz-cikolatali-waffle.webp",
     "aciklama": "Belçika waffle üzerine beyaz çikolata.",
     "kalori": 700,
-    "icerik": ["Waffle Hamuru", "Beyaz Çikolata Sosu", "çilek", "muz"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Waffle Hamuru",
+      "Beyaz Çikolata Sosu",
+      "çilek",
+      "muz"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -938,13 +1288,22 @@
     "resim": "images/islak-kek.webp",
     "aciklama": "Yoğun çikolata soslu ıslak kek.",
     "kalori": 470,
-    "icerik": ["Kakao", "Un", "Yumurta"],
-    "alerjen": ["Gluten", "Süt", "Yumurta", "Şeker"],
+    "icerik": [
+      "Kakao",
+      "Un",
+      "Yumurta"
+    ],
+    "alerjen": [
+      "Gluten",
+      "Süt",
+      "Yumurta",
+      "Şeker"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
   },
-    {
+  {
     "id": 64,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
@@ -953,8 +1312,21 @@
     "resim": "images/cikolatali-mozaik-pasta.webp",
     "aciklama": "Ev yapımı çikolatalı mozaik pasta.",
     "kalori": 510,
-    "icerik": ["Bisküvi", "Çikolata", "Tereyağı", "Süt", "Yumurta", "Şeker", "Kakao", "Vanilya", "ceviz"],
-    "alerjen": ["Gluten", "Süt"],
+    "icerik": [
+      "Bisküvi",
+      "Çikolata",
+      "Tereyağı",
+      "Süt",
+      "Yumurta",
+      "Şeker",
+      "Kakao",
+      "Vanilya",
+      "ceviz"
+    ],
+    "alerjen": [
+      "Gluten",
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -968,8 +1340,19 @@
     "resim": "images/citir-kadayifli-muhallebi.webp",
     "aciklama": "Kadayıf ve muhallebinin enfes uyumu.",
     "kalori": 480,
-    "icerik": ["Muhallebi", "Kadayıf", "Tereyağı", "Şeker", "Süt", "Vanilya", "krema"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Muhallebi",
+      "Kadayıf",
+      "Tereyağı",
+      "Şeker",
+      "Süt",
+      "Vanilya",
+      "krema"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -983,8 +1366,19 @@
     "resim": "images/magnolia.webp",
     "aciklama": "Meyveli magnolia tatlısı.",
     "kalori": 450,
-    "icerik": ["Süt", "Bisküvi", "Meyve", "Krema", "Vanilya", "Şeker", "Tereyağı"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Süt",
+      "Bisküvi",
+      "Meyve",
+      "Krema",
+      "Vanilya",
+      "Şeker",
+      "Tereyağı"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -998,8 +1392,19 @@
     "resim": "images/cheesecake.webp",
     "aciklama": "Kremamsı cheesecake.",
     "kalori": 520,
-    "icerik": ["Labne", "Bisküvi", "Krema", "Vanilya", "Şeker", "Tereyağı", "Yumurta"],
-    "alerjen": ["Süt", "Gluten"],
+    "icerik": [
+      "Labne",
+      "Bisküvi",
+      "Krema",
+      "Vanilya",
+      "Şeker",
+      "Tereyağı",
+      "Yumurta"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true
@@ -1013,8 +1418,14 @@
     "resim": "images/donut.webp",
     "aciklama": "Yumuşak hamurlu donut.",
     "kalori": 310,
-    "icerik": ["Hamur", "Şeker"],
-    "alerjen": ["Gluten", "Yumurta"],
+    "icerik": [
+      "Hamur",
+      "Şeker"
+    ],
+    "alerjen": [
+      "Gluten",
+      "Yumurta"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1028,7 +1439,9 @@
     "resim": "images/sade-soda.webp",
     "aciklama": "Doğal maden suyu.",
     "kalori": 0,
-    "icerik": ["Maden Suyu"],
+    "icerik": [
+      "Maden Suyu"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1043,7 +1456,10 @@
     "resim": "images/meyveli-soda.webp",
     "aciklama": "Meyve aromalı soda.",
     "kalori": 45,
-    "icerik": ["Maden Suyu", "Meyve Aroması"],
+    "icerik": [
+      "Maden Suyu",
+      "Meyve Aroması"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1058,7 +1474,9 @@
     "resim": "images/mesrubat.webp",
     "aciklama": "Gazlı içecek çeşitleri.",
     "kalori": 140,
-    "icerik": ["Gazlı İçecek"],
+    "icerik": [
+      "Gazlı İçecek"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -1073,7 +1491,9 @@
     "resim": "images/meyve-suyu.webp",
     "aciklama": "Meyve suyu çeşitleri.",
     "kalori": 110,
-    "icerik": ["Meyve Suyu"],
+    "icerik": [
+      "Meyve Suyu"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1088,8 +1508,12 @@
     "resim": "images/ayran.webp",
     "aciklama": "Soğuk ayran.",
     "kalori": 70,
-    "icerik": ["Yoğurt"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Yoğurt"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1103,7 +1527,9 @@
     "resim": "images/su-500.webp",
     "aciklama": "500 ml içme suyu.",
     "kalori": 0,
-    "icerik": ["Su"],
+    "icerik": [
+      "Su"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1118,7 +1544,9 @@
     "resim": "images/su-bardak.webp",
     "aciklama": "Bardak su.",
     "kalori": 0,
-    "icerik": ["Su"],
+    "icerik": [
+      "Su"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1133,7 +1561,9 @@
     "resim": "images/siyah-cay-bardak.webp",
     "aciklama": "Demleme siyah çay.",
     "kalori": 2,
-    "icerik": ["Siyah Çay"],
+    "icerik": [
+      "Siyah Çay"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -1148,7 +1578,9 @@
     "resim": "images/siyah-cay-fincan.webp",
     "aciklama": "Fincanda servis edilen siyah çay.",
     "kalori": 2,
-    "icerik": ["Siyah Çay"],
+    "icerik": [
+      "Siyah Çay"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
@@ -1163,7 +1595,9 @@
     "resim": "images/meyve-cayi.webp",
     "aciklama": "Karışık meyve çayı.",
     "kalori": 5,
-    "icerik": ["Meyve Çayı"],
+    "icerik": [
+      "Meyve Çayı"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1178,7 +1612,9 @@
     "resim": "images/bitki-cayi.webp",
     "aciklama": "Bitki çayı çeşitleri.",
     "kalori": 5,
-    "icerik": ["Bitki Çayı"],
+    "icerik": [
+      "Bitki Çayı"
+    ],
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
@@ -1193,8 +1629,14 @@
     "resim": "images/salep.webp",
     "aciklama": "Tarçınlı sıcak salep.",
     "kalori": 240,
-    "icerik": ["Süt", "Sale tozu", "Tarçın"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Sale tozu",
+      "Tarçın"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1208,8 +1650,13 @@
     "resim": "images/sicak-cikolata.webp",
     "aciklama": "Yoğun sıcak çikolata.",
     "kalori": 310,
-    "icerik": ["Süt", "Çikolata tozu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Çikolata tozu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1223,8 +1670,13 @@
     "resim": "images/sicak-beyaz-cikolata.webp",
     "aciklama": "Beyaz çikolatalı sıcak içecek.",
     "kalori": 320,
-    "icerik": ["Süt", "Beyaz Çikolata Sosu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Beyaz Çikolata Sosu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1238,8 +1690,13 @@
     "resim": "images/caramel-hot-milk.webp",
     "aciklama": "Karamel aromalı sıcak süt.",
     "kalori": 190,
-    "icerik": ["Süt", "Karamel sosu"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt",
+      "Karamel sosu"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
@@ -1253,8 +1710,12 @@
     "resim": "images/sade-sut.webp",
     "aciklama": "Sıcak veya soğuk sade süt.",
     "kalori": 120,
-    "icerik": ["Süt"],
-    "alerjen": ["Süt"],
+    "icerik": [
+      "Süt"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
