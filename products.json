@@ -1,22 +1,5 @@
 [
   {
-    "id": 1,
-    "anaKategori": "kahveler",
-    "altKategori": "espresso-bazli",
-    "isim": "EspressoTEST",
-    "fiyat": 115,
-    "resim": "images/espresso.webp",
-    "aciklama": "Yoğun aromalı tek shot espresso.",
-    "kalori": 2,
-    "icerik": [
-      "Arabica Kahve"
-    ],
-    "alerjen": [],
-    "kafein": true,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 2,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
