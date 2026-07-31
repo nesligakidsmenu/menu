@@ -1,29 +1,76 @@
 [
   {
-    "id": "kahveler",
-    "name": "Kahveler",
+    "id": "caylar",
+    "name": "caylar",
     "subCategories": [
-      "Espresso Bazlı",
-      "Filtre Kahve",
-      "Türk Kahvesi"
+      "bitki-cayi",
+      "cay",
+      "meyve-cayi"
+    ]
+  },
+  {
+    "id": "cocuk",
+    "name": "cocuk",
+    "subCategories": [
+      "cocuk-icecekleri",
+      "cocuk-menuleri"
+    ]
+  },
+  {
+    "id": "kahveler",
+    "name": "kahveler",
+    "subCategories": [
+      "espresso-bazli",
+      "geleneksel",
+      "soguk",
+      "sutlu"
+    ]
+  },
+  {
+    "id": "sicak-icecekler",
+    "name": "sicak-icecekler",
+    "subCategories": [
+      "sicak"
     ]
   },
   {
     "id": "soguk-icecekler",
-    "name": "Soğuk İçecekler",
+    "name": "soguk-icecekler",
     "subCategories": [
-      "Frozen",
-      "Milkshake",
-      "Limonata"
+      "ayran",
+      "mesrubat",
+      "meyve-suyu",
+      "meyveli-soda",
+      "soda",
+      "su"
+    ]
+  },
+  {
+    "id": "soguk-special",
+    "name": "soguk-special",
+    "subCategories": [
+      "frappe",
+      "frozen",
+      "milkshake",
+      "smoothie"
     ]
   },
   {
     "id": "tatlilar",
-    "name": "Tatlılar",
+    "name": "tatlilar",
     "subCategories": [
-      "Waffle",
-      "Cheesecake",
-      "Pasta"
+      "donut",
+      "pastalar",
+      "waffle"
+    ]
+  },
+  {
+    "id": "yiyecekler",
+    "name": "yiyecekler",
+    "subCategories": [
+      "atistirmaliklar",
+      "gunluk-lezzetler",
+      "ilaveler"
     ]
   }
 ]
