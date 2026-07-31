@@ -1719,5 +1719,27 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
+  },
+  {
+    "id": "4c9d1b75-0905-40dd-812f-d0bdc7c64263",
+    "anaKategori": "tatlilar",
+    "altKategori": "waffle",
+    "isim": "galip",
+    "fiyat": 1000,
+    "resim": "9adf1a90-95ca-46cb-81af-05bf9ea17b2b.webp",
+    "aciklama": "galileo",
+    "kalori": 55,
+    "icerik": [
+      "55",
+      "52",
+      "34"
+    ],
+    "alerjen": [
+      "süt",
+      "fınfıdk"
+    ],
+    "kafein": true,
+    "vejetaryen": true,
+    "onerilen": false
   }
 ]
