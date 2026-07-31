@@ -1702,5 +1702,20 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false
+  },
+  {
+    "id": "c967206f-5b67-46bd-a253-fd717bc61050",
+    "anaKategori": "kahveler",
+    "altKategori": "espresso-bazli",
+    "isim": "Espresso",
+    "fiyat": 115,
+    "resim": "",
+    "aciklama": "",
+    "kalori": 0,
+    "icerik": [],
+    "alerjen": [],
+    "kafein": true,
+    "vejetaryen": true,
+    "onerilen": false
   }
 ]
