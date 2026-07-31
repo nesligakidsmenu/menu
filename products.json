@@ -1711,8 +1711,10 @@
     "fiyat": 115,
     "resim": "",
     "aciklama": "",
-    "kalori": 0,
-    "icerik": [],
+    "kalori": 2,
+    "icerik": [
+      "Arabica Kahve"
+    ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
