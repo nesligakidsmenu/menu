@@ -1,0 +1,29 @@
+[
+  {
+    "id": "kahveler",
+    "name": "Kahveler",
+    "subCategories": [
+      "Espresso Bazlı",
+      "Filtre Kahve",
+      "Türk Kahvesi"
+    ]
+  },
+  {
+    "id": "soguk-icecekler",
+    "name": "Soğuk İçecekler",
+    "subCategories": [
+      "Frozen",
+      "Milkshake",
+      "Limonata"
+    ]
+  },
+  {
+    "id": "tatlilar",
+    "name": "Tatlılar",
+    "subCategories": [
+      "Waffle",
+      "Cheesecake",
+      "Pasta"
+    ]
+  }
+]
