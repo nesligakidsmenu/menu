@@ -1,25 +1,5 @@
 [
   {
-    "id": "f8232eff-5c1f-428d-a74b-f02412099208",
-    "order": 2,
-    "anaKategori": "denemess",
-    "altKategori": "denemexxx",
-    "isim": "DDDDD",
-    "fiyat": 111111,
-    "resim": "",
-    "aciklama": "1111",
-    "kalori": 111,
-    "icerik": [
-      "1111"
-    ],
-    "alerjen": [
-      "11111"
-    ],
-    "kafein": true,
-    "vejetaryen": true,
-    "onerilen": true
-  },
-  {
     "id": 1,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
