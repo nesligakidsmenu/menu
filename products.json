@@ -810,6 +810,7 @@
   },
   {
     "id": 38,
+    "order": 40,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Anne Çorbası",
@@ -823,8 +824,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false,
-    "order": 40
+    "onerilen": true
   },
   {
     "id": 39,
