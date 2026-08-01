@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nesliga QR Menü yönetim paneli">
+    <title>Nesliga | Yönetim Paneli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="loginScreen" class="screen" aria-labelledby="loginTitle">
+        <section class="loginCard">
+            <p class="eyebrow">NESLİGA</p>
+            <h1 id="loginTitle">Yönetim Paneli</h1>
+            <p>QR menünüzü güncel ve düzenli tutun.</p>
+
+            <label class="srOnly" for="password">Yönetim şifresi</label>
+            <input id="password" type="password" placeholder="Şifrenizi girin" autocomplete="current-password">
+            <button id="loginBtn" type="button">Giriş yap</button>
+            <p id="loginError" role="alert" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <div id="dashboard" class="hidden">
+        <header class="topbar">
+            <div class="brandBlock">
+                <p class="eyebrow">NESLİGA</p>
+                <h1>Menü Yönetimi</h1>
+                <span>QR Menü içerik merkezi</span>
+            </div>
+            <a class="viewMenuLink" href="../index.html" target="_blank" rel="noopener noreferrer">
+                Menüde görüntüle
+                <span aria-hidden="true">↗</span>
+            </a>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar" aria-label="Yönetim menüsü">
+                <div class="sidebarHeading">
+                    <p class="eyebrow">YÖNETİM</p>
+                    <h2>İçerikler</h2>
+                </div>
+
+                <nav aria-label="Sayfa geçişleri">
+                    <button class="menuItem active" type="button" aria-current="page">
+                        <span aria-hidden="true">◫</span>
+                        Ürünler
+                    </button>
+                    <button class="menuItem" type="button">
+                        <span aria-hidden="true">◇</span>
+                        Kategoriler
+                    </button>
+                    <button class="menuItem" type="button">
+                        <span aria-hidden="true">▣</span>
+                        Resimler
+                    </button>
+                    <button class="menuItem" type="button">
+                        <span aria-hidden="true">⚙</span>
+                        Ayarlar
+                    </button>
+                </nav>
+            </aside>
+
+            <section class="content" aria-live="polite">
+                <section id="productsPage" aria-labelledby="productsTitle">
+                    <div class="pageHeading">
+                        <div>
+                            <p class="eyebrow">MENÜ İÇERİĞİ</p>
+                            <h2 id="productsTitle">Ürünler</h2>
+                            <p>Menüde gösterilecek ürünleri yönetin.</p>
+                        </div>
+                    </div>
+
+                    <div class="toolbar">
+                        <label class="searchField" for="searchInput">
+                            <span class="srOnly">Ürün ara</span>
+                            <span aria-hidden="true">⌕</span>
+                            <input id="searchInput" type="search" placeholder="Ürün ara..." autocomplete="off">
+                        </label>
+                        <button id="newProductBtn" class="primary" type="button">
+                            <span aria-hidden="true">＋</span>
+                            Yeni ürün
+                        </button>
+                    </div>
+
+                    <div class="tableWrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ürün</th>
+                                    <th scope="col">Kategori</th>
+                                    <th scope="col">Fiyat</th>
+                                    <th scope="col">İşlem</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productList"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="categoriesPage" class="hidden" aria-labelledby="categoriesTitle">
+                    <div class="pageHeading">
+                        <div>
+                            <p class="eyebrow">MENÜ DÜZENİ</p>
+                            <h2 id="categoriesTitle">Kategoriler</h2>
+                            <p>Ana ve alt kategori yapısını yönetin.</p>
+                        </div>
+                    </div>
+
+                    <div class="toolbar categoryToolbar">
+                        <button id="generateCategoriesBtn" class="secondary" type="button">Ürünlerden oluştur</button>
+                        <button id="newCategoryBtn" class="primary" type="button">Ana kategori ekle</button>
+                        <button id="newSubCategoryBtn" class="primary" type="button">Alt kategori ekle</button>
+                        <button id="saveCategoriesBtn" class="success" type="button">Değişiklikleri kaydet</button>
+                    </div>
+                    <div id="categoryList" class="categoryList"></div>
+                </section>
+
+                <section id="imagesPage" class="hidden" aria-labelledby="imagesTitle">
+                    <div class="pageHeading">
+                        <div>
+                            <p class="eyebrow">MEDYA KÜTÜPHANESİ</p>
+                            <h2 id="imagesTitle">Resimler</h2>
+                            <p>Resim yönetimi yakında burada olacak.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="settingsPage" class="hidden" aria-labelledby="settingsTitle">
+                    <div class="pageHeading">
+                        <div>
+                            <p class="eyebrow">PANEL AYARLARI</p>
+                            <h2 id="settingsTitle">Ayarlar</h2>
+                            <p>Yönetim tercihleri yakında burada olacak.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <aside id="productEditor" class="editor" aria-labelledby="editorTitle">
+                <div class="editorHeading">
+                    <p class="eyebrow">ÜRÜN DÜZENLEYİCİ</p>
+                    <h2 id="editorTitle">Ürün bilgileri</h2>
+                </div>
+
+                <div class="imageBox">
+                    <img id="imagePreview" src="../assets/images/products/no-image.webp" alt="Seçilen ürün görseli">
+                    <button id="selectImageBtn" type="button">Resim seç</button>
+                    <input id="imageInput" type="file" accept=".jpg,.jpeg,.png,.webp" hidden>
+                </div>
+
+                <div class="formGroup">
+                    <label for="editName">Ürün adı</label>
+                    <input id="editName" type="text" autocomplete="off">
+                </div>
+                <div class="formGroup">
+                    <label for="editPrice">Fiyat</label>
+                    <input id="editPrice" type="number" min="0" step="0.01" inputmode="decimal">
+                </div>
+                <div class="formGroup">
+                    <label for="editCategory">Ana kategori</label>
+                    <select id="editCategory">
+                        <option value="">Kategori seçin</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="editSubCategory">Alt kategori</label>
+                    <select id="editSubCategory">
+                        <option value="">Alt kategori seçin</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="editDescription">Açıklama</label>
+                    <textarea id="editDescription" rows="4"></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="editCalories">Kalori</label>
+                    <input id="editCalories" type="number" min="0" inputmode="numeric">
+                </div>
+                <div class="formGroup">
+                    <label for="editIngredients">İçerikler <span>(virgülle ayırın)</span></label>
+                    <textarea id="editIngredients" rows="3" placeholder="Süt, kakao, kahve"></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="editAllergens">Alerjenler <span>(virgülle ayırın)</span></label>
+                    <textarea id="editAllergens" rows="2" placeholder="Süt, fındık"></textarea>
+                </div>
+
+                <fieldset class="checkboxGroup">
+                    <legend>Ürün özellikleri</legend>
+                    <label><input type="checkbox" id="editCaffeine"> Kafein içerir</label>
+                    <label><input type="checkbox" id="editVegetarian"> Vejetaryen</label>
+                    <label><input type="checkbox" id="editRecommended"> Önerilen ürün</label>
+                </fieldset>
+
+                <div class="buttonGroup">
+                    <button id="newProductBtn2" class="primary" type="button">Yeni ürün</button>
+                    <button id="saveBtn" class="success" type="button">Kaydet</button>
+                    <button id="deleteBtn" class="danger" type="button">Sil</button>
+                    <button id="cancelBtn" class="secondary" type="button">İptal</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
