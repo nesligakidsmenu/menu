@@ -766,6 +766,7 @@
   },
   {
     "id": 35,
+    "order": 38,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Mango Frozen",
@@ -781,8 +782,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 38
+    "onerilen": true
   },
   {
     "id": 36,
