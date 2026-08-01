@@ -534,6 +534,7 @@
   },
   {
     "id": 26,
+    "order": 28,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Oreo Milkshake",
@@ -553,8 +554,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
-    "order": 28
+    "onerilen": false
   },
   {
     "id": 27,
