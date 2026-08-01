@@ -726,6 +726,7 @@
   },
   {
     "id": 34,
+    "order": 36,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Strawberry Frozen",
@@ -741,8 +742,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 36
+    "onerilen": true
   },
   {
     "id": 35,
