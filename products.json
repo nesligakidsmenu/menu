@@ -116,6 +116,7 @@
   },
   {
     "id": 7,
+    "order": 9,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Caramel Latte",
@@ -133,8 +134,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": true,
-    "order": 9
+    "onerilen": false
   },
   {
     "id": 8,
