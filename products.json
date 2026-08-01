@@ -1021,6 +1021,7 @@
   },
   {
     "id": 48,
+    "order": 50,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Köfte & Pilav",
@@ -1035,8 +1036,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false,
-    "order": 50
+    "onerilen": true
   },
   {
     "id": 49,
