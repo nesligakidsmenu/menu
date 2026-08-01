@@ -1,11 +1,31 @@
 [
   {
-    "id": "caylar",
-    "name": "caylar",
+    "id": "kahveler",
+    "name": "kahveler",
     "subCategories": [
-      "bitki-cayi",
-      "cay",
-      "meyve-cayi"
+      "espresso-bazli",
+      "geleneksel",
+      "soguk",
+      "sutlu"
+    ]
+  },
+  {
+    "id": "soguk-special",
+    "name": "soguk-special",
+    "subCategories": [
+      "frappe",
+      "frozen",
+      "milkshake",
+      "smoothie"
+    ]
+  },
+  {
+    "id": "yiyecekler",
+    "name": "yiyecekler",
+    "subCategories": [
+      "atistirmaliklar",
+      "gunluk-lezzetler",
+      "ilaveler"
     ]
   },
   {
@@ -17,20 +37,12 @@
     ]
   },
   {
-    "id": "kahveler",
-    "name": "kahveler",
+    "id": "tatlilar",
+    "name": "tatlilar",
     "subCategories": [
-      "espresso-bazli",
-      "geleneksel",
-      "soguk",
-      "sutlu"
-    ]
-  },
-  {
-    "id": "sicak-icecekler",
-    "name": "sicak-icecekler",
-    "subCategories": [
-      "sicak"
+      "donut",
+      "pastalar",
+      "waffle"
     ]
   },
   {
@@ -46,38 +58,19 @@
     ]
   },
   {
-    "id": "soguk-special",
-    "name": "soguk-special",
+    "id": "caylar",
+    "name": "caylar",
     "subCategories": [
-      "frappe",
-      "frozen",
-      "milkshake",
-      "smoothie"
+      "bitki-cayi",
+      "cay",
+      "meyve-cayi"
     ]
   },
   {
-    "id": "tatlilar",
-    "name": "tatlilar",
+    "id": "sicak-icecekler",
+    "name": "sicak-icecekler",
     "subCategories": [
-      "donut",
-      "pastalar",
-      "waffle"
-    ]
-  },
-  {
-    "id": "yiyecekler",
-    "name": "yiyecekler",
-    "subCategories": [
-      "atistirmaliklar",
-      "gunluk-lezzetler",
-      "ilaveler"
-    ]
-  },
-  {
-    "id": "deneme",
-    "name": "DENEME",
-    "subCategories": [
-      "deneme-alt"
+      "sicak"
     ]
   }
 ]
