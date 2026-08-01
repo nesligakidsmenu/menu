@@ -1,21 +1,5 @@
 [
   {
-    "id": "f141a2fb-c762-4cf2-8c30-cea9dc4d5c1c",
-    "order": 1,
-    "anaKategori": "anam",
-    "altKategori": "anam-anam",
-    "isim": "SDSDSDSD",
-    "fiyat": 3444334,
-    "resim": "",
-    "aciklama": "REWSADZFDZVXC",
-    "kalori": 2,
-    "icerik": [],
-    "alerjen": [],
-    "kafein": true,
-    "vejetaryen": true,
-    "onerilen": true
-  },
-  {
     "id": "f8232eff-5c1f-428d-a74b-f02412099208",
     "order": 2,
     "anaKategori": "denemess",
