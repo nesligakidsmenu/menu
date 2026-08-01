@@ -1397,6 +1397,7 @@
   },
   {
     "id": 65,
+    "order": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çıtır Kadayıflı Muhallebi",
@@ -1419,8 +1420,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 67
+    "onerilen": true
   },
   {
     "id": 66,
