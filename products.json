@@ -1189,6 +1189,7 @@
   },
   {
     "id": 56,
+    "order": 58,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Köfte Menü",
@@ -1205,8 +1206,7 @@
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": true,
-    "order": 58
+    "onerilen": false
   },
   {
     "id": 57,
