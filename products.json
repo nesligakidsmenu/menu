@@ -1,5 +1,25 @@
 [
   {
+    "id": "f8232eff-5c1f-428d-a74b-f02412099208",
+    "order": 1,
+    "anaKategori": "denemess",
+    "altKategori": "denemexxx",
+    "isim": "DDDDD",
+    "fiyat": 111111,
+    "resim": "",
+    "aciklama": "1111",
+    "kalori": 111,
+    "icerik": [
+      "1111"
+    ],
+    "alerjen": [
+      "11111"
+    ],
+    "kafein": true,
+    "vejetaryen": true,
+    "onerilen": true
+  },
+  {
     "id": 1,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
@@ -15,7 +35,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 1
+    "order": 2
   },
   {
     "id": 2,
@@ -33,7 +53,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 2
+    "order": 3
   },
   {
     "id": 3,
@@ -52,7 +72,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 3
+    "order": 4
   },
   {
     "id": 4,
@@ -70,7 +90,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 4
+    "order": 5
   },
   {
     "id": 5,
@@ -91,7 +111,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 5
+    "order": 6
   },
   {
     "id": 6,
@@ -112,7 +132,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 6
+    "order": 7
   },
   {
     "id": 7,
@@ -134,7 +154,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 7
+    "order": 8
   },
   {
     "id": 8,
@@ -156,7 +176,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 8
+    "order": 9
   },
   {
     "id": 9,
@@ -178,7 +198,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 9
+    "order": 10
   },
   {
     "id": 10,
@@ -200,7 +220,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 10
+    "order": 11
   },
   {
     "id": 11,
@@ -222,7 +242,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 11
+    "order": 12
   },
   {
     "id": 12,
@@ -242,7 +262,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 12
+    "order": 13
   },
   {
     "id": 13,
@@ -264,7 +284,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 13
+    "order": 14
   },
   {
     "id": 14,
@@ -287,7 +307,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 14
+    "order": 15
   },
   {
     "id": 15,
@@ -310,7 +330,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 15
+    "order": 16
   },
   {
     "id": 16,
@@ -333,7 +353,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 16
+    "order": 17
   },
   {
     "id": 17,
@@ -356,7 +376,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 17
+    "order": 18
   },
   {
     "id": 18,
@@ -379,7 +399,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 18
+    "order": 19
   },
   {
     "id": 19,
@@ -397,7 +417,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 19
+    "order": 20
   },
   {
     "id": 20,
@@ -415,7 +435,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 20
+    "order": 21
   },
   {
     "id": 21,
@@ -438,7 +458,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 21
+    "order": 22
   },
   {
     "id": 22,
@@ -461,7 +481,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 22
+    "order": 23
   },
   {
     "id": 23,
@@ -484,7 +504,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 23
+    "order": 24
   },
   {
     "id": 24,
@@ -507,7 +527,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 24
+    "order": 25
   },
   {
     "id": 25,
@@ -530,7 +550,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 25
+    "order": 26
   },
   {
     "id": 26,
@@ -554,7 +574,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 26
+    "order": 27
   },
   {
     "id": 27,
@@ -577,7 +597,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 27
+    "order": 28
   },
   {
     "id": 28,
@@ -601,7 +621,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 28
+    "order": 29
   },
   {
     "id": 29,
@@ -625,7 +645,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 29
+    "order": 30
   },
   {
     "id": 30,
@@ -649,7 +669,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 30
+    "order": 31
   },
   {
     "id": 31,
@@ -673,7 +693,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 31
+    "order": 32
   },
   {
     "id": 32,
@@ -697,7 +717,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 32
+    "order": 33
   },
   {
     "id": 33,
@@ -722,7 +742,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 33
+    "order": 34
   },
   {
     "id": 34,
@@ -742,7 +762,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 34
+    "order": 35
   },
   {
     "id": 35,
@@ -762,7 +782,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 35
+    "order": 36
   },
   {
     "id": 36,
@@ -784,7 +804,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 36
+    "order": 37
   },
   {
     "id": 37,
@@ -806,7 +826,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 37
+    "order": 38
   },
   {
     "id": 38,
@@ -824,7 +844,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 38
+    "order": 39
   },
   {
     "id": 39,
@@ -843,7 +863,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 39
+    "order": 40
   },
   {
     "id": 40,
@@ -862,7 +882,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 40
+    "order": 41
   },
   {
     "id": 41,
@@ -881,7 +901,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 41
+    "order": 42
   },
   {
     "id": 42,
@@ -899,7 +919,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 42
+    "order": 43
   },
   {
     "id": 43,
@@ -920,7 +940,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 43
+    "order": 44
   },
   {
     "id": 44,
@@ -942,7 +962,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 44
+    "order": 45
   },
   {
     "id": 45,
@@ -966,7 +986,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 45
+    "order": 46
   },
   {
     "id": 46,
@@ -989,7 +1009,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true,
-    "order": 46
+    "order": 47
   },
   {
     "id": 47,
@@ -1017,7 +1037,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 47
+    "order": 48
   },
   {
     "id": 48,
@@ -1036,7 +1056,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 48
+    "order": 49
   },
   {
     "id": 49,
@@ -1054,7 +1074,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 49
+    "order": 50
   },
   {
     "id": 50,
@@ -1076,7 +1096,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 50
+    "order": 51
   },
   {
     "id": 51,
@@ -1099,7 +1119,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 51
+    "order": 52
   },
   {
     "id": 52,
@@ -1121,7 +1141,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 52
+    "order": 53
   },
   {
     "id": 53,
@@ -1144,7 +1164,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 53
+    "order": 54
   },
   {
     "id": 54,
@@ -1164,7 +1184,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 54
+    "order": 55
   },
   {
     "id": 55,
@@ -1185,7 +1205,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 55
+    "order": 56
   },
   {
     "id": 56,
@@ -1206,7 +1226,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true,
-    "order": 56
+    "order": 57
   },
   {
     "id": 57,
@@ -1228,7 +1248,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 57
+    "order": 58
   },
   {
     "id": 58,
@@ -1249,7 +1269,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 58
+    "order": 59
   },
   {
     "id": 59,
@@ -1270,7 +1290,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 59
+    "order": 60
   },
   {
     "id": 60,
@@ -1291,7 +1311,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 60
+    "order": 61
   },
   {
     "id": 61,
@@ -1315,7 +1335,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 61
+    "order": 62
   },
   {
     "id": 62,
@@ -1339,7 +1359,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 62
+    "order": 63
   },
   {
     "id": 63,
@@ -1364,7 +1384,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 63
+    "order": 64
   },
   {
     "id": 64,
@@ -1393,7 +1413,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 64
+    "order": 65
   },
   {
     "id": 65,
@@ -1420,7 +1440,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 65
+    "order": 66
   },
   {
     "id": 66,
@@ -1447,7 +1467,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 66
+    "order": 67
   },
   {
     "id": 67,
@@ -1474,7 +1494,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 67
+    "order": 68
   },
   {
     "id": 68,
@@ -1496,7 +1516,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 68
+    "order": 69
   },
   {
     "id": 69,
@@ -1514,7 +1534,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 69
+    "order": 70
   },
   {
     "id": 70,
@@ -1533,7 +1553,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 70
+    "order": 71
   },
   {
     "id": 71,
@@ -1551,7 +1571,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 71
+    "order": 72
   },
   {
     "id": 72,
@@ -1569,7 +1589,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 72
+    "order": 73
   },
   {
     "id": 73,
@@ -1589,7 +1609,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 73
+    "order": 74
   },
   {
     "id": 74,
@@ -1607,7 +1627,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 74
+    "order": 75
   },
   {
     "id": 75,
@@ -1625,7 +1645,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 75
+    "order": 76
   },
   {
     "id": 76,
@@ -1643,7 +1663,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 76
+    "order": 77
   },
   {
     "id": 77,
@@ -1661,7 +1681,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 77
+    "order": 78
   },
   {
     "id": 78,
@@ -1679,7 +1699,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 78
+    "order": 79
   },
   {
     "id": 79,
@@ -1697,7 +1717,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 79
+    "order": 80
   },
   {
     "id": 80,
@@ -1719,7 +1739,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 80
+    "order": 81
   },
   {
     "id": 81,
@@ -1740,7 +1760,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 81
+    "order": 82
   },
   {
     "id": 82,
@@ -1761,7 +1781,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 82
+    "order": 83
   },
   {
     "id": 83,
@@ -1782,7 +1802,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 83
+    "order": 84
   },
   {
     "id": 84,
@@ -1802,6 +1822,6 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 84
+    "order": 85
   }
 ]
