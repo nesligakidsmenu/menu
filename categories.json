@@ -72,5 +72,10 @@
       "gunluk-lezzetler",
       "ilaveler"
     ]
+  },
+  {
+    "id": "deneme",
+    "name": "DENEME",
+    "subCategories": []
   }
 ]
