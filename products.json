@@ -3,7 +3,7 @@
     "id": 2,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
-    "isim": "Double Espressoooo",
+    "isim": "Double Espresso",
     "fiyat": 135,
     "resim": "6d5059f0-b83f-4bc1-9005-630a6d249ec6.webp",
     "aciklama": "İki shot espresso.",
@@ -14,7 +14,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": false
   },
   {
     "id": 3,
