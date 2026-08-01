@@ -76,6 +76,8 @@
   {
     "id": "deneme",
     "name": "DENEME",
-    "subCategories": []
+    "subCategories": [
+      "deneme-alt"
+    ]
   }
 ]
