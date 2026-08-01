@@ -1719,24 +1719,5 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false
-  },
-  {
-    "id": "f8b8f448-83fd-4ca5-b536-957615348ba6",
-    "anaKategori": "deneme",
-    "altKategori": "deneme-alt",
-    "isim": "DENEME ÜRÜN",
-    "fiyat": 1111,
-    "resim": "",
-    "aciklama": "111",
-    "kalori": 1111,
-    "icerik": [
-      "2222",
-      "333",
-      "444"
-    ],
-    "alerjen": [],
-    "kafein": true,
-    "vejetaryen": true,
-    "onerilen": false
   }
 ]
