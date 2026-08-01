@@ -1295,6 +1295,7 @@
   },
   {
     "id": 61,
+    "order": 63,
     "anaKategori": "tatlilar",
     "altKategori": "waffle",
     "isim": "Çikolatalı Waffle",
@@ -1314,8 +1315,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
-    "order": 63
+    "onerilen": false
   },
   {
     "id": 62,
