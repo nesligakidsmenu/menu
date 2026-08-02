@@ -1368,12 +1368,13 @@
   },
   {
     "id": 64,
+    "order": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çikolatalı Mozaik Pasta",
     "fiyat": 270,
     "resim": "images/cikolatali-mozaik-pasta.webp",
-    "aciklama": "Ev yapımı çikolatalı mozaik pasta.",
+    "aciklama": "Ev yapımı çikolata kaplı bol cevizli mozaik pasta.",
     "kalori": 510,
     "icerik": [
       "Bisküvi",
@@ -1392,8 +1393,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 67
+    "onerilen": false
   },
   {
     "id": 65,
