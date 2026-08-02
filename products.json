@@ -160,12 +160,13 @@
   },
   {
     "id": 9,
+    "order": 12,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Strawberry Latte",
     "fiyat": 170,
     "resim": "images/strawberry-latte.webp",
-    "aciklama": "Çilek aromalı latte.",
+    "aciklama": "Çilek şuruplu latte.",
     "kalori": 260,
     "icerik": [
       "Espresso",
@@ -177,8 +178,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 12
+    "onerilen": false
   },
   {
     "id": 10,
