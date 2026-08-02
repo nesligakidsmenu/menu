@@ -1573,12 +1573,13 @@
   },
   {
     "id": 73,
+    "order": 76,
     "anaKategori": "soguk-icecekler",
     "altKategori": "ayran",
     "isim": "Ayran",
     "fiyat": 60,
     "resim": "images/ayran.webp",
-    "aciklama": "Soğuk ayran.",
+    "aciklama": "Soğuk ev yapımı ayran.",
     "kalori": 70,
     "icerik": [
       "Yoğurt"
@@ -1588,8 +1589,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 76
+    "onerilen": false
   },
   {
     "id": 74,
