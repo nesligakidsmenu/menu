@@ -1611,12 +1611,13 @@
   },
   {
     "id": 75,
+    "order": 78,
     "anaKategori": "soguk-icecekler",
     "altKategori": "su",
     "isim": "Su (Bardak)",
     "fiyat": 20,
     "resim": "images/su-bardak.webp",
-    "aciklama": "Bardak su.",
+    "aciklama": "Pet bardak su.",
     "kalori": 0,
     "icerik": [
       "Su"
@@ -1624,8 +1625,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 78
+    "onerilen": false
   },
   {
     "id": 76,
