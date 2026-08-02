@@ -138,12 +138,13 @@
   },
   {
     "id": 8,
+    "order": 11,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Vanilla Latte",
     "fiyat": 170,
     "resim": "images/vanilla-latte.webp",
-    "aciklama": "Vanilya aromalı latte.",
+    "aciklama": "Vanilya şuruplu latte.",
     "kalori": 255,
     "icerik": [
       "Espresso",
@@ -155,8 +156,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 11
+    "onerilen": false
   },
   {
     "id": 9,
