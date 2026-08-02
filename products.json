@@ -1168,12 +1168,13 @@
   },
   {
     "id": 55,
+    "order": 58,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
-    "isim": "Mini Tavuk Menü",
+    "isim": "Mini Tavuk",
     "fiyat": 240,
     "resim": "images/mini-tavuk-menu.webp",
-    "aciklama": "Çocuklara özel çıtır tavuk menüsü.",
+    "aciklama": "Çocuklara özel çıtır tavuk.",
     "kalori": 540,
     "icerik": [
       "Çıtır Tavuk",
@@ -1184,8 +1185,7 @@
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false,
-    "order": 58
+    "onerilen": false
   },
   {
     "id": 56,
