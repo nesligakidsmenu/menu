@@ -19,12 +19,13 @@
   },
   {
     "id": 2,
+    "order": 5,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Double Espresso",
     "fiyat": 135,
     "resim": "images/double-espresso.webp",
-    "aciklama": "İki shot espresso.",
+    "aciklama": "Double shot espresso.",
     "kalori": 4,
     "icerik": [
       "Arabica Kahve"
@@ -32,8 +33,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 5
+    "onerilen": false
   },
   {
     "id": 3,
