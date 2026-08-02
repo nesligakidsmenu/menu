@@ -1,25 +1,5 @@
 [
   {
-    "id": "f17fa9bf-c495-4ad0-a981-297af7ea843e",
-    "order": 1,
-    "anaKategori": "dondurma",
-    "altKategori": "1-top-dondurma",
-    "isim": "Dondurma",
-    "fiyat": 25,
-    "resim": "",
-    "aciklama": "1 Top dondurma",
-    "kalori": 0,
-    "icerik": [
-      "Süt"
-    ],
-    "alerjen": [
-      "Süt"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 1,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
