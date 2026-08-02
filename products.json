@@ -1319,12 +1319,13 @@
   },
   {
     "id": 62,
+    "order": 65,
     "anaKategori": "tatlilar",
     "altKategori": "waffle",
     "isim": "Beyaz Çikolatalı Waffle",
     "fiyat": 270,
     "resim": "images/beyaz-cikolatali-waffle.webp",
-    "aciklama": "Belçika waffle üzerine beyaz çikolata.",
+    "aciklama": "Çıtır waffle hamuru, çilek, muz ve beyaz çikolata sosu.",
     "kalori": 700,
     "icerik": [
       "Waffle Hamuru",
@@ -1338,8 +1339,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 65
+    "onerilen": false
   },
   {
     "id": 63,
