@@ -653,12 +653,13 @@
   },
   {
     "id": 31,
+    "order": 34,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Mocha Frappe",
     "fiyat": 195,
     "resim": "images/mocha-frappe.webp",
-    "aciklama": "Çikolatalı mocha frappe.",
+    "aciklama": "Çikolatalı frappe.",
     "kalori": 340,
     "icerik": [
       "Espresso",
@@ -672,8 +673,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 34
+    "onerilen": false
   },
   {
     "id": 32,
@@ -1368,13 +1368,12 @@
   },
   {
     "id": 64,
-    "order": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çikolatalı Mozaik Pasta",
     "fiyat": 270,
     "resim": "images/cikolatali-mozaik-pasta.webp",
-    "aciklama": "Ev yapımı çikolatalı kaplı bol cevizli mozaik pasta.",
+    "aciklama": "Ev yapımı çikolatalı mozaik pasta.",
     "kalori": 510,
     "icerik": [
       "Bisküvi",
@@ -1393,7 +1392,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "order": 67
   },
   {
     "id": 65,
