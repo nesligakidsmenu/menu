@@ -903,12 +903,13 @@
   },
   {
     "id": 43,
+    "order": 46,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Sade Pilav",
     "fiyat": 170,
     "resim": "images/sade-pilav.webp",
-    "aciklama": "Tereyağlı sade pilav.",
+    "aciklama": "Tereyağlı sade basmati pilav.",
     "kalori": 340,
     "icerik": [
       "Pirinç",
@@ -919,8 +920,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 46
+    "onerilen": false
   },
   {
     "id": 44,
