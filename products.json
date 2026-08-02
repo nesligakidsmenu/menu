@@ -1424,12 +1424,13 @@
   },
   {
     "id": 66,
+    "order": 69,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Magnolia",
     "fiyat": 290,
     "resim": "images/magnolia.webp",
-    "aciklama": "Meyveli magnolia tatlısı.",
+    "aciklama": "Çilekli magnolia tatlısı.",
     "kalori": 450,
     "icerik": [
       "Süt",
@@ -1446,8 +1447,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 69
+    "onerilen": false
   },
   {
     "id": 67,
