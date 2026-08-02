@@ -1210,12 +1210,13 @@
   },
   {
     "id": 57,
+    "order": 60,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Tost Menü",
     "fiyat": 220,
     "resim": "images/mini-tost-menu.webp",
-    "aciklama": "Kaşarlı tost menüsü.",
+    "aciklama": "Çocuklara özel kaşarlı tost menüsü.",
     "kalori": 480,
     "icerik": [
       "Kaşar Peyniri",
@@ -1227,8 +1228,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 60
+    "onerilen": false
   },
   {
     "id": 58,
