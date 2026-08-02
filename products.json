@@ -1342,28 +1342,30 @@
     "onerilen": false
   },
   {
-    "id": 63,
+    "id": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
-    "isim": "Islak Kek",
-    "fiyat": 260,
-    "resim": "images/islak-kek.webp",
-    "aciklama": "Yoğun çikolata soslu ıslak kek.",
-    "kalori": 470,
+    "isim": "Cheesecake",
+    "fiyat": 290,
+    "resim": "images/cheesecake.webp",
+    "aciklama": "Kremamsı cheesecake.",
+    "kalori": 520,
     "icerik": [
-      "Kakao",
-      "Un",
+      "Labne",
+      "Bisküvi",
+      "Krema",
+      "Vanilya",
+      "Şeker",
+      "Tereyağı",
       "Yumurta"
     ],
     "alerjen": [
-      "Gluten",
       "Süt",
-      "Yumurta",
-      "Şeker"
+      "Gluten"
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
+    "onerilen": true,
     "order": 66
   },
   {
@@ -1450,30 +1452,28 @@
     "onerilen": false
   },
   {
-    "id": 67,
+    "id": 63,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
-    "isim": "Cheesecake",
-    "fiyat": 290,
-    "resim": "images/cheesecake.webp",
-    "aciklama": "Kremamsı cheesecake.",
-    "kalori": 520,
+    "isim": "Islak Kek",
+    "fiyat": 260,
+    "resim": "images/islak-kek.webp",
+    "aciklama": "Yoğun çikolata soslu ıslak kek.",
+    "kalori": 470,
     "icerik": [
-      "Labne",
-      "Bisküvi",
-      "Krema",
-      "Vanilya",
-      "Şeker",
-      "Tereyağı",
+      "Kakao",
+      "Un",
       "Yumurta"
     ],
     "alerjen": [
+      "Gluten",
       "Süt",
-      "Gluten"
+      "Yumurta",
+      "Şeker"
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
+    "onerilen": false,
     "order": 70
   },
   {
