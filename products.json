@@ -1294,54 +1294,6 @@
     "order": 63
   },
   {
-    "id": 61,
-    "order": 64,
-    "anaKategori": "tatlilar",
-    "altKategori": "waffle",
-    "isim": "Çikolatalı Waffle",
-    "fiyat": 270,
-    "resim": "images/cikolatali-waffle.webp",
-    "aciklama": "Çıtır waffle hamuru, çilek, muz ve çikolata sosu.",
-    "kalori": 690,
-    "icerik": [
-      "Waffle Hamuru",
-      "Çikolata Sosu",
-      "çilek",
-      "muz"
-    ],
-    "alerjen": [
-      "Süt",
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
-    "id": 62,
-    "order": 65,
-    "anaKategori": "tatlilar",
-    "altKategori": "waffle",
-    "isim": "Beyaz Çikolatalı Waffle",
-    "fiyat": 270,
-    "resim": "images/beyaz-cikolatali-waffle.webp",
-    "aciklama": "Çıtır waffle hamuru, çilek, muz ve beyaz çikolata sosu.",
-    "kalori": 700,
-    "icerik": [
-      "Waffle Hamuru",
-      "Beyaz Çikolata Sosu",
-      "çilek",
-      "muz"
-    ],
-    "alerjen": [
-      "Süt",
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
@@ -1366,11 +1318,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 66
+    "order": 64
   },
   {
     "id": 64,
-    "order": 67,
+    "order": 65,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çikolatalı Mozaik Pasta",
@@ -1399,7 +1351,7 @@
   },
   {
     "id": 65,
-    "order": 68,
+    "order": 66,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çıtır Kadayıflı Muhallebi",
@@ -1426,7 +1378,7 @@
   },
   {
     "id": 66,
-    "order": 69,
+    "order": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Magnolia",
@@ -1442,6 +1394,54 @@
       "Vanilya",
       "Şeker",
       "Tereyağı"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": true,
+    "onerilen": false
+  },
+  {
+    "id": 61,
+    "order": 68,
+    "anaKategori": "tatlilar",
+    "altKategori": "waffle",
+    "isim": "Çikolatalı Waffle",
+    "fiyat": 270,
+    "resim": "images/cikolatali-waffle.webp",
+    "aciklama": "Çıtır waffle hamuru, çilek, muz ve çikolata sosu.",
+    "kalori": 690,
+    "icerik": [
+      "Waffle Hamuru",
+      "Çikolata Sosu",
+      "çilek",
+      "muz"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": true,
+    "onerilen": false
+  },
+  {
+    "id": 62,
+    "order": 69,
+    "anaKategori": "tatlilar",
+    "altKategori": "waffle",
+    "isim": "Beyaz Çikolatalı Waffle",
+    "fiyat": 270,
+    "resim": "images/beyaz-cikolatali-waffle.webp",
+    "aciklama": "Çıtır waffle hamuru, çilek, muz ve beyaz çikolata sosu.",
+    "kalori": 700,
+    "icerik": [
+      "Waffle Hamuru",
+      "Beyaz Çikolata Sosu",
+      "çilek",
+      "muz"
     ],
     "alerjen": [
       "Süt",
