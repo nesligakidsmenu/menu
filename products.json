@@ -37,12 +37,13 @@
   },
   {
     "id": 3,
+    "order": 6,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Americano",
     "fiyat": 125,
     "resim": "images/americano.webp",
-    "aciklama": "Espresso ve sıcak su.",
+    "aciklama": "Double shot espresso ve sıcak su.",
     "kalori": 5,
     "icerik": [
       "Espresso",
@@ -51,8 +52,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 6
+    "onerilen": false
   },
   {
     "id": 4,
