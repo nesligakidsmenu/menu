@@ -1665,12 +1665,13 @@
   },
   {
     "id": 78,
+    "order": 81,
     "anaKategori": "caylar",
     "altKategori": "meyve-cayi",
     "isim": "Meyve Çayı",
     "fiyat": 65,
     "resim": "images/meyve-cayi.webp",
-    "aciklama": "Karışık meyve çayı.",
+    "aciklama": "Granül meyve çayı. (Elma/Kuşburnu/Portakal)",
     "kalori": 5,
     "icerik": [
       "Meyve Çayı"
@@ -1678,8 +1679,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 81
+    "onerilen": false
   },
   {
     "id": 79,
