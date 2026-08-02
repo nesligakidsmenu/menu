@@ -401,21 +401,21 @@
   },
   {
     "id": 20,
+    "order": 23,
     "anaKategori": "kahveler",
     "altKategori": "geleneksel",
     "isim": "Double Türk Kahvesi",
     "fiyat": 135,
     "resim": "images/double-turk-kahvesi.webp",
     "aciklama": "Çift porsiyon Türk kahvesi.",
-    "kalori": 12,
+    "kalori": 14,
     "icerik": [
       "Türk Kahvesi"
     ],
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 23
+    "onerilen": false
   },
   {
     "id": 21,
