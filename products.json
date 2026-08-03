@@ -1,25 +1,5 @@
 [
   {
-    "id": "a38a157c-e8d1-4567-a10c-27421d0f26ce",
-    "order": 1,
-    "anaKategori": "caylar",
-    "altKategori": "cay",
-    "isim": "deneme2",
-    "fiyat": 22,
-    "resim": "deneme2.webp",
-    "aciklama": "22",
-    "kalori": 22,
-    "icerik": [
-      "22"
-    ],
-    "alerjen": [
-      "22"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false
-  },
-  {
     "id": "09ffc995-8f39-40a0-b330-86ee66c33932",
     "order": 2,
     "anaKategori": "caylar",
