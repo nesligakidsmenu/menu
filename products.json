@@ -1471,11 +1471,12 @@
   },
   {
     "id": 58,
+    "order": 72,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Babyccino",
     "fiyat": 100,
-    "resim": "images/babyccino.webp",
+    "resim": "urun.webp",
     "aciklama": "Çocuklara özel süt köpüğü içeceği.",
     "kalori": 90,
     "icerik": [
@@ -1487,8 +1488,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 72
+    "onerilen": false
   },
   {
     "id": 59,
