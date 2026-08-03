@@ -1,7 +1,30 @@
 [
   {
-    "id": "de5a0b72-ccdb-4521-bc87-1c782931410b",
+    "id": "a59d35e3-1610-475b-9d9b-edc7ff9f29eb",
     "order": 1,
+    "anaKategori": "soguk-special",
+    "altKategori": "frappe",
+    "isim": "Chocolate Strawberry Frappe",
+    "fiyat": 205,
+    "resim": "chocolate-strawberry-frappe.webp",
+    "aciklama": "Çikolata, çilek ve espresso aromalarının dengeli uyumunu sunan zengin içimli frappe.",
+    "kalori": 445,
+    "icerik": [
+      "Tam yağlı süt",
+      "espresso (1 shot)",
+      "çikolata sosu",
+      "çilek püresi"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
+    "kafein": true,
+    "vejetaryen": true,
+    "onerilen": false
+  },
+  {
+    "id": "de5a0b72-ccdb-4521-bc87-1c782931410b",
+    "order": 2,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Chocolate Caramel Frappe",
@@ -24,7 +47,7 @@
   },
   {
     "id": "e27f6f13-ca4f-42c5-bd94-e84a3b307f03",
-    "order": 2,
+    "order": 3,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "White Chocolate Caramel Frappe",
@@ -47,7 +70,7 @@
   },
   {
     "id": "cd2d4e8a-cb45-4807-bf77-c62caa05ff9c",
-    "order": 3,
+    "order": 4,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Strawberry Mango Frozen",
@@ -69,7 +92,7 @@
   },
   {
     "id": "a69f1952-807d-4fee-b441-a54597985662",
-    "order": 4,
+    "order": 5,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Strawberry Vanilla Frozen",
@@ -91,7 +114,7 @@
   },
   {
     "id": "d5c284eb-f4ec-4f63-9064-a793d34ebc6e",
-    "order": 5,
+    "order": 6,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Mango Vanilla Frozen",
@@ -113,7 +136,7 @@
   },
   {
     "id": "b8b73318-039c-4205-8634-21c3869f0285",
-    "order": 6,
+    "order": 7,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "White Chocolate Vanilla Frozen",
@@ -135,7 +158,7 @@
   },
   {
     "id": "a7bb0400-fa8b-4d3e-97d8-cc9de0c9d147",
-    "order": 7,
+    "order": 8,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "Strawberry Mango Smoothie",
@@ -157,7 +180,7 @@
   },
   {
     "id": "66193de1-a296-4720-877e-537da2e2cfe0",
-    "order": 8,
+    "order": 9,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "Mango Vanilla Smoothie",
@@ -179,7 +202,7 @@
   },
   {
     "id": "2d17d419-d427-4c20-aae4-30dfa0b81d07",
-    "order": 9,
+    "order": 10,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "White Chocolate Strawberry Smoothie",
@@ -201,7 +224,7 @@
   },
   {
     "id": "101c3dcb-871a-43c1-9731-3bca74921054",
-    "order": 10,
+    "order": 11,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "White Chocolate Mango Smoothie",
@@ -223,7 +246,7 @@
   },
   {
     "id": "b6ba6ca0-9d00-482c-9a9a-7816b4518579",
-    "order": 13,
+    "order": 14,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "White Chocolate Vanilla Smoothie",
@@ -245,7 +268,7 @@
   },
   {
     "id": "febb8ade-ccca-42db-8ec2-df8deaa11e7e",
-    "order": 14,
+    "order": 15,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Mango Milkshake",
@@ -266,7 +289,7 @@
   },
   {
     "id": "3622192c-eaa9-45cd-81ad-41f777476540",
-    "order": 15,
+    "order": 16,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Strawberry Vanilla Milkshake",
@@ -288,7 +311,7 @@
   },
   {
     "id": "834236a8-975c-4a9b-9313-01baf65e58f5",
-    "order": 16,
+    "order": 17,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Mango Vanilla Milkshake",
@@ -310,7 +333,7 @@
   },
   {
     "id": "13c30a43-595b-4dfb-b503-62303466f36c",
-    "order": 17,
+    "order": 18,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Chocolate Vanilla Milkshake",
@@ -332,7 +355,7 @@
   },
   {
     "id": "c51c4fff-dfc0-4601-a30f-4b9fc6c59843",
-    "order": 18,
+    "order": 19,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Chocolate Caramel Milkshake",
@@ -354,7 +377,7 @@
   },
   {
     "id": "426be234-1ef5-4901-911b-569bd6451af3",
-    "order": 19,
+    "order": 20,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "White Chocolate Strawberry Milkshake",
@@ -376,7 +399,7 @@
   },
   {
     "id": "74f37493-d40b-4d33-bb99-6ea4d1ace8e2",
-    "order": 20,
+    "order": 21,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "White Chocolate Mango Milkshake",
@@ -398,7 +421,7 @@
   },
   {
     "id": "ebf480bf-2c9a-40c3-9f61-14c585e3cfa1",
-    "order": 21,
+    "order": 22,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Caramel Vanilla Milkshake",
@@ -420,7 +443,7 @@
   },
   {
     "id": "dc623ce3-8a13-4fe4-affc-1a8f4cb1da72",
-    "order": 22,
+    "order": 23,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "White Chocolate Vanilla Milkshake",
@@ -456,11 +479,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 26
+    "order": 27
   },
   {
     "id": 2,
-    "order": 27,
+    "order": 28,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Double Espresso",
@@ -478,7 +501,7 @@
   },
   {
     "id": 3,
-    "order": 28,
+    "order": 29,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Americano",
@@ -511,7 +534,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 29
+    "order": 30
   },
   {
     "id": 5,
@@ -532,7 +555,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 30
+    "order": 31
   },
   {
     "id": 6,
@@ -553,11 +576,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 31
+    "order": 32
   },
   {
     "id": 7,
-    "order": 32,
+    "order": 33,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Caramel Latte",
@@ -579,7 +602,7 @@
   },
   {
     "id": 8,
-    "order": 33,
+    "order": 34,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Vanilla Latte",
@@ -601,7 +624,7 @@
   },
   {
     "id": 9,
-    "order": 34,
+    "order": 35,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Strawberry Latte",
@@ -641,7 +664,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 35
+    "order": 36
   },
   {
     "id": 11,
@@ -663,7 +686,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 36
+    "order": 37
   },
   {
     "id": 12,
@@ -683,7 +706,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 37
+    "order": 38
   },
   {
     "id": 13,
@@ -705,7 +728,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 38
+    "order": 39
   },
   {
     "id": 14,
@@ -728,11 +751,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 39
+    "order": 40
   },
   {
     "id": 15,
-    "order": 40,
+    "order": 41,
     "anaKategori": "kahveler",
     "altKategori": "soguk",
     "isim": "Caramel Iced Latte",
@@ -774,7 +797,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 41
+    "order": 42
   },
   {
     "id": 17,
@@ -797,7 +820,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 42
+    "order": 43
   },
   {
     "id": 18,
@@ -820,7 +843,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 43
+    "order": 44
   },
   {
     "id": 19,
@@ -838,11 +861,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 44
+    "order": 45
   },
   {
     "id": 20,
-    "order": 45,
+    "order": 46,
     "anaKategori": "kahveler",
     "altKategori": "geleneksel",
     "isim": "Double Türk Kahvesi",
@@ -879,7 +902,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 46
+    "order": 47
   },
   {
     "id": 22,
@@ -902,7 +925,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 47
+    "order": 48
   },
   {
     "id": 23,
@@ -925,7 +948,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 48
+    "order": 49
   },
   {
     "id": 24,
@@ -948,7 +971,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 49
+    "order": 50
   },
   {
     "id": 25,
@@ -971,11 +994,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 50
+    "order": 51
   },
   {
     "id": 26,
-    "order": 51,
+    "order": 52,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Oreo Milkshake",
@@ -1018,7 +1041,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 52
+    "order": 53
   },
   {
     "id": 28,
@@ -1042,7 +1065,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 53
+    "order": 54
   },
   {
     "id": 29,
@@ -1066,7 +1089,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 54
+    "order": 55
   },
   {
     "id": 30,
@@ -1090,11 +1113,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 55
+    "order": 56
   },
   {
     "id": 31,
-    "order": 56,
+    "order": 57,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Mocha Frappe",
@@ -1138,7 +1161,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 57
+    "order": 58
   },
   {
     "id": 33,
@@ -1163,11 +1186,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 58
+    "order": 59
   },
   {
     "id": 34,
-    "order": 59,
+    "order": 60,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Strawberry Frozen",
@@ -1187,7 +1210,7 @@
   },
   {
     "id": 35,
-    "order": 60,
+    "order": 61,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Mango Frozen",
@@ -1225,7 +1248,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 61
+    "order": 62
   },
   {
     "id": 37,
@@ -1247,11 +1270,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 62
+    "order": 63
   },
   {
     "id": 38,
-    "order": 63,
+    "order": 64,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Anne Çorbası",
@@ -1284,7 +1307,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 64
+    "order": 65
   },
   {
     "id": 40,
@@ -1303,7 +1326,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 65
+    "order": 66
   },
   {
     "id": 41,
@@ -1322,7 +1345,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 66
+    "order": 67
   },
   {
     "id": 42,
@@ -1340,11 +1363,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 67
+    "order": 68
   },
   {
     "id": 43,
-    "order": 68,
+    "order": 69,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Sade Pilav",
@@ -1383,11 +1406,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 69
+    "order": 70
   },
   {
     "id": 45,
-    "order": 70,
+    "order": 71,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Nesliga Paylaşım Tabağı",
@@ -1430,7 +1453,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true,
-    "order": 71
+    "order": 72
   },
   {
     "id": 47,
@@ -1458,11 +1481,11 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 72
+    "order": 73
   },
   {
     "id": 48,
-    "order": 73,
+    "order": 74,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Köfte & Pilav",
@@ -1495,7 +1518,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 74
+    "order": 75
   },
   {
     "id": 50,
@@ -1517,7 +1540,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 75
+    "order": 76
   },
   {
     "id": 51,
@@ -1540,7 +1563,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 76
+    "order": 77
   },
   {
     "id": 52,
@@ -1562,7 +1585,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 77
+    "order": 78
   },
   {
     "id": 53,
@@ -1585,7 +1608,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 78
+    "order": 79
   },
   {
     "id": 54,
@@ -1605,11 +1628,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 79
+    "order": 80
   },
   {
     "id": 55,
-    "order": 80,
+    "order": 81,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Tavuk Menü",
@@ -1630,7 +1653,7 @@
   },
   {
     "id": 56,
-    "order": 81,
+    "order": 82,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Köfte Menü",
@@ -1651,7 +1674,7 @@
   },
   {
     "id": 57,
-    "order": 82,
+    "order": 83,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Tost Menü",
@@ -1673,7 +1696,7 @@
   },
   {
     "id": 58,
-    "order": 83,
+    "order": 84,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Babyccino",
@@ -1711,7 +1734,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 84
+    "order": 85
   },
   {
     "id": 60,
@@ -1732,7 +1755,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 85
+    "order": 86
   },
   {
     "id": 67,
@@ -1759,11 +1782,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": true,
-    "order": 86
+    "order": 87
   },
   {
     "id": 64,
-    "order": 87,
+    "order": 88,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çikolatalı Mozaik Pasta",
@@ -1792,7 +1815,7 @@
   },
   {
     "id": 65,
-    "order": 88,
+    "order": 89,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Çıtır Kadayıflı Muhallebi",
@@ -1819,7 +1842,7 @@
   },
   {
     "id": 66,
-    "order": 89,
+    "order": 90,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Magnolia",
@@ -1846,7 +1869,7 @@
   },
   {
     "id": 61,
-    "order": 90,
+    "order": 91,
     "anaKategori": "tatlilar",
     "altKategori": "waffle",
     "isim": "Çikolatalı Waffle",
@@ -1870,7 +1893,7 @@
   },
   {
     "id": 62,
-    "order": 91,
+    "order": 92,
     "anaKategori": "tatlilar",
     "altKategori": "waffle",
     "isim": "Beyaz Çikolatalı Waffle",
@@ -1915,7 +1938,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 92
+    "order": 93
   },
   {
     "id": 68,
@@ -1937,7 +1960,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 93
+    "order": 94
   },
   {
     "id": 69,
@@ -1955,7 +1978,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 94
+    "order": 95
   },
   {
     "id": 70,
@@ -1974,7 +1997,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 95
+    "order": 96
   },
   {
     "id": 71,
@@ -1992,7 +2015,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 96
+    "order": 97
   },
   {
     "id": 72,
@@ -2010,11 +2033,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 97
+    "order": 98
   },
   {
     "id": 73,
-    "order": 98,
+    "order": 99,
     "anaKategori": "soguk-icecekler",
     "altKategori": "ayran",
     "isim": "Ayran",
@@ -2048,11 +2071,11 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 99
+    "order": 100
   },
   {
     "id": 75,
-    "order": 100,
+    "order": 101,
     "anaKategori": "soguk-icecekler",
     "altKategori": "su",
     "isim": "Su (Bardak)",
@@ -2084,7 +2107,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 101
+    "order": 102
   },
   {
     "id": 77,
@@ -2102,11 +2125,11 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 102
+    "order": 103
   },
   {
     "id": 78,
-    "order": 103,
+    "order": 104,
     "anaKategori": "caylar",
     "altKategori": "meyve-cayi",
     "isim": "Meyve Çayı",
@@ -2124,7 +2147,7 @@
   },
   {
     "id": 79,
-    "order": 104,
+    "order": 105,
     "anaKategori": "caylar",
     "altKategori": "bitki-cayi",
     "isim": "Bitki Çayı",
@@ -2160,7 +2183,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 105
+    "order": 106
   },
   {
     "id": 81,
@@ -2181,7 +2204,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 106
+    "order": 107
   },
   {
     "id": 82,
@@ -2202,7 +2225,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 107
+    "order": 108
   },
   {
     "id": 83,
@@ -2223,7 +2246,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 108
+    "order": 109
   },
   {
     "id": 84,
@@ -2243,6 +2266,6 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 109
+    "order": 110
   }
 ]
