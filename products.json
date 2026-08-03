@@ -1,25 +1,5 @@
 [
   {
-    "id": "09ffc995-8f39-40a0-b330-86ee66c33932",
-    "order": 2,
-    "anaKategori": "caylar",
-    "altKategori": "cay",
-    "isim": "deneme",
-    "fiyat": 111,
-    "resim": "deneme.webp",
-    "aciklama": "1111",
-    "kalori": 1111,
-    "icerik": [
-      "111"
-    ],
-    "alerjen": [
-      "1111"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false
-  },
-  {
     "id": "b6ba6ca0-9d00-482c-9a9a-7816b4518579",
     "order": 3,
     "anaKategori": "soguk-special",
