@@ -1886,27 +1886,6 @@
     "onerilen": false
   },
   {
-    "id": 59,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-icecekleri",
-    "isim": "Kids Strawberry Milk",
-    "fiyat": 120,
-    "resim": "images/kids-strawberry-milk.webp",
-    "aciklama": "Çilek aromalı çocuk sütü.",
-    "kalori": 180,
-    "icerik": [
-      "Süt",
-      "Çilek Şurubu"
-    ],
-    "alerjen": [
-      "Süt"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false,
-    "order": 93
-  },
-  {
     "id": 60,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
