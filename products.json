@@ -1702,11 +1702,11 @@
     "isim": "Babyccino",
     "fiyat": 100,
     "resim": "urun.webp",
-    "aciklama": "Çocuklara özel süt köpüğü içeceği.",
-    "kalori": 90,
+    "aciklama": "Yoğun süt köpüğü ve hafif kakao dokunuşuyla hazırlanan, çocuklara özel yumuşak içimli klasik babyccino.",
+    "kalori": 135,
     "icerik": [
-      "Süt Köpüğü",
-      "Kakao"
+      "Tam yağlı süt",
+      "kakao"
     ],
     "alerjen": [
       "Süt"
