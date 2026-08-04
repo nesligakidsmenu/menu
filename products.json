@@ -1,26 +1,5 @@
 [
   {
-    "id": "848c6620-6ce4-40e0-b9c2-f907a0dd2e7d",
-    "order": 1,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-icecekleri",
-    "isim": "Pink Panda",
-    "fiyat": 150,
-    "resim": "pink-panda.png",
-    "aciklama": "Çilek püresinin meyvemsi lezzetiyle hazırlanan, çocukların favorisi olmaya aday özel içecek.",
-    "kalori": 250,
-    "icerik": [
-      "Tam yağlı süt",
-      "çilek püresi"
-    ],
-    "alerjen": [
-      "Süt"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": true
-  },
-  {
     "id": "697eb8f0-60c3-48e3-9d44-05590947e7f7",
     "order": 2,
     "anaKategori": "cocuk",
