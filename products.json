@@ -1886,27 +1886,6 @@
     "onerilen": false
   },
   {
-    "id": 60,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-icecekleri",
-    "isim": "Kids Chocolate Milk",
-    "fiyat": 120,
-    "resim": "images/kids-chocolate-milk.webp",
-    "aciklama": "Çikolatalı çocuk sütü.",
-    "kalori": 190,
-    "icerik": [
-      "Süt",
-      "Çikolata Sosu"
-    ],
-    "alerjen": [
-      "Süt"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false,
-    "order": 94
-  },
-  {
     "id": 67,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
