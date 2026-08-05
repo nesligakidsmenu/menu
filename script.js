@@ -623,41 +623,51 @@ async function dinamikAnaKategorileriYukle() {
 }
 
 
-function aramaKutusu(veriler){
-const input=document.getElementById("arama"); if(!input) return;
+function aramaKutusu(veriler) {
 
-const sonucAlani = aramaSonucAlaniOlustur(input);
-input.addEventListener("input",function(){
-const q = normalizeTR(this.value.trim()); if(!q){sonucAlani.innerHTML="";return;}
-const sonuc = veriler
-.filter(u =>
-    [u.isim, u.aciklama, u.anaKategori, u.altKategori]
-.some(v => normalizeTR(v || "").includes(q)))
-.sort((a, b) => {
+    const input = document.getElementById("arama");
+    if (!input) return;
 
-    const aIsim = normalizeTR(a.isim);
-    const bIsim = normalizeTR(b.isim);
+    const sonucAlani = aramaSonucAlaniOlustur(input);
 
-    const aBasliyor = aIsim.startsWith(q);
-    const bBasliyor = bIsim.startsWith(q);
+    input.addEventListener("input", function () {
 
-    if (aBasliyor && !bBasliyor) return -1;
-    if (!aBasliyor && bBasliyor) return 1;
+        const q = normalizeTR(this.value.trim());
 
-    return aIsim.length - bIsim.length;
+        if (!q) {
+            sonucAlani.innerHTML = "";
+            return;
+        }
 
-})
-.slice(0,8);
-if(!sonuc.length){
-    sonucAlani.innerHTML="<p style='padding:16px'>Sonuç bulunamadı.</p>";
-    return;
-}
+        const sonuc = veriler
+            .filter(u =>
+                [u.isim, u.aciklama, u.anaKategori, u.altKategori]
+                    .some(v => normalizeTR(v || "").includes(q))
+            )
+            .sort((a, b) => {
 
-sonucAlani.innerHTML = sonuc.map(aramaSonucKart).join("");
+                const aIsim = normalizeTR(a.isim);
+                const bIsim = normalizeTR(b.isim);
 
+                const aBasliyor = aIsim.startsWith(q);
+                const bBasliyor = bIsim.startsWith(q);
 
+                if (aBasliyor && !bBasliyor) return -1;
+                if (!aBasliyor && bBasliyor) return 1;
 
-});
+                return aIsim.length - bIsim.length;
+
+            });
+
+        if (!sonuc.length) {
+            sonucAlani.innerHTML = "<p style='padding:16px'>Sonuç bulunamadı.</p>";
+            return;
+        }
+
+        sonucAlani.innerHTML = sonuc.map(aramaSonucKart).join("");
+
+    });
+
 }
 
 // Premium UI placeholder: planned enhancements
