@@ -1,25 +1,5 @@
 [
   {
-    "id": "7465d88e-701a-48c2-9985-2fcafc0e2d5c",
-    "order": 1,
-    "anaKategori": "caylar",
-    "altKategori": "cay",
-    "isim": "TEST",
-    "fiyat": 25,
-    "resim": "",
-    "aciklama": "1",
-    "kalori": 1,
-    "icerik": [
-      "1"
-    ],
-    "alerjen": [
-      "1"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false
-  },
-  {
     "id": "c3076e83-2d29-41df-919e-af893978aa13",
     "order": 2,
     "anaKategori": "cocuk",
