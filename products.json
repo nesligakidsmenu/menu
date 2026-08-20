@@ -35,16 +35,13 @@
     "isim": "Mini Hamburger Menü",
     "fiyat": 290,
     "resim": "mini-hamburger-menu.webp",
-    "aciklama": "90 g dana köfte, cheddar peyniri, taze sebzeler ve burger sosuyla hazırlanan hamburger; patates kızartması ve Pepsi ile servis edilir.",
-    "kalori": 980,
+    "aciklama": "65 g dana köfte, cheddar peyniri ve ketçap ile hazırlanan hamburger; patates kızartması ve meyve suyu ile servis edilir.",
+    "kalori": 850,
     "icerik": [
       "Susamlı hamburger ekmeği",
-      "90 g dana köfte",
+      "65 g dana köfte",
       "cheddar peyniri",
-      "marul",
-      "domates",
-      "turşu",
-      "burger sosu ve patates kızartması. Pepsi ile servis edilir."
+      "ketçap ve patates kızartması"
     ],
     "alerjen": [
       "Gluten",
