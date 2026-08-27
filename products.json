@@ -944,10 +944,11 @@
   },
   {
     "id": 12,
+    "order": 51,
     "anaKategori": "kahveler",
     "altKategori": "soguk",
     "isim": "Iced Americano",
-    "fiyat": 160,
+    "fiyat": 170,
     "resim": "images/iced-americano.webp",
     "aciklama": "Buzlu americano.",
     "kalori": 5,
@@ -959,8 +960,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 51
+    "onerilen": false
   },
   {
     "id": 13,
