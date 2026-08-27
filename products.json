@@ -1032,10 +1032,11 @@
   },
   {
     "id": 16,
+    "order": 55,
     "anaKategori": "kahveler",
     "altKategori": "soguk",
     "isim": "Strawberry Iced Latte",
-    "fiyat": 185,
+    "fiyat": 200,
     "resim": "images/strawberry-iced-latte.webp",
     "aciklama": "Çilek aromalı buzlu latte.",
     "kalori": 255,
@@ -1050,8 +1051,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 55
+    "onerilen": false
   },
   {
     "id": 17,
