@@ -1137,10 +1137,11 @@
   },
   {
     "id": 21,
+    "order": 60,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Strawberry Milkshake",
-    "fiyat": 180,
+    "fiyat": 200,
     "resim": "images/strawberry-milkshake.webp",
     "aciklama": "Çilek aromalı yoğun kıvamlı milkshake.",
     "kalori": 420,
@@ -1155,8 +1156,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
-    "order": 60
+    "onerilen": true
   },
   {
     "id": 22,
