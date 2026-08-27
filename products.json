@@ -1711,10 +1711,11 @@
   },
   {
     "id": 47,
+    "order": 86,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Atıştırma Tabağı",
-    "fiyat": 300,
+    "fiyat": 385,
     "resim": "images/atistirma-tabagi.webp",
     "aciklama": "Karışık sıcak atıştırmalık tabağı.",
     "kalori": 760,
@@ -1724,18 +1725,12 @@
       "Nugget",
       "Soğan Halkası"
     ],
-    "soslar": [
-      "Barbekü Sos",
-      "Acı Sos",
-      "Mayonez"
-    ],
     "alerjen": [
       "Gluten"
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false,
-    "order": 86
+    "onerilen": false
   },
   {
     "id": 48,
