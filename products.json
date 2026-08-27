@@ -1229,10 +1229,11 @@
   },
   {
     "id": 25,
+    "order": 64,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "White Chocolate Milkshake",
-    "fiyat": 190,
+    "fiyat": 220,
     "resim": "images/white-chocolate-milkshake.webp",
     "aciklama": "Beyaz çikolatalı milkshake.",
     "kalori": 455,
@@ -1247,8 +1248,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 64
+    "onerilen": false
   },
   {
     "id": 26,
