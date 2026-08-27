@@ -1419,10 +1419,11 @@
   },
   {
     "id": 33,
+    "order": 72,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Oreo Frappe",
-    "fiyat": 200,
+    "fiyat": 230,
     "resim": "images/oreo-frappe.webp",
     "aciklama": "Oreo parçacıklı frappe.",
     "kalori": 365,
@@ -1439,8 +1440,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 72
+    "onerilen": false
   },
   {
     "id": 34,
