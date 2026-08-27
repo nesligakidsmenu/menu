@@ -922,10 +922,11 @@
   },
   {
     "id": 11,
+    "order": 50,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "White Chocolate Mocha",
-    "fiyat": 180,
+    "fiyat": 200,
     "resim": "images/white-chocolate-mocha.webp",
     "aciklama": "Beyaz çikolatalı mocha.",
     "kalori": 300,
@@ -939,8 +940,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 50
+    "onerilen": false
   },
   {
     "id": 12,
