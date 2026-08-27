@@ -1160,10 +1160,11 @@
   },
   {
     "id": 22,
+    "order": 61,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Caramel Milkshake",
-    "fiyat": 190,
+    "fiyat": 210,
     "resim": "images/caramel-milkshake.webp",
     "aciklama": "Karamel aromalı yoğun kıvamlı milkshake.",
     "kalori": 435,
@@ -1178,8 +1179,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 61
+    "onerilen": false
   },
   {
     "id": 23,
