@@ -964,10 +964,11 @@
   },
   {
     "id": 13,
+    "order": 52,
     "anaKategori": "kahveler",
     "altKategori": "soguk",
     "isim": "Iced Latte",
-    "fiyat": 170,
+    "fiyat": 180,
     "resim": "images/iced-latte.webp",
     "aciklama": "Buzlu latte.",
     "kalori": 210,
@@ -981,8 +982,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 52
+    "onerilen": false
   },
   {
     "id": 14,
