@@ -1299,10 +1299,11 @@
   },
   {
     "id": 28,
+    "order": 67,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Caramel Frappe",
-    "fiyat": 190,
+    "fiyat": 210,
     "resim": "images/caramel-frappe.webp",
     "aciklama": "Karamel aromalı frappe.",
     "kalori": 310,
@@ -1318,8 +1319,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 67
+    "onerilen": false
   },
   {
     "id": 29,
