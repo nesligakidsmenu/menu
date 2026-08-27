@@ -792,10 +792,11 @@
   },
   {
     "id": 5,
+    "order": 44,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Cappuccino",
-    "fiyat": 140,
+    "fiyat": 150,
     "resim": "images/cappuccino.webp",
     "aciklama": "Bol süt köpüklü cappuccino.",
     "kalori": 185,
@@ -808,8 +809,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 44
+    "onerilen": false
   },
   {
     "id": 6,
