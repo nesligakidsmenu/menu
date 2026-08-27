@@ -1276,10 +1276,11 @@
   },
   {
     "id": 27,
+    "order": 66,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Frappe",
-    "fiyat": 180,
+    "fiyat": 200,
     "resim": "images/frappe.webp",
     "aciklama": "Soğuk kahve bazlı frappe.",
     "kalori": 260,
@@ -1294,8 +1295,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 66
+    "onerilen": false
   },
   {
     "id": 28,
