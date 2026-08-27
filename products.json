@@ -2392,10 +2392,11 @@
   },
   {
     "id": 80,
+    "order": 120,
     "anaKategori": "sicak-icecekler",
     "altKategori": "sicak",
     "isim": "Salep",
-    "fiyat": 170,
+    "fiyat": 180,
     "resim": "images/salep.webp",
     "aciklama": "Tarçınlı sıcak salep.",
     "kalori": 240,
@@ -2409,8 +2410,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 120
+    "onerilen": false
   },
   {
     "id": 81,
