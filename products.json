@@ -1347,10 +1347,11 @@
   },
   {
     "id": 30,
+    "order": 69,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Strawberry Frappe",
-    "fiyat": 190,
+    "fiyat": 210,
     "resim": "images/strawberry-frappe.webp",
     "aciklama": "Çilek aromalı frappe.",
     "kalori": 315,
@@ -1366,8 +1367,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 69
+    "onerilen": false
   },
   {
     "id": 31,
