@@ -1055,10 +1055,11 @@
   },
   {
     "id": 17,
+    "order": 56,
     "anaKategori": "kahveler",
     "altKategori": "soguk",
     "isim": "Chocolate Iced Latte",
-    "fiyat": 190,
+    "fiyat": 200,
     "resim": "images/chocolate-iced-latte.webp",
     "aciklama": "Çikolatalı buzlu latte.",
     "kalori": 285,
@@ -1073,8 +1074,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 56
+    "onerilen": false
   },
   {
     "id": 18,
