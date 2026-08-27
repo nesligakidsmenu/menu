@@ -1484,10 +1484,11 @@
   },
   {
     "id": 36,
+    "order": 75,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "Strawberry Smoothie",
-    "fiyat": 195,
+    "fiyat": 200,
     "resim": "images/strawberry-smoothie.webp",
     "aciklama": "Çilekli smoothie.",
     "kalori": 235,
@@ -1501,8 +1502,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 75
+    "onerilen": false
   },
   {
     "id": 37,
