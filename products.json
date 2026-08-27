@@ -1183,10 +1183,11 @@
   },
   {
     "id": 23,
+    "order": 62,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Vanilla Milkshake",
-    "fiyat": 180,
+    "fiyat": 200,
     "resim": "images/vanilla-milkshake.webp",
     "aciklama": "Vanilya aromalı milkshake.",
     "kalori": 425,
@@ -1201,8 +1202,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 62
+    "onerilen": false
   },
   {
     "id": 24,
