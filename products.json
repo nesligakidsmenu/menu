@@ -1206,10 +1206,11 @@
   },
   {
     "id": 24,
+    "order": 63,
     "anaKategori": "soguk-special",
     "altKategori": "milkshake",
     "isim": "Chocolate Milkshake",
-    "fiyat": 180,
+    "fiyat": 200,
     "resim": "images/chocolate-milkshake.webp",
     "aciklama": "Çikolatalı milkshake.",
     "kalori": 445,
@@ -1224,8 +1225,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 63
+    "onerilen": false
   },
   {
     "id": 25,
