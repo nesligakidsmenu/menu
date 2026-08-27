@@ -813,10 +813,11 @@
   },
   {
     "id": 6,
+    "order": 45,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Latte",
-    "fiyat": 145,
+    "fiyat": 160,
     "resim": "images/latte.webp",
     "aciklama": "Yumuşak içimli espresso ve süt.",
     "kalori": 210,
@@ -829,8 +830,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 45
+    "onerilen": false
   },
   {
     "id": 7,
