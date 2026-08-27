@@ -1323,10 +1323,11 @@
   },
   {
     "id": 29,
+    "order": 68,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Vanilla Frappe",
-    "fiyat": 190,
+    "fiyat": 210,
     "resim": "images/vanilla-frappe.webp",
     "aciklama": "Vanilya aromalı frappe.",
     "kalori": 305,
@@ -1342,8 +1343,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 68
+    "onerilen": false
   },
   {
     "id": 30,
