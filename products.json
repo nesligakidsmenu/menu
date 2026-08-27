@@ -900,10 +900,11 @@
   },
   {
     "id": 10,
+    "order": 49,
     "anaKategori": "kahveler",
     "altKategori": "sutlu",
     "isim": "Chocolate Mocha",
-    "fiyat": 180,
+    "fiyat": 190,
     "resim": "images/chocolate-mocha.webp",
     "aciklama": "Çikolatalı mocha.",
     "kalori": 295,
@@ -917,8 +918,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 49
+    "onerilen": false
   },
   {
     "id": 11,
