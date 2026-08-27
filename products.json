@@ -2435,10 +2435,11 @@
   },
   {
     "id": 82,
+    "order": 122,
     "anaKategori": "sicak-icecekler",
     "altKategori": "sicak",
     "isim": "Sıcak Beyaz Çikolata",
-    "fiyat": 190,
+    "fiyat": 200,
     "resim": "images/sicak-beyaz-cikolata.webp",
     "aciklama": "Beyaz çikolatalı sıcak içecek.",
     "kalori": 320,
@@ -2451,8 +2452,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 122
+    "onerilen": false
   },
   {
     "id": 83,
