@@ -1395,10 +1395,11 @@
   },
   {
     "id": 32,
+    "order": 71,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "White Chocolate Frappe",
-    "fiyat": 200,
+    "fiyat": 220,
     "resim": "images/white-chocolate-frappe.webp",
     "aciklama": "Beyaz çikolatalı frappe.",
     "kalori": 355,
@@ -1414,8 +1415,7 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 71
+    "onerilen": false
   },
   {
     "id": 33,
