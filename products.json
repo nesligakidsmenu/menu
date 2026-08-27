@@ -1506,10 +1506,11 @@
   },
   {
     "id": 37,
+    "order": 76,
     "anaKategori": "soguk-special",
     "altKategori": "smoothie",
     "isim": "Mango Smoothie",
-    "fiyat": 195,
+    "fiyat": 199.96,
     "resim": "images/mango-smoothie.webp",
     "aciklama": "Mangolu smoothie.",
     "kalori": 240,
@@ -1523,8 +1524,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 76
+    "onerilen": false
   },
   {
     "id": 38,
