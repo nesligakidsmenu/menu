@@ -61,8 +61,8 @@
       "badem",
       "Antep fıstığı ve susam içerebilir."
     ],
-    "kafein": false,
-    "vejetaryen": false,
+    "kafein": true,
+    "vejetaryen": true,
     "onerilen": false
   },
   {
