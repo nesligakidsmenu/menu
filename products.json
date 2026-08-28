@@ -159,31 +159,6 @@
     "onerilen": true
   },
   {
-    "id": "5da9b6ea-1702-4e80-899a-f7f6922e7e44",
-    "order": 6,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-menuleri",
-    "isim": "Mini Hamburger Menü",
-    "fiyat": 290,
-    "resim": "mini-hamburger-menu.webp",
-    "aciklama": "65 g dana köfte, cheddar peyniri ve ketçap ile hazırlanan hamburger; patates kızartması ve meyve suyu ile servis edilir.",
-    "kalori": 850,
-    "icerik": [
-      "Susamlı hamburger ekmeği",
-      "65 g dana köfte",
-      "cheddar peyniri",
-      "ketçap ve patates kızartması"
-    ],
-    "alerjen": [
-      "Gluten",
-      "süt ve süt ürünleri",
-      "susam."
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false
-  },
-  {
     "id": "effc3143-f744-46a2-8530-252088485e23",
     "order": 7,
     "anaKategori": "tatlilar",
