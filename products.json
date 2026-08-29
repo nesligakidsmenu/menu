@@ -2097,10 +2097,11 @@
   },
   {
     "id": 67,
+    "order": 103,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Cheesecake",
-    "fiyat": 290,
+    "fiyat": 300,
     "resim": "images/cheesecake.webp",
     "aciklama": "Kremamsı cheesecake.",
     "kalori": 520,
@@ -2119,8 +2120,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
-    "order": 103
+    "onerilen": true
   },
   {
     "id": 64,
