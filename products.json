@@ -850,10 +850,11 @@
   },
   {
     "id": 1,
+    "order": 42,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Espresso",
-    "fiyat": 115,
+    "fiyat": 125,
     "resim": "images/espresso.webp",
     "aciklama": "Yoğun aromalı tek shot espresso.",
     "kalori": 2,
@@ -863,8 +864,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 42
+    "onerilen": false
   },
   {
     "id": 2,
