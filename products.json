@@ -2359,10 +2359,11 @@
   },
   {
     "id": 71,
+    "order": 116,
     "anaKategori": "soguk-icecekler",
     "altKategori": "mesrubat",
     "isim": "Meşrubat",
-    "fiyat": 85,
+    "fiyat": 90,
     "resim": "images/mesrubat.webp",
     "aciklama": "Gazlı içecek çeşitleri.",
     "kalori": 140,
@@ -2372,8 +2373,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 116
+    "onerilen": false
   },
   {
     "id": 72,
