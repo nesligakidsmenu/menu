@@ -1232,10 +1232,11 @@
   },
   {
     "id": 19,
+    "order": 63,
     "anaKategori": "kahveler",
     "altKategori": "geleneksel",
     "isim": "Türk Kahvesi",
-    "fiyat": 115,
+    "fiyat": 125,
     "resim": "images/turk-kahvesi.webp",
     "aciklama": "Geleneksel Türk kahvesi.",
     "kalori": 7,
@@ -1245,8 +1246,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 63
+    "onerilen": false
   },
   {
     "id": 20,
