@@ -905,10 +905,11 @@
   },
   {
     "id": 4,
+    "order": 48,
     "anaKategori": "kahveler",
     "altKategori": "espresso-bazli",
     "isim": "Filter Coffee",
-    "fiyat": 130,
+    "fiyat": 140,
     "resim": "images/filter-coffee.webp",
     "aciklama": "Taze demlenmiş filtre kahve.",
     "kalori": 5,
@@ -918,8 +919,7 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 48
+    "onerilen": false
   },
   {
     "id": 5,
