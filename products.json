@@ -1884,10 +1884,11 @@
   },
   {
     "id": 49,
+    "order": 93,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Patates Kızartması",
-    "fiyat": 145,
+    "fiyat": 150,
     "resim": "images/patates-kizartmasi.webp",
     "aciklama": "Çıtır patates kızartması.",
     "kalori": 430,
@@ -1897,8 +1898,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 93
+    "onerilen": false
   },
   {
     "id": 50,
