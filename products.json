@@ -1902,10 +1902,11 @@
   },
   {
     "id": 50,
+    "order": 94,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Kaşarlı Tost",
-    "fiyat": 165,
+    "fiyat": 170,
     "resim": "images/kasarli-tost.webp",
     "aciklama": "Bol kaşarlı tost.",
     "kalori": 470,
@@ -1919,8 +1920,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 94
+    "onerilen": false
   },
   {
     "id": 51,
