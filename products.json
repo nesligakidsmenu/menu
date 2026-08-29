@@ -2255,10 +2255,11 @@
   },
   {
     "id": 63,
+    "order": 111,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Islak Kek",
-    "fiyat": 260,
+    "fiyat": 270,
     "resim": "images/islak-kek.webp",
     "aciklama": "Yoğun çikolata soslu ıslak kek.",
     "kalori": 470,
@@ -2275,8 +2276,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 111
+    "onerilen": false
   },
   {
     "id": 68,
