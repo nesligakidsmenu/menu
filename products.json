@@ -2415,10 +2415,11 @@
   },
   {
     "id": 74,
+    "order": 119,
     "anaKategori": "soguk-icecekler",
     "altKategori": "su",
     "isim": "Su (500 ml)",
-    "fiyat": 25,
+    "fiyat": 30,
     "resim": "images/su-500.webp",
     "aciklama": "500 ml içme suyu.",
     "kalori": 0,
@@ -2428,8 +2429,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 119
+    "onerilen": false
   },
   {
     "id": 75,
