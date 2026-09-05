@@ -2302,10 +2302,11 @@
   },
   {
     "id": 69,
+    "order": 113,
     "anaKategori": "soguk-icecekler",
     "altKategori": "soda",
     "isim": "Sade Soda",
-    "fiyat": 40,
+    "fiyat": 50,
     "resim": "images/sade-soda.webp",
     "aciklama": "Doğal maden suyu.",
     "kalori": 0,
@@ -2315,8 +2316,7 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false,
-    "order": 113
+    "onerilen": false
   },
   {
     "id": 70,
