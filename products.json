@@ -2179,31 +2179,6 @@
     "onerilen": false
   },
   {
-    "id": 63,
-    "order": 111,
-    "anaKategori": "tatlilar",
-    "altKategori": "pastalar",
-    "isim": "Islak Kek",
-    "fiyat": 270,
-    "resim": "images/islak-kek.webp",
-    "aciklama": "Yoğun çikolata soslu ıslak kek.",
-    "kalori": 470,
-    "icerik": [
-      "Kakao",
-      "Un",
-      "Yumurta"
-    ],
-    "alerjen": [
-      "Gluten",
-      "Süt",
-      "Yumurta",
-      "Şeker"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 68,
     "anaKategori": "tatlilar",
     "altKategori": "donut",
