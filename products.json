@@ -2179,33 +2179,6 @@
     "onerilen": false
   },
   {
-    "id": 66,
-    "order": 108,
-    "anaKategori": "tatlilar",
-    "altKategori": "pastalar",
-    "isim": "Magnolia",
-    "fiyat": 290,
-    "resim": "images/magnolia.webp",
-    "aciklama": "Çilekli magnolia",
-    "kalori": 450,
-    "icerik": [
-      "Süt",
-      "Bisküvi",
-      "Meyve",
-      "Krema",
-      "Vanilya",
-      "Şeker",
-      "Tereyağı"
-    ],
-    "alerjen": [
-      "Süt",
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 63,
     "order": 111,
     "anaKategori": "tatlilar",
