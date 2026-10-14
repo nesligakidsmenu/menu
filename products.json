@@ -1698,6 +1698,7 @@
   },
   {
     "id": 40,
+    "order": 84,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Günün Kıymalı Yemeği",
@@ -1713,7 +1714,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 84
+    "aktif": false
   },
   {
     "id": 41,
