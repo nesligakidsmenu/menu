@@ -2181,7 +2181,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": false
   },
   {
     "id": 68,
