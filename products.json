@@ -1738,6 +1738,7 @@
   },
   {
     "id": 42,
+    "order": 86,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Günün Sebzeli Yemeği",
@@ -1752,7 +1753,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 86
+    "aktif": false
   },
   {
     "id": 43,
