@@ -1779,9 +1779,10 @@
   },
   {
     "id": 44,
+    "order": 88,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
-    "isim": "Sade Makarna",
+    "isim": "Makarna",
     "fiyat": 160,
     "resim": "images/sade-makarna.webp",
     "aciklama": "Tereyağlı sade makarna.",
@@ -1797,7 +1798,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 88
+    "aktif": true
   },
   {
     "id": 45,
