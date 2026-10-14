@@ -1718,6 +1718,7 @@
   },
   {
     "id": 41,
+    "order": 85,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Günün Tavuklu Yemeği",
@@ -1733,7 +1734,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 85
+    "aktif": false
   },
   {
     "id": 42,
