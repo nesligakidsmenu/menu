@@ -1762,7 +1762,7 @@
     "altKategori": "gunluk-lezzetler",
     "isim": "Pilav",
     "fiyat": 160,
-    "resim": "images/sade-pilav.webp",
+    "resim": "images/pilav.webp",
     "aciklama": "Tereyağlı sade basmati pilav.",
     "kalori": 340,
     "icerik": [
@@ -1784,7 +1784,7 @@
     "altKategori": "gunluk-lezzetler",
     "isim": "Makarna",
     "fiyat": 160,
-    "resim": "images/sade-makarna.webp",
+    "resim": "images/makarna.webp",
     "aciklama": "Tereyağlı sade makarna.",
     "kalori": 390,
     "icerik": [
