@@ -1,22 +1,5 @@
 [
   {
-    "id": "0668bb3d-3e53-4916-aa4b-690d6a4e54fe",
-    "order": 1,
-    "anaKategori": "bla",
-    "altKategori": "hala",
-    "isim": "deneme",
-    "fiyat": 1,
-    "resim": "",
-    "aciklama": "",
-    "kalori": 0,
-    "icerik": [],
-    "alerjen": [],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
     "id": "a0d80324-ec57-4888-81ab-90cc6347dfa6",
     "order": 2,
     "anaKategori": "cocuk",
