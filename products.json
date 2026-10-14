@@ -1678,6 +1678,7 @@
   },
   {
     "id": 39,
+    "order": 83,
     "anaKategori": "yiyecekler",
     "altKategori": "gunluk-lezzetler",
     "isim": "Günün Etli Yemeği",
@@ -1693,7 +1694,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 83
+    "aktif": false
   },
   {
     "id": 40,
