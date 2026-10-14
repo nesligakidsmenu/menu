@@ -194,7 +194,7 @@ async function verileriGetir() {
     try {
 
        const cevap = await fetch("products.json");
-const urunler = urunleriSirala(await cevap.json());
+const urunler = urunleriSirala(await cevap.json()).filter(urun => urun.aktif !== false);
 
 const kategoriCevap = await fetch("categories.json");
 const kategoriler = await kategoriCevap.json();
