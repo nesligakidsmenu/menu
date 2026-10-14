@@ -44,6 +44,7 @@
         caffeine: $("#editCaffeine"),
         vegetarian: $("#editVegetarian"),
         recommended: $("#editRecommended"),
+        active: $("#editActive"),
         categoryList: $("#categoryList"),
         generateCategoriesButton: $("#generateCategoriesBtn"),
         newCategoryButton: $("#newCategoryBtn"),
@@ -281,7 +282,7 @@
             }
 
             const nameCell = document.createElement("td");
-            nameCell.textContent = product.isim || "İsimsiz ürün";
+            nameCell.textContent = `${product.isim || "İsimsiz ürün"}${product.aktif === false ? " (Menüde gizli)" : ""}`;
 
             const categoryCell = document.createElement("td");
             categoryCell.append(document.createTextNode(categoryName(product.anaKategori)));
@@ -348,7 +349,8 @@
             alerjen: [],
             kafein: false,
             vejetaryen: false,
-            onerilen: false
+            onerilen: false,
+            aktif: true
         };
     }
 
@@ -362,6 +364,7 @@
         elements.caffeine.checked = Boolean(product.kafein);
         elements.vegetarian.checked = Boolean(product.vejetaryen);
         elements.recommended.checked = Boolean(product.onerilen);
+        elements.active.checked = product.aktif !== false;
         elements.imagePreview.src = imageUrl(product.resim);
         elements.imagePreview.alt = product.isim ? `${product.isim} ürün görseli` : "Seçilen ürün görseli";
         elements.imageInput.value = "";
@@ -379,6 +382,7 @@
         elements.caffeine.checked = false;
         elements.vegetarian.checked = false;
         elements.recommended.checked = false;
+        elements.active.checked = true;
         elements.imageInput.value = "";
         elements.imagePreview.src = DEFAULT_IMAGE;
         elements.imagePreview.alt = "Seçilen ürün görseli";
@@ -528,7 +532,8 @@
             alerjen: commaSeparatedValues(elements.allergens.value),
             kafein: elements.caffeine.checked,
             vejetaryen: elements.vegetarian.checked,
-            onerilen: elements.recommended.checked
+            onerilen: elements.recommended.checked,
+            aktif: elements.active.checked
         };
     }
 
