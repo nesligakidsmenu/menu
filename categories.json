@@ -5,9 +5,9 @@
     "subCategories": [
       "espresso-bazli",
       "geleneksel",
+      "hazir-kahveler",
       "soguk",
-      "sutlu",
-      "hazir-kahveler"
+      "sutlu"
     ]
   },
   {
@@ -73,5 +73,10 @@
     "subCategories": [
       "sicak"
     ]
+  },
+  {
+    "id": "bla",
+    "name": "Bla",
+    "subCategories": []
   }
 ]
