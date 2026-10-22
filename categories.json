@@ -82,9 +82,10 @@
       "deneme1",
       "deneme2"
     ],
+    "image": "assets/images/products/kategori-deneme.webp",
     "subCategoryImages": {
-      "deneme-resim": "assets/images/products/alt-kategori-deneme-deneme-resim.png"
-    },
-    "image": "assets/images/products/kategori-deneme.png"
+      "deneme-resim": "assets/images/products/alt-kategori-deneme-deneme-resim.png",
+      "deneme1": "assets/images/products/alt-kategori-deneme-deneme1.webp"
+    }
   }
 ]
