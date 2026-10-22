@@ -72,5 +72,11 @@
     "subCategories": [
       "sicak"
     ]
+  },
+  {
+    "id": "denneme",
+    "name": "Denneme",
+    "subCategories": [],
+    "image": "assets/images/products/kategori-denneme.webp"
   }
 ]
