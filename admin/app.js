@@ -203,7 +203,10 @@
             .map((category) => ({
                 id: String(category.id),
                 name: String(category.name || category.id),
-                subCategories: uniqueStrings(category.subCategories || [])
+                subCategories: uniqueStrings(category.subCategories || []),
+                ...(category.image ? { image: String(category.image) } : {}),
+                ...(category.subCategoryImages && typeof category.subCategoryImages === "object"
+                    ? { subCategoryImages: { ...category.subCategoryImages } } : {})
             }));
     }
 
@@ -687,6 +690,14 @@
                 row.className = "subCategoryRow";
                 const label = document.createElement("span");
                 label.textContent = subCategory;
+                const subImagePath = category.subCategoryImages?.[subCategory];
+                if (subImagePath) {
+                    const thumb = document.createElement("img");
+                    thumb.className = "categoryAdminThumb";
+                    thumb.src = `../${String(subImagePath).replace(/^\.\//, "")}`;
+                    thumb.alt = `${subCategory} görseli`;
+                    row.append(thumb);
+                }
                 const deleteSubButton = createButton("Sil", "deleteSubCategory", () => deleteSubCategory(category.id, subCategory));
                 deleteSubButton.setAttribute("aria-label", `${subCategory} alt kategorisini sil`);
                 row.append(label, deleteSubButton);
@@ -781,25 +792,65 @@
         const category = state.categories.find((item) => item.id === categoryId);
         if (!category) return;
 
-        const name = window.prompt(`${category.name} için yeni alt kategori adı:`);
-        if (name === null) return;
-
-        const cleanName = name.trim();
-        if (!cleanName) {
-            toast("Uyarı", "Alt kategori adı boş olamaz.", "error");
-            return;
-        }
-
-        const id = slugify(cleanName);
-        if (category.subCategories.includes(id)) {
-            toast("Uyarı", "Bu alt kategori zaten mevcut.", "error");
-            return;
-        }
-
-        category.subCategories.push(id);
-        renderCategories();
-        populateCategoryOptions(categoryId, id);
-        toast("Hazır", "Alt kategori eklendi. Kalıcı hale getirmek için kaydedin.", "success");
+        const modal = document.createElement("div");
+        modal.className = "categoryCreateOverlay";
+        modal.innerHTML = `
+          <form class="categoryCreateDialog">
+            <h2 class="subCategoryModalTitle"></h2>
+            <label>Alt kategori adı<input name="subCategoryName" type="text" maxlength="80" required placeholder="Örn. Pilavlar"></label>
+            <label>Alt kategori görseli (isteğe bağlı)<input name="subCategoryImage" type="file" accept="image/png,image/jpeg,image/webp"></label>
+            <img class="categoryCreatePreview" alt="Görsel önizlemesi" hidden>
+            <p class="categoryCreateHint">JPG, PNG veya WEBP; en fazla 10 MB. Görsel seçmezsen varsayılan simge kullanılır.</p>
+            <div class="categoryCreateActions"><button type="button" class="categoryCreateCancel">İptal</button><button type="submit" class="categoryCreateSubmit">Alt kategori ekle</button></div>
+          </form>`;
+        document.body.append(modal);
+        const form = modal.querySelector("form");
+        modal.querySelector(".subCategoryModalTitle").textContent = `${category.name} — Alt kategori ekle`;
+        const fileInput = form.elements.subCategoryImage;
+        const preview = modal.querySelector(".categoryCreatePreview");
+        const close = () => modal.remove();
+        modal.querySelector(".categoryCreateCancel").addEventListener("click", close);
+        modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+        fileInput.addEventListener("change", () => {
+            const file = fileInput.files?.[0];
+            if (!file) { preview.hidden = true; preview.removeAttribute("src"); return; }
+            if (!["image/jpeg", "image/png", "image/webp"].includes(file.type) || file.size > 10 * 1024 * 1024) {
+                toast("Uyarı", "JPG, PNG veya WEBP seçin; dosya 10 MB'dan küçük olmalı.", "error");
+                fileInput.value = ""; preview.hidden = true; return;
+            }
+            preview.src = URL.createObjectURL(file);
+            preview.hidden = false;
+        });
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const cleanName = String(form.elements.subCategoryName.value || "").trim();
+            if (!cleanName) { toast("Uyarı", "Alt kategori adı boş olamaz.", "error"); return; }
+            const id = slugify(cleanName);
+            if (category.subCategories.includes(id)) {
+                toast("Uyarı", "Bu alt kategori zaten mevcut.", "error"); return;
+            }
+            const submit = modal.querySelector(".categoryCreateSubmit");
+            submit.disabled = true; submit.textContent = "Kaydediliyor...";
+            try {
+                const file = fileInput.files?.[0];
+                let image = "";
+                if (file) image = await apiUploadImage(file, `alt-kategori-${category.id}-${id}`);
+                category.subCategories.push(id);
+                if (image) {
+                    category.subCategoryImages = category.subCategoryImages || {};
+                    category.subCategoryImages[id] = `assets/images/products/${image}`;
+                }
+                renderCategories();
+                populateCategoryOptions(categoryId, id);
+                toast("Hazır", "Alt kategori eklendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
+                close();
+            } catch (error) {
+                console.error(error);
+                toast("Hata", error.message || "Alt kategori görseli yüklenemedi.", "error");
+                submit.disabled = false; submit.textContent = "Alt kategori ekle";
+            }
+        });
+        form.elements.subCategoryName.focus();
     }
 
     async function deleteCategory(categoryId) {
