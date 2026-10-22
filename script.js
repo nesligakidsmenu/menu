@@ -183,10 +183,10 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
             if (resim.getAttribute("src") !== yol) resim.src = yol;
             resim.onerror = () => {
                 resim.onerror = null;
-                resim.src = "./assets/icons/default.webp";
+                resim.src = "./assets/images/logo/gorsel-yok.png";
             };
         } else if (!resim.getAttribute("src")) {
-            resim.src = "./assets/icons/default.webp";
+            resim.src = "./assets/images/logo/gorsel-yok.png";
         }
         resim.alt = kategoriAdi;
 
@@ -632,7 +632,7 @@ async function dinamikAnaKategorileriYukle() {
 
             kart.innerHTML = `
                 <div class="icon">
-                    <img src="${k.image ? `./${String(k.image).replace(/^\.\//, "")}` : "./assets/icons/default.webp"}"
+                    <img src="${k.image ? `./${String(k.image).replace(/^\.\//, "")}` : "./assets/images/logo/gorsel-yok.png"}"
                          alt="${k.name}"
                          onerror="this.onerror=null;this.src='./assets/icons/default.webp';">
                 </div>
