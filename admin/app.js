@@ -679,9 +679,11 @@
                 image.alt = `${category.name} görseli`;
                 header.append(image);
             }
+            const editCategoryButton = createButton("Düzenle", "editCategory", () => editCategory(category.id));
+            editCategoryButton.setAttribute("aria-label", `${category.name} kategorisini düzenle`);
             const deleteCategoryButton = createButton("Sil", "deleteCategory", () => deleteCategory(category.id));
             deleteCategoryButton.setAttribute("aria-label", `${category.name} kategorisini sil`);
-            header.append(title, deleteCategoryButton);
+            header.append(title, editCategoryButton, deleteCategoryButton);
 
             const subCategoryList = document.createElement("div");
             subCategoryList.className = "subCategoryList";
@@ -707,6 +709,70 @@
             const addSubButton = createButton("Alt kategori ekle", "addSubCategory", () => addSubCategory(category.id));
             card.append(header, subCategoryList, addSubButton);
             elements.categoryList.append(card);
+        });
+    }
+
+    function editCategory(categoryId) {
+        const category = state.categories.find((item) => item.id === categoryId);
+        if (!category) return;
+        const modal = document.createElement("div");
+        modal.className = "categoryCreateOverlay";
+        modal.innerHTML = `
+          <form class="categoryCreateDialog">
+            <h2>Ana kategoriyi düzenle</h2>
+            <label>Kategori adı<input name="categoryName" type="text" maxlength="80" required></label>
+            <label>Görseli değiştir (isteğe bağlı)<input name="categoryImage" type="file" accept="image/png,image/jpeg,image/webp"></label>
+            <img class="categoryCreatePreview" alt="Görsel önizlemesi" hidden>
+            <p class="categoryCreateHint">Yeni görsel seçmezsen mevcut görsel korunur.</p>
+            <div class="categoryCreateActions"><button type="button" class="categoryCreateCancel">İptal</button><button type="submit" class="categoryCreateSubmit">Değişiklikleri uygula</button></div>
+          </form>`;
+        document.body.append(modal);
+        const form = modal.querySelector("form");
+        form.elements.categoryName.value = category.name;
+        const fileInput = form.elements.categoryImage;
+        const preview = modal.querySelector(".categoryCreatePreview");
+        if (category.image) { preview.src = `../${String(category.image).replace(/^\.\//, "")}`; preview.hidden = false; }
+        const close = () => modal.remove();
+        modal.querySelector(".categoryCreateCancel").addEventListener("click", close);
+        modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+        fileInput.addEventListener("change", () => {
+            const file = fileInput.files?.[0];
+            if (!file) return;
+            if (!["image/jpeg", "image/png", "image/webp"].includes(file.type) || file.size > 10 * 1024 * 1024) {
+                toast("Uyarı", "JPG, PNG veya WEBP seçin; dosya 10 MB'dan küçük olmalı.", "error");
+                fileInput.value = ""; return;
+            }
+            preview.src = URL.createObjectURL(file); preview.hidden = false;
+        });
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const name = String(form.elements.categoryName.value || "").trim();
+            if (!name) return;
+            const newId = slugify(name);
+            if (newId !== category.id && state.categories.some((item) => item.id === newId)) {
+                toast("Uyarı", "Bu isimde başka bir kategori var.", "error"); return;
+            }
+            const submit = modal.querySelector(".categoryCreateSubmit");
+            submit.disabled = true; submit.textContent = "Kaydediliyor...";
+            try {
+                const file = fileInput.files?.[0];
+                if (file) {
+                    const uploaded = await apiUploadImage(file, `kategori-${newId}`);
+                    category.image = `assets/images/products/${uploaded}`;
+                }
+                category.name = name;
+                if (newId !== category.id) {
+                    const oldId = category.id;
+                    category.id = newId;
+                    state.products.forEach((product) => { if (product.anaKategori === oldId) product.anaKategori = newId; });
+                }
+                renderCategories(); populateCategoryOptions(category.id); renderProducts();
+                toast("Hazır", "Kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
+                close();
+            } catch (error) {
+                console.error(error); toast("Hata", error.message || "Kategori güncellenemedi.", "error");
+                submit.disabled = false; submit.textContent = "Değişiklikleri uygula";
+            }
         });
     }
 
