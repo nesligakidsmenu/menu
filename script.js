@@ -160,8 +160,10 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         const ikon = document.createElement("div");
         ikon.className = "icon";
         const resim = document.createElement("img");
-        resim.src = "./assets/icons/default.webp";
+        const kategoriGorseli = String(kategoriBilgisi?.image || kategoriBilgisi?.ikon || "").trim();
+        resim.src = kategoriGorseli ? `./${kategoriGorseli.replace(/^\.\//, "")}` : "./assets/icons/default.webp";
         resim.alt = kategoriAdi;
+        resim.onerror = () => { resim.onerror = null; resim.src = "./assets/icons/default.webp"; };
         ikon.append(resim);
 
         const ad = document.createElement("span");
@@ -604,8 +606,9 @@ async function dinamikAnaKategorileriYukle() {
 
             kart.innerHTML = `
                 <div class="icon">
-                    <img src="./assets/icons/default.webp"
-                         alt="${k.name}">
+                    <img src="${k.image ? `./${String(k.image).replace(/^\.\//, "")}` : "./assets/icons/default.webp"}"
+                         alt="${k.name}"
+                         onerror="this.onerror=null;this.src='./assets/icons/default.webp';">
                 </div>
                 <span>${k.name}</span>
             `;
