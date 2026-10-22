@@ -362,8 +362,13 @@ if (!altKategori && !DIREKT_URUN_KATEGORILERI.includes(kategori)){
                 <a class="category" href="kategori.html?kat=${kategori}&alt=${kod}">
 
                     <div class="icon">
-                        ${altKategoriIcon(kod)}
-                        
+                        ${(() => {
+                            const parent = Array.isArray(kategoriler) ? kategoriler.find(item => String(item?.id || "") === kategori) : null;
+                            const customImage = parent?.subCategoryImages?.[kod];
+                            return customImage
+                                ? `<img class="altKategoriIcon" src="./${String(customImage).replace(/^\.\//, "")}" alt="${kod.replace(/["&<>]/g, "")}" onerror="this.onerror=null;this.src='./assets/icons/default.webp';">`
+                                : altKategoriIcon(kod);
+                        })()}
                     </div>
 
                     <div class="categoryInfo">
