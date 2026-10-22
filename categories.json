@@ -72,16 +72,5 @@
     "subCategories": [
       "sicak"
     ]
-  },
-  {
-    "id": "denneme",
-    "name": "Denneme",
-    "subCategories": [
-      "deneme-urun-1"
-    ],
-    "image": "assets/images/products/kategori-denneme.webp",
-    "subCategoryImages": {
-      "deneme-urun-1": "assets/images/products/alt-kategori-denneme-deneme-urun-1.webp"
-    }
   }
 ]
