@@ -77,13 +77,14 @@
     "id": "deneme",
     "name": "deneme",
     "subCategories": [
+      "deneme-resim",
       "deneme-urun",
       "deneme1",
-      "deneme2",
-      "deneme-resim"
+      "deneme2"
     ],
     "subCategoryImages": {
       "deneme-resim": "assets/images/products/alt-kategori-deneme-deneme-resim.png"
-    }
+    },
+    "image": "assets/images/products/kategori-deneme.png"
   }
 ]
