@@ -140,37 +140,58 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         : [];
     const tumKategoriler = [...kayitliKategoriler, ...urunKategorileri];
 
-    const mevcutKategoriKodlari = new Set(
-        [...alan.querySelectorAll("a.category")]
-            .map((baglanti) => new URL(baglanti.href).searchParams.get("kat"))
-            .filter(Boolean)
+    const kartlari = new Map(
+        [...alan.querySelectorAll("a.category")].map((baglanti) => [
+            new URL(baglanti.href, window.location.href).searchParams.get("kat"),
+            baglanti
+        ]).filter(([kod]) => Boolean(kod))
     );
 
     tumKategoriler.forEach((kategoriBilgisi) => {
-
         const kategoriKodu = String(kategoriBilgisi?.id || "").trim();
         const kategoriAdi = String(kategoriBilgisi?.name || kategoriKodunuGuzellestir(kategoriKodu)).trim();
+        if (!kategoriKodu || !kategoriAdi) return;
 
-        if (!kategoriKodu || !kategoriAdi || mevcutKategoriKodlari.has(kategoriKodu)) return;
+        let kart = kartlari.get(kategoriKodu);
+        if (!kart) {
+            kart = document.createElement("a");
+            kart.className = "category";
+            kart.href = `kategori.html?kat=${encodeURIComponent(kategoriKodu)}`;
 
-        const kart = document.createElement("a");
-        kart.className = "category";
+            const ikon = document.createElement("div");
+            ikon.className = "icon";
+            const resim = document.createElement("img");
+            ikon.append(resim);
+            const ad = document.createElement("span");
+            kart.append(ikon, ad);
+            alan.append(kart);
+            kartlari.set(kategoriKodu, kart);
+        }
+
         kart.href = `kategori.html?kat=${encodeURIComponent(kategoriKodu)}`;
+        const ikon = kart.querySelector(".icon") || kart;
+        let resim = ikon.querySelector("img");
+        if (!resim) {
+            resim = document.createElement("img");
+            ikon.prepend(resim);
+        }
 
-        const ikon = document.createElement("div");
-        ikon.className = "icon";
-        const resim = document.createElement("img");
+        // Admin panelinden yüklenen görseli tercih et; yoksa mevcut ikon yolunu koru.
         const kategoriGorseli = String(kategoriBilgisi?.image || kategoriBilgisi?.ikon || "").trim();
-        resim.src = kategoriGorseli ? `./${kategoriGorseli.replace(/^\.\//, "")}` : "./assets/icons/default.webp";
+        if (kategoriGorseli) {
+            const yol = `./${kategoriGorseli.replace(/^\.\//, "")}`;
+            if (resim.getAttribute("src") !== yol) resim.src = yol;
+            resim.onerror = () => {
+                resim.onerror = null;
+                resim.src = "./assets/icons/default.webp";
+            };
+        } else if (!resim.getAttribute("src")) {
+            resim.src = "./assets/icons/default.webp";
+        }
         resim.alt = kategoriAdi;
-        resim.onerror = () => { resim.onerror = null; resim.src = "./assets/icons/default.webp"; };
-        ikon.append(resim);
 
-        const ad = document.createElement("span");
-        ad.textContent = kategoriAdi;
-        kart.append(ikon, ad);
-        alan.append(kart);
-        mevcutKategoriKodlari.add(kategoriKodu);
+        const ad = kart.querySelector("span");
+        if (ad) ad.textContent = kategoriAdi;
     });
 }
 
