@@ -79,7 +79,11 @@
     "subCategories": [
       "deneme-urun",
       "deneme1",
-      "deneme2"
-    ]
+      "deneme2",
+      "deneme-resim"
+    ],
+    "subCategoryImages": {
+      "deneme-resim": "assets/images/products/alt-kategori-deneme-deneme-resim.png"
+    }
   }
 ]
