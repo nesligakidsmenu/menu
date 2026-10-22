@@ -700,9 +700,11 @@
                     thumb.alt = `${subCategory} görseli`;
                     row.append(thumb);
                 }
+                const editSubButton = createButton("Düzenle", "editSubCategory", () => editSubCategory(category.id, subCategory));
+                editSubButton.setAttribute("aria-label", `${subCategory} alt kategorisini düzenle`);
                 const deleteSubButton = createButton("Sil", "deleteSubCategory", () => deleteSubCategory(category.id, subCategory));
                 deleteSubButton.setAttribute("aria-label", `${subCategory} alt kategorisini sil`);
-                row.append(label, deleteSubButton);
+                row.append(label, editSubButton, deleteSubButton);
                 subCategoryList.append(row);
             });
 
@@ -917,6 +919,82 @@
             }
         });
         form.elements.subCategoryName.focus();
+    }
+
+    function editSubCategory(categoryId, oldId) {
+        const category = state.categories.find((item) => item.id === categoryId);
+        if (!category) return;
+        const modal = document.createElement("div");
+        modal.className = "categoryCreateOverlay";
+        modal.innerHTML = `
+          <form class="categoryCreateDialog">
+            <h2>Alt kategoriyi düzenle</h2>
+            <label>Alt kategori adı<input name="subCategoryName" type="text" maxlength="80" required></label>
+            <label>Görseli değiştir (isteğe bağlı)<input name="subCategoryImage" type="file" accept="image/png,image/jpeg,image/webp"></label>
+            <img class="categoryCreatePreview" alt="Görsel önizlemesi" hidden>
+            <p class="categoryCreateHint">Yeni görsel seçmezsen mevcut görsel korunur.</p>
+            <div class="categoryCreateActions"><button type="button" class="categoryCreateCancel">İptal</button><button type="submit" class="categoryCreateSubmit">Değişiklikleri kaydet</button></div>
+          </form>`;
+        document.body.append(modal);
+        const form = modal.querySelector("form");
+        form.elements.subCategoryName.value = oldId;
+        const fileInput = form.elements.subCategoryImage;
+        const preview = modal.querySelector(".categoryCreatePreview");
+        const existingImage = category.subCategoryImages?.[oldId];
+        if (existingImage) {
+            preview.src = `../${String(existingImage).replace(/^\.\//, "")}`;
+            preview.hidden = false;
+        }
+        const close = () => modal.remove();
+        modal.querySelector(".categoryCreateCancel").addEventListener("click", close);
+        modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+        fileInput.addEventListener("change", () => {
+            const file = fileInput.files?.[0];
+            if (!file) return;
+            if (!["image/jpeg", "image/png", "image/webp"].includes(file.type) || file.size > 10 * 1024 * 1024) {
+                toast("Uyarı", "JPG, PNG veya WEBP seçin; dosya 10 MB'dan küçük olmalı.", "error");
+                fileInput.value = ""; return;
+            }
+            preview.src = URL.createObjectURL(file); preview.hidden = false;
+        });
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const cleanName = String(form.elements.subCategoryName.value || "").trim();
+            const newId = slugify(cleanName);
+            if (!newId) { toast("Uyarı", "Alt kategori adı boş olamaz.", "error"); return; }
+            if (newId !== oldId && category.subCategories.includes(newId)) {
+                toast("Uyarı", "Bu alt kategori zaten mevcut.", "error"); return;
+            }
+            const submit = modal.querySelector(".categoryCreateSubmit");
+            submit.disabled = true; submit.textContent = "Kaydediliyor...";
+            try {
+                const file = fileInput.files?.[0];
+                let uploadedPath = "";
+                if (file) {
+                    const uploaded = await apiUploadImage(file, `alt-kategori-${category.id}-${newId}`);
+                    uploadedPath = `assets/images/products/${uploaded}`;
+                }
+                category.subCategories = category.subCategories.map((id) => id === oldId ? newId : id);
+                if (category.subCategoryImages?.[oldId]) {
+                    category.subCategoryImages[newId] = category.subCategoryImages[oldId];
+                    if (newId !== oldId) delete category.subCategoryImages[oldId];
+                }
+                if (uploadedPath) {
+                    category.subCategoryImages = category.subCategoryImages || {};
+                    category.subCategoryImages[newId] = uploadedPath;
+                }
+                state.products.forEach((product) => {
+                    if (product.anaKategori === categoryId && product.altKategori === oldId) product.altKategori = newId;
+                });
+                renderCategories();
+                toast("Hazır", "Alt kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet ve Ürünleri Kaydet seçeneklerini kullanın.", "success");
+                close();
+            } catch (error) {
+                console.error(error);
+                toast("Hata", error.message || "Alt kategori güncellenemedi.", "error");
+                submit.disabled = false; submit.textContent = "Değişiklikleri kaydet";
+            }
+        });
     }
 
     async function deleteCategory(categoryId) {
