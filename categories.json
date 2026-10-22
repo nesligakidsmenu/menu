@@ -72,19 +72,5 @@
     "subCategories": [
       "sicak"
     ]
-  },
-  {
-    "id": "deneme",
-    "name": "deneme",
-    "subCategories": [
-      "deneme2"
-    ],
-    "image": "assets/images/products/kategori-deneme.webp",
-    "subCategoryImages": {
-      "deneme-resim": "assets/images/products/alt-kategori-deneme-deneme-resim.png",
-      "deneme1": "assets/images/products/alt-kategori-deneme-deneme1.webp",
-      "deneme-urun": "assets/images/products/alt-kategori-deneme-deneme-urun.webp",
-      "deneme2": "assets/images/products/alt-kategori-deneme-deneme2.webp"
-    }
   }
 ]
