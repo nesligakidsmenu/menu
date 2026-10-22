@@ -112,11 +112,51 @@ function validateImage(file) {
     if (file.size > MAX_IMAGE_SIZE) throw new Error("Resim dosyası 10 MB'dan büyük olamaz.");
 }
 
+async function convertImageToWebP(file) {
+    // Görseli tarayıcıda WebP'ye dönüştür; sunucuya her zaman .webp gönder.
+    if (file.type === "image/webp") return file;
+
+    let bitmap;
+    try {
+        if ("createImageBitmap" in window) {
+            bitmap = await createImageBitmap(file);
+        } else {
+            bitmap = await new Promise((resolve, reject) => {
+                const image = new Image();
+                const url = URL.createObjectURL(file);
+                image.onload = () => { URL.revokeObjectURL(url); resolve(image); };
+                image.onerror = () => { URL.revokeObjectURL(url); reject(new Error("Görsel açılamadı.")); };
+                image.src = url;
+            });
+        }
+
+        const canvas = document.createElement("canvas");
+        canvas.width = bitmap.width || bitmap.naturalWidth;
+        canvas.height = bitmap.height || bitmap.naturalHeight;
+        const context = canvas.getContext("2d");
+        if (!context) throw new Error("Görsel dönüştürme başlatılamadı.");
+        context.drawImage(bitmap, 0, 0);
+
+        const blob = await new Promise((resolve, reject) => {
+            canvas.toBlob((result) => result ? resolve(result) : reject(new Error("WebP dönüşümü başarısız oldu.")), "image/webp", 0.88);
+        });
+        if (bitmap.close) bitmap.close();
+        return new File([blob], `${file.name.replace(/\\.[^.]+$/, "") || "gorsel"}.webp`, {
+            type: "image/webp",
+            lastModified: Date.now()
+        });
+    } catch (error) {
+        if (bitmap && bitmap.close) bitmap.close();
+        throw new Error("Görsel WebP formatına dönüştürülemedi. Başka bir JPG, PNG veya WEBP dosyası deneyin.");
+    }
+}
+
 async function apiUploadImage(file, productName) {
     validateImage(file);
+    const webpFile = await convertImageToWebP(file);
 
     const formData = new FormData();
-    formData.append("image", file);
+    formData.append("image", webpFile, `${String(productName || "gorsel").replace(/[^a-z0-9_-]/gi, "-")}.webp`);
     formData.append("productName", productName);
 
     const result = await parseJson(await request("/upload-image", {
