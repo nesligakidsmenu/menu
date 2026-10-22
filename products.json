@@ -1,26 +1,5 @@
 [
   {
-    "id": "1203ebd0-86fd-4cc2-8781-1a665827a36a",
-    "order": 1,
-    "anaKategori": "deneme",
-    "altKategori": "deneme2",
-    "isim": "deneme ürünn",
-    "fiyat": 1,
-    "resim": "deneme-urunn.webp",
-    "aciklama": "1",
-    "kalori": 1,
-    "icerik": [
-      "1"
-    ],
-    "alerjen": [
-      "1"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
     "id": "12d149be-6fbb-4fb8-b6af-5a0c7c3f9a6b",
     "order": 2,
     "anaKategori": "tatlilar",
