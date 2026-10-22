@@ -160,7 +160,11 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         const ikon = document.createElement("div");
         ikon.className = "icon";
         const resim = document.createElement("img");
-        resim.src = "./assets/icons/default.webp";
+        const kategoriResmi = String(kategoriBilgisi?.image || "").replace(/^images\//, "");
+        resim.src = kategoriResmi
+            ? `./assets/images/products/${kategoriResmi}`
+            : "./assets/icons/default.webp";
+        resim.onerror = () => { resim.onerror = null; resim.src = "./assets/icons/default.webp"; };
         resim.alt = kategoriAdi;
         ikon.append(resim);
 
