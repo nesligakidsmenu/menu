@@ -203,8 +203,7 @@
             .map((category) => ({
                 id: String(category.id),
                 name: String(category.name || category.id),
-                subCategories: uniqueStrings(category.subCategories || []),
-                image: String(category.image || "")
+                subCategories: uniqueStrings(category.subCategories || [])
             }));
     }
 
@@ -650,11 +649,6 @@
         });
     }
 
-    function publicCategoryImageUrl(fileName) {
-        const cleanName = String(fileName || "").replace(/^images\//, "");
-        return cleanName ? `../assets/images/products/${cleanName}` : "../assets/icons/default.webp";
-    }
-
     function renderCategories() {
         if (!elements.categoryList) return;
         elements.categoryList.replaceChildren();
@@ -679,46 +673,6 @@
             deleteCategoryButton.setAttribute("aria-label", `${category.name} kategorisini sil`);
             header.append(title, deleteCategoryButton);
 
-            const imageControls = document.createElement("div");
-            imageControls.className = "categoryImageControls";
-            const preview = document.createElement("img");
-            preview.className = "categoryImagePreview";
-            preview.alt = `${category.name} kategori görseli`;
-            preview.src = category.image ? publicCategoryImageUrl(category.image) : "../assets/icons/default.webp";
-            preview.onerror = () => { preview.src = "../assets/icons/default.webp"; };
-            const uploadLabel = document.createElement("label");
-            uploadLabel.className = "categoryImageUpload";
-            uploadLabel.textContent = category.image ? "Görseli değiştir" : "Kategori görseli yükle";
-            const imageInput = document.createElement("input");
-            imageInput.type = "file";
-            imageInput.accept = ".jpg,.jpeg,.png,.webp";
-            imageInput.hidden = true;
-            imageInput.addEventListener("change", async () => {
-                const file = imageInput.files?.[0];
-                if (!file) return;
-                uploadLabel.textContent = "Yükleniyor...";
-                uploadLabel.classList.add("isBusy");
-                try {
-                    if (typeof validateImage === "function") validateImage(file);
-                    const fileName = await apiUploadImage(file, `kategori-${category.id}`);
-                    category.image = fileName;
-                    preview.src = publicCategoryImageUrl(fileName);
-                    uploadLabel.textContent = "Görseli değiştir";
-                    toast("Başarılı", `${category.name} görseli yüklendi. Kaydediliyor...`, "success");
-                    await saveCategories();
-                    renderCategories();
-                } catch (error) {
-                    console.error(error);
-                    toast("Görsel yüklenemedi", error.message || "Kategori görseli yüklenemedi.", "error");
-                    uploadLabel.textContent = category.image ? "Görseli değiştir" : "Kategori görseli yükle";
-                } finally {
-                    uploadLabel.classList.remove("isBusy");
-                    imageInput.value = "";
-                }
-            });
-            uploadLabel.append(imageInput);
-            imageControls.append(preview, uploadLabel);
-
             const subCategoryList = document.createElement("div");
             subCategoryList.className = "subCategoryList";
             category.subCategories.forEach((subCategory) => {
@@ -733,7 +687,7 @@
             });
 
             const addSubButton = createButton("Alt kategori ekle", "addSubCategory", () => addSubCategory(category.id));
-            card.append(header, imageControls, subCategoryList, addSubButton);
+            card.append(header, subCategoryList, addSubButton);
             elements.categoryList.append(card);
         });
     }
@@ -754,7 +708,7 @@
             return;
         }
 
-        state.categories.push({ id, name: cleanName, subCategories: [], image: "" });
+        state.categories.push({ id, name: cleanName, subCategories: [] });
         renderCategories();
         populateCategoryOptions(id);
         toast("Hazır", "Kategori eklendi. Kalıcı hale getirmek için kaydedin.", "success");
@@ -869,8 +823,7 @@
         state.categories = [...grouped.entries()].map(([id, subCategories]) => ({
             id,
             name: existing.get(id) || prettifySlug(id),
-            subCategories: [...subCategories].sort(localeCompare),
-            image: state.categories.find((category) => category.id === id)?.image || ""
+            subCategories: [...subCategories].sort(localeCompare)
         }));
 
         renderCategories();
