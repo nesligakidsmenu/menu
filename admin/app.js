@@ -669,6 +669,13 @@
             header.className = "categoryHeader";
             const title = document.createElement("h3");
             title.textContent = category.name;
+            if (category.image) {
+                const image = document.createElement("img");
+                image.className = "categoryAdminThumb";
+                image.src = `../${String(category.image).replace(/^\.\//, "")}`;
+                image.alt = `${category.name} görseli`;
+                header.append(image);
+            }
             const deleteCategoryButton = createButton("Sil", "deleteCategory", () => deleteCategory(category.id));
             deleteCategoryButton.setAttribute("aria-label", `${category.name} kategorisini sil`);
             header.append(title, deleteCategoryButton);
@@ -693,25 +700,58 @@
     }
 
     function addCategory() {
-        const name = window.prompt("Yeni ana kategori adı:");
-        if (name === null) return;
-
-        const cleanName = name.trim();
-        if (!cleanName) {
-            toast("Uyarı", "Kategori adı boş olamaz.", "error");
-            return;
-        }
-
-        const id = slugify(cleanName);
-        if (state.categories.some((category) => category.id === id)) {
-            toast("Uyarı", "Bu kategori zaten mevcut.", "error");
-            return;
-        }
-
-        state.categories.push({ id, name: cleanName, subCategories: [] });
-        renderCategories();
-        populateCategoryOptions(id);
-        toast("Hazır", "Kategori eklendi. Kalıcı hale getirmek için kaydedin.", "success");
+        // Form modalı: kategori adı ve isteğe bağlı görsel birlikte seçilir.
+        const modal = document.createElement("div");
+        modal.className = "categoryCreateOverlay";
+        modal.innerHTML = `
+          <form class="categoryCreateDialog">
+            <h2>Yeni ana kategori</h2>
+            <label>Kategori adı<input name="categoryName" type="text" maxlength="80" required placeholder="Örn. Kahvaltılıklar"></label>
+            <label>Kategori görseli (isteğe bağlı)<input name="categoryImage" type="file" accept="image/png,image/jpeg,image/webp"></label>
+            <img class="categoryCreatePreview" alt="Görsel önizlemesi" hidden>
+            <p class="categoryCreateHint">JPG, PNG veya WEBP; en fazla 10 MB. Görsel seçmezsen varsayılan simge kullanılır.</p>
+            <div class="categoryCreateActions"><button type="button" class="categoryCreateCancel">İptal</button><button type="submit" class="categoryCreateSubmit">Kategori ekle</button></div>
+          </form>`;
+        document.body.append(modal);
+        const form = modal.querySelector("form");
+        const fileInput = form.elements.categoryImage;
+        const preview = modal.querySelector(".categoryCreatePreview");
+        const close = () => modal.remove();
+        modal.querySelector(".categoryCreateCancel").addEventListener("click", close);
+        modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+        fileInput.addEventListener("change", () => {
+            const file = fileInput.files?.[0];
+            if (!file) { preview.hidden = true; preview.removeAttribute("src"); return; }
+            if (!['image/jpeg','image/png','image/webp'].includes(file.type) || file.size > 10 * 1024 * 1024) {
+                toast("Uyarı", "JPG, PNG veya WEBP seçin; dosya 10 MB'dan küçük olmalı.", "error");
+                fileInput.value = ""; preview.hidden = true; return;
+            }
+            preview.src = URL.createObjectURL(file); preview.hidden = false;
+        });
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const cleanName = String(form.elements.categoryName.value || "").trim();
+            if (!cleanName) { toast("Uyarı", "Kategori adı boş olamaz.", "error"); return; }
+            const id = slugify(cleanName);
+            if (state.categories.some((category) => category.id === id)) { toast("Uyarı", "Bu kategori zaten mevcut.", "error"); return; }
+            const submit = modal.querySelector(".categoryCreateSubmit");
+            submit.disabled = true; submit.textContent = "Kaydediliyor...";
+            try {
+                let image = "";
+                const file = fileInput.files?.[0];
+                if (file) image = await apiUploadImage(file, `kategori-${id}`);
+                const category = { id, name: cleanName, subCategories: [] };
+                if (image) category.image = `assets/images/products/${image}`;
+                state.categories.push(category);
+                renderCategories(); populateCategoryOptions(id);
+                toast("Hazır", "Kategori eklendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
+                close();
+            } catch (error) {
+                console.error(error); toast("Hata", error.message || "Kategori görseli yüklenemedi.", "error");
+                submit.disabled = false; submit.textContent = "Kategori ekle";
+            }
+        });
+        form.elements.categoryName.focus();
     }
 
     function addSubCategoryFromToolbar() {

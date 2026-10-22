@@ -1007,3 +1007,17 @@ button:disabled {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Kategori oluşturma penceresi ve görsel önizlemesi */
+.categoryCreateOverlay{position:fixed;inset:0;z-index:9999;background:rgba(20,17,12,.62);display:flex;align-items:center;justify-content:center;padding:18px}
+.categoryCreateDialog{width:min(100%,480px);background:#fffdf8;color:#29251e;border-radius:16px;padding:24px;box-shadow:0 18px 60px rgba(0,0,0,.28);display:grid;gap:16px}
+.categoryCreateDialog h2{margin:0;font-size:1.25rem}
+.categoryCreateDialog label{display:grid;gap:8px;font-weight:600}
+.categoryCreateDialog input[type=text],.categoryCreateDialog input[type=file]{width:100%;box-sizing:border-box;border:1px solid #d8d0c3;border-radius:8px;padding:11px;background:#fff;font:inherit}
+.categoryCreatePreview{width:120px;height:120px;object-fit:cover;border-radius:10px;border:1px solid #e5ded3}
+.categoryCreateHint{margin:0;font-size:.86rem;color:#756e63;line-height:1.45}
+.categoryCreateActions{display:flex;justify-content:flex-end;gap:10px}
+.categoryCreateActions button{border:0;border-radius:8px;padding:11px 16px;cursor:pointer;font:inherit}
+.categoryCreateCancel{background:#eee8df;color:#332d25}.categoryCreateSubmit{background:#b58b42;color:#fff;font-weight:700}.categoryCreateSubmit:disabled{opacity:.6;cursor:wait}
+.categoryAdminThumb{width:42px;height:42px;object-fit:cover;border-radius:8px;margin-left:10px}
