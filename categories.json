@@ -77,8 +77,8 @@
     "id": "deneme",
     "name": "deneme",
     "subCategories": [
-      "deneme-urun"
-    ],
-    "image": "assets/images/products/kategori-deneme.png"
+      "deneme-urun",
+      "deneme1"
+    ]
   }
 ]
