@@ -78,5 +78,11 @@
     "id": "bla",
     "name": "Bla",
     "subCategories": []
+  },
+  {
+    "id": "deneme",
+    "name": "deneme",
+    "subCategories": [],
+    "image": "assets/images/products/kategori-deneme.png"
   }
 ]
