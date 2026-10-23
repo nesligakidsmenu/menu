@@ -1953,12 +1953,13 @@
   },
   {
     "id": 51,
+    "order": 99,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
-    "isim": "Kaşarlı-Sucuklu Tost",
+    "isim": "Sucuklu Kaşarlı Tost",
     "fiyat": 220,
     "resim": "images/kasarli-sucuklu-tost.webp",
-    "aciklama": "Kaşarlı sucuklu tost.",
+    "aciklama": "Sucuklu kaşarlı tost",
     "kalori": 620,
     "icerik": [
       "Kaşar",
@@ -1972,7 +1973,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": false,
-    "order": 99
+    "aktif": true
   },
   {
     "id": 52,
