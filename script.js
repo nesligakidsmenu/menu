@@ -183,10 +183,10 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
             if (resim.getAttribute("src") !== yol) resim.src = yol;
             resim.onerror = () => {
                 resim.onerror = null;
-                resim.src = "./assets/images/logo/gorsel-yok.png";
+                resim.src = "./assets/icons/default.webp";
             };
         } else if (!resim.getAttribute("src")) {
-            resim.src = "./assets/images/logo/gorsel-yok.png";
+            resim.src = "./assets/icons/default.webp";
         }
         resim.alt = kategoriAdi;
 
@@ -602,66 +602,53 @@ function seciliUrunuGoster() {
 }
 
 async function dinamikAnaKategorileriYukle() {
+
     const alan = document.getElementById("anaKategoriListesi");
     if (!alan) return;
 
     try {
-        const cevap = await fetch("./categories.json", {
-            cache: "no-store"
-        });
 
-        if (!cevap.ok) {
-            throw new Error("Kategori listesi yüklenemedi.");
-        }
-
+        const cevap = await fetch("categories.json");
         const kategoriler = await cevap.json();
 
-        kategoriler.forEach(k => {
-            let kart = [...alan.querySelectorAll("a.category")]
-                .find(a => {
-                    const href = a.getAttribute("href") || "";
-                    const eslesme = href.match(/[?&]kat=([^&]+)/);
-                    return eslesme &&
-                        decodeURIComponent(eslesme[1]) === k.id;
-                });
+        const mevcutlar = [
+            ...alan.querySelectorAll("a.category")
+        ].map(a => {
 
-            if (!kart) {
-                kart = document.createElement("a");
-                kart.className = "category";
-                alan.appendChild(kart);
+            const href = a.getAttribute("href") || "";
+            const eslesme = href.match(/kat=([^&]+)/);
 
-                kart.innerHTML = `
-                    <div class="icon">
-                        <img src="./assets/images/logo/gorsel-yok.png"
-                             alt="">
-                    </div>
-                    <span></span>
-                `;
-            }
+            return eslesme ? decodeURIComponent(eslesme[1]) : "";
 
-            kart.href = `kategori.html?kat=${encodeURIComponent(k.id)}`;
-
-            const ad = kart.querySelector("span");
-            if (ad) ad.textContent = k.name;
-
-            const resim = kart.querySelector("img");
-            if (resim) {
-                resim.alt = k.name;
-
-                if (k.image) {
-                    resim.onerror = function () {
-                        this.onerror = null;
-                        this.src = "./assets/images/logo/gorsel-yok.png";
-                    };
-
-                    resim.src = "./" + String(k.image).replace(/^\.\//, "");
-                }
-            }
         });
 
-    } catch (hata) {
-        console.error("Kategori isimleri güncellenemedi:", hata);
+        kategoriler.forEach(k => {
+
+            if (mevcutlar.includes(k.id)) return;
+
+            const kart = document.createElement("a");
+            kart.className = "category";
+            kart.href = `kategori.html?kat=${k.id}`;
+
+            kart.innerHTML = `
+                <div class="icon">
+                    <img src="${k.image ? `./${String(k.image).replace(/^\.\//, "")}` : "./assets/icons/default.webp"}"
+                         alt="${k.name}"
+                         onerror="this.onerror=null;this.src='./assets/icons/default.webp';">
+                </div>
+                <span>${k.name}</span>
+            `;
+
+            alan.appendChild(kart);
+
+        });
+
+    } catch (e) {
+
+        console.error("Dinamik kategori yüklenemedi.", e);
+
     }
+
 }
 
 
