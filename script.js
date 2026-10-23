@@ -124,7 +124,6 @@ function kategoriKodunuGuzellestir(kategoriKodu) {
 }
 
 function dinamikAnaKategorileriGoster(kategoriler, urunler) {
-
     const alan = document.getElementById("anaKategoriListesi");
     if (!alan) return;
 
@@ -133,68 +132,87 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         ? urunler
             .map((urun) => String(urun?.anaKategori || "").trim())
             .filter(Boolean)
-            .map((kategoriKodu) => ({
-                id: kategoriKodu,
-                name: kategoriKodunuGuzellestir(kategoriKodu)
-            }))
+            .map((id) => ({ id, name: kategoriKodunuGuzellestir(id) }))
         : [];
-    const tumKategoriler = [...kayitliKategoriler, ...urunKategorileri];
 
-    const kartlari = new Map(
-        [...alan.querySelectorAll("a.category")].map((baglanti) => [
-            new URL(baglanti.href, window.location.href).searchParams.get("kat"),
-            baglanti
-        ]).filter(([kod]) => Boolean(kod))
+    // categories.json tek doğruluk kaynağıdır. Ürünlerden türetilen adlar,
+    // kayıtlı kategorilerin Türkçe karakterli adlarının üzerine yazamaz.
+    const kategoriHaritasi = new Map();
+    kayitliKategoriler.forEach((k) => {
+        const id = String(k?.id || "").trim();
+        const name = String(k?.name || "").trim();
+        if (id && name) kategoriHaritasi.set(id, { ...k, id, name });
+    });
+    urunKategorileri.forEach((k) => {
+        if (!kategoriHaritasi.has(k.id)) kategoriHaritasi.set(k.id, k);
+    });
+
+    const ikonYollari = {
+        "kahveler": "./assets/icons/kahveler.webp",
+        "yiyecekler": "./assets/icons/yiyecekler.webp",
+        "tatlilar": "./assets/icons/tatlilar.webp",
+        "soguk-icecekler": "./assets/icons/soguk-icecekler.webp",
+        "caylar": "./assets/icons/caylar.webp",
+        "sicak-icecekler": "./assets/icons/sicak-icecekler.webp",
+        "soguk-special": "./assets/icons/soguk-special-icecekler.webp",
+        "cocuk": "./assets/icons/cocuk-menuleri.webp"
+    };
+
+    const mevcutKartlar = new Map(
+        [...alan.querySelectorAll("a.category")].map((kart) => {
+            const href = kart.getAttribute("href") || "";
+            const match = href.match(/[?&]kat=([^&]+)/);
+            return [match ? decodeURIComponent(match[1]) : "", kart];
+        }).filter(([id]) => Boolean(id))
     );
 
-    tumKategoriler.forEach((kategoriBilgisi) => {
-        const kategoriKodu = String(kategoriBilgisi?.id || "").trim();
-        const kategoriAdi = String(kategoriBilgisi?.name || kategoriKodunuGuzellestir(kategoriKodu)).trim();
-        if (!kategoriKodu || !kategoriAdi) return;
+    // Eski veya artık categories.json içinde olmayan kartları kaldır.
+    const gecerliIdler = new Set(kategoriHaritasi.keys());
+    mevcutKartlar.forEach((kart, id) => {
+        if (!gecerliIdler.has(id)) {
+            kart.remove();
+            mevcutKartlar.delete(id);
+        }
+    });
 
-        let kart = kartlari.get(kategoriKodu);
+    kategoriHaritasi.forEach((bilgi) => {
+        const id = bilgi.id;
+        const ad = bilgi.name;
+        let kart = mevcutKartlar.get(id);
+
         if (!kart) {
             kart = document.createElement("a");
             kart.className = "category";
-            kart.href = `kategori.html?kat=${encodeURIComponent(kategoriKodu)}`;
-
-            const ikon = document.createElement("div");
-            ikon.className = "icon";
-            const resim = document.createElement("img");
-            ikon.append(resim);
-            const ad = document.createElement("span");
-            kart.append(ikon, ad);
-            alan.append(kart);
-            kartlari.set(kategoriKodu, kart);
+            kart.innerHTML = `
+                <div class="icon"><img alt=""></div>
+                <span></span>
+            `;
+            alan.appendChild(kart);
+            mevcutKartlar.set(id, kart);
         }
 
-        kart.href = `kategori.html?kat=${encodeURIComponent(kategoriKodu)}`;
-        const ikon = kart.querySelector(".icon") || kart;
-        let resim = ikon.querySelector("img");
+        kart.href = `kategori.html?kat=${encodeURIComponent(id)}`;
+
+        const adAlani = kart.querySelector("span");
+        if (adAlani) adAlani.textContent = ad;
+
+        const ikonAlani = kart.querySelector(".icon") || kart;
+        let resim = ikonAlani.querySelector("img");
         if (!resim) {
             resim = document.createElement("img");
-            ikon.prepend(resim);
+            ikonAlani.prepend(resim);
         }
 
-        // Admin panelinden yüklenen görseli tercih et; yoksa mevcut ikon yolunu koru.
-        const kategoriGorseli = String(kategoriBilgisi?.image || kategoriBilgisi?.ikon || "").trim();
-        if (kategoriGorseli) {
-            const yol = `./${kategoriGorseli.replace(/^\.\//, "")}`;
-            if (resim.getAttribute("src") !== yol) resim.src = yol;
-            resim.onerror = () => {
-                resim.onerror = null;
-                resim.src = "./assets/icons/default.webp";
-            };
-        } else if (!resim.getAttribute("src")) {
-            resim.src = "./assets/icons/default.webp";
-        }
-        resim.alt = kategoriAdi;
-
-        const ad = kart.querySelector("span");
-        if (ad) ad.textContent = kategoriAdi;
+        const gorsel = String(bilgi.image || bilgi.ikon || ikonYollari[id] || "./assets/images/logo/gorsel-yok.png").trim();
+        const yol = `./${gorsel.replace(/^\.\//, "")}`;
+        resim.alt = ad;
+        resim.onerror = function () {
+            this.onerror = null;
+            this.src = "./assets/images/logo/gorsel-yok.png";
+        };
+        if (resim.getAttribute("src") !== yol) resim.src = yol;
     });
 }
-
 function kategoriAltKategorileriniGetir(veriler, kategoriler, kategoriKodu) {
 
     const kayitliKategori = Array.isArray(kategoriler)
@@ -599,56 +617,6 @@ function seciliUrunuGoster() {
         }, 2500);
 
     }, 300);
-}
-
-async function dinamikAnaKategorileriYukle() {
-
-    const alan = document.getElementById("anaKategoriListesi");
-    if (!alan) return;
-
-    try {
-
-        const cevap = await fetch("categories.json");
-        const kategoriler = await cevap.json();
-
-        const mevcutlar = [
-            ...alan.querySelectorAll("a.category")
-        ].map(a => {
-
-            const href = a.getAttribute("href") || "";
-            const eslesme = href.match(/kat=([^&]+)/);
-
-            return eslesme ? decodeURIComponent(eslesme[1]) : "";
-
-        });
-
-        kategoriler.forEach(k => {
-
-            if (mevcutlar.includes(k.id)) return;
-
-            const kart = document.createElement("a");
-            kart.className = "category";
-            kart.href = `kategori.html?kat=${k.id}`;
-
-            kart.innerHTML = `
-                <div class="icon">
-                    <img src="${k.image ? `./${String(k.image).replace(/^\.\//, "")}` : "./assets/icons/default.webp"}"
-                         alt="${k.name}"
-                         onerror="this.onerror=null;this.src='./assets/icons/default.webp';">
-                </div>
-                <span>${k.name}</span>
-            `;
-
-            alan.appendChild(kart);
-
-        });
-
-    } catch (e) {
-
-        console.error("Dinamik kategori yüklenemedi.", e);
-
-    }
-
 }
 
 
