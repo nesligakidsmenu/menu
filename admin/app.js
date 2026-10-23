@@ -762,7 +762,7 @@
             try {
                 const file = fileInput.files?.[0];
                 if (file) {
-                    const uploaded = await apiUploadImage(file, `kategori-${newId}`);
+                    const uploaded = await apiUploadImage(file, `kategori-${category.id}`);
                     category.image = `assets/images/products/${uploaded}`;
                 }
                 category.name = name;
