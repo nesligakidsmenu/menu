@@ -2192,3 +2192,45 @@ html body .header .logo{
     }
 
 }
+
+
+/* NESLIGA KIDS — MOBİL KATEGORİ VE ALT MENÜ İYİLEŞTİRMESİ */
+html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
+
+@media (max-width:768px) {
+  .categories { grid-template-columns:1fr; gap:12px; padding:12px 14px 18px; }
+  .categories > .category {
+    min-height:112px; padding:12px 16px; gap:14px; border-radius:20px;
+  }
+  .categories > .category .icon {
+    width:68px; min-width:68px; height:68px; flex:0 0 68px; border-radius:20px;
+  }
+  .categories > .category .icon img {
+    width:58px; height:58px; object-fit:contain;
+  }
+  .categories > .category > span,
+  .categories > .category .categoryTitle {
+    font-size:18px; line-height:1.25; overflow-wrap:anywhere;
+  }
+  .bottom-nav {
+    height:70px; padding:5px 4px 0; padding-bottom:env(safe-area-inset-bottom, 0px);
+    align-items:stretch; background:#111;
+  }
+  .bottom-nav a {
+    min-width:0; padding:2px 3px; gap:3px; font-size:11px;
+    line-height:1.12; font-weight:600; overflow-wrap:anywhere;
+  }
+  .bottom-nav a span { display:block; max-width:100%; text-align:center; }
+  .bottom-nav svg { width:21px; height:21px; flex:0 0 21px; margin:0; }
+  body { padding-bottom:calc(82px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width:380px) {
+  .categories > .category { min-height:102px; padding:10px 12px; gap:12px; }
+  .categories > .category .icon {
+    width:62px; min-width:62px; height:62px; flex-basis:62px;
+  }
+  .categories > .category .icon img { width:54px; height:54px; }
+  .categories > .category > span,
+  .categories > .category .categoryTitle { font-size:16px; }
+  .bottom-nav a { font-size:10px; }
+}
