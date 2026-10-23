@@ -10,30 +10,12 @@
     ]
   },
   {
-    "id": "soguk-special-icecekler",
-    "name": "Soğuk Special İçecekler",
-    "subCategories": [
-      "frappe",
-      "frozen",
-      "milkshake",
-      "smoothie"
-    ]
-  },
-  {
     "id": "yiyecekler",
     "name": "Yiyecekler",
     "subCategories": [
       "atistirmaliklar",
       "gunluk-lezzetler",
       "ilaveler"
-    ]
-  },
-  {
-    "id": "cocuklar-icin",
-    "name": "Çocuklar için",
-    "subCategories": [
-      "cocuk-icecekleri",
-      "cocuk-menuleri"
     ]
   },
   {
@@ -71,6 +53,24 @@
     "name": "Sıcak İçecekler",
     "subCategories": [
       "sicak"
+    ]
+  },
+  {
+    "id": "cocuk",
+    "name": "Cocuk",
+    "subCategories": [
+      "cocuk-icecekleri",
+      "cocuk-menuleri"
+    ]
+  },
+  {
+    "id": "soguk-special",
+    "name": "Soguk Special",
+    "subCategories": [
+      "frappe",
+      "frozen",
+      "milkshake",
+      "smoothie"
     ]
   }
 ]
