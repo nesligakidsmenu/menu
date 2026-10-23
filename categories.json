@@ -28,16 +28,6 @@
     ]
   },
   {
-    "id": "soguk-special-icecekler",
-    "name": "Soğuk Special İçecekler",
-    "subCategories": [
-      "frappe",
-      "frozen",
-      "milkshake",
-      "smoothie"
-    ]
-  },
-  {
     "id": "cocuk",
     "name": "Çocuklar için",
     "subCategories": [
@@ -71,6 +61,16 @@
       "bitki-cayi",
       "cay",
       "meyve-cayi"
+    ]
+  },
+  {
+    "id": "soguk-special",
+    "name": "Soguk Special",
+    "subCategories": [
+      "frappe",
+      "frozen",
+      "milkshake",
+      "smoothie"
     ]
   }
 ]
