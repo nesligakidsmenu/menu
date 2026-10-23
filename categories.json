@@ -62,7 +62,10 @@
     "subCategories": [
       "cocuk-icecekleri",
       "cocuk-menuleri"
-    ]
+    ],
+    "subCategoryNames": {
+      "cocuk-menuleri": "cocuk-yiyecekleri"
+    }
   },
   {
     "id": "caylar",
