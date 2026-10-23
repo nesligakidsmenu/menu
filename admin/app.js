@@ -750,10 +750,13 @@
             event.preventDefault();
             const name = String(form.elements.categoryName.value || "").trim();
             if (!name) return;
-            const newId = slugify(name);
-            if (newId !== category.id && state.categories.some((item) => item.id === newId)) {
-                toast("Uyarı", "Bu isimde başka bir kategori var.", "error"); return;
-            }
+            if (state.categories.some((item) =>
+    item.id !== category.id &&
+    item.name.toLocaleLowerCase("tr-TR") === name.toLocaleLowerCase("tr-TR")
+)) {
+    toast("Uyarı", "Bu isimde başka bir kategori var.", "error");
+    return;
+}
             const submit = modal.querySelector(".categoryCreateSubmit");
             submit.disabled = true; submit.textContent = "Kaydediliyor...";
             try {
