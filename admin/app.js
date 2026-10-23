@@ -206,7 +206,9 @@
                 subCategories: uniqueStrings(category.subCategories || []),
                 ...(category.image ? { image: String(category.image) } : {}),
                 ...(category.subCategoryImages && typeof category.subCategoryImages === "object"
-                    ? { subCategoryImages: { ...category.subCategoryImages } } : {})
+                    ? { subCategoryImages: { ...category.subCategoryImages } } : {}),
+                ...(category.subCategoryNames && typeof category.subCategoryNames === "object"
+                    ? { subCategoryNames: { ...category.subCategoryNames } } : {})
             }));
     }
 
@@ -292,7 +294,8 @@
             if (product.altKategori) {
                 categoryCell.append(document.createElement("br"));
                 const subCategory = document.createElement("small");
-                subCategory.textContent = product.altKategori;
+                const parentCategory = state.categories.find((item) => item.id === product.anaKategori);
+                subCategory.textContent = parentCategory?.subCategoryNames?.[product.altKategori] || product.altKategori;
                 categoryCell.append(subCategory);
             }
 
@@ -417,7 +420,10 @@
         elements.subCategory.replaceChildren(createOption("", "Alt kategori seçin"));
 
         (category?.subCategories || []).forEach((subCategory) => {
-            elements.subCategory.append(createOption(subCategory, subCategory));
+            elements.subCategory.append(createOption(
+                subCategory,
+                category?.subCategoryNames?.[subCategory] || subCategory
+            ));
         });
 
         elements.subCategory.value = chosenSubCategory;
@@ -702,7 +708,7 @@
                 const row = document.createElement("div");
                 row.className = "subCategoryRow";
                 const label = document.createElement("span");
-                label.textContent = subCategory;
+                label.textContent = category.subCategoryNames?.[subCategory] || subCategory;
                 const subImagePath = category.subCategoryImages?.[subCategory];
                 if (subImagePath) {
                     const thumb = document.createElement("img");
@@ -926,6 +932,8 @@
                 let image = "";
                 if (file) image = await apiUploadImage(file, `alt-kategori-${category.id}-${id}`);
                 category.subCategories.push(id);
+                category.subCategoryNames = category.subCategoryNames || {};
+                category.subCategoryNames[id] = cleanName;
                 if (image) {
                     category.subCategoryImages = category.subCategoryImages || {};
                     category.subCategoryImages[id] = `assets/images/products/${image}`;
@@ -959,7 +967,7 @@
           </form>`;
         document.body.append(modal);
         const form = modal.querySelector("form");
-        form.elements.subCategoryName.value = oldId;
+        form.elements.subCategoryName.value = category.subCategoryNames?.[oldId] || oldId;
         const fileInput = form.elements.subCategoryImage;
         const preview = modal.querySelector(".categoryCreatePreview");
         const existingImage = category.subCategoryImages?.[oldId];
@@ -982,10 +990,13 @@
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
             const cleanName = String(form.elements.subCategoryName.value || "").trim();
-            const newId = slugify(cleanName);
-            if (!newId) { toast("Uyarı", "Alt kategori adı boş olamaz.", "error"); return; }
-            if (newId !== oldId && category.subCategories.includes(newId)) {
-                toast("Uyarı", "Bu alt kategori zaten mevcut.", "error"); return;
+            if (!cleanName) { toast("Uyarı", "Alt kategori adı boş olamaz.", "error"); return; }
+            const duplicateName = category.subCategories.some((id) =>
+                id !== oldId &&
+                String(category.subCategoryNames?.[id] || id).toLocaleLowerCase("tr-TR") === cleanName.toLocaleLowerCase("tr-TR")
+            );
+            if (duplicateName) {
+                toast("Uyarı", "Bu isimde başka bir alt kategori var.", "error"); return;
             }
             const submit = modal.querySelector(".categoryCreateSubmit");
             submit.disabled = true; submit.textContent = "Kaydediliyor...";
@@ -993,23 +1004,18 @@
                 const file = fileInput.files?.[0];
                 let uploadedPath = "";
                 if (file) {
-                    const uploaded = await apiUploadImage(file, `alt-kategori-${category.id}-${newId}`);
+                    const uploaded = await apiUploadImage(file, `alt-kategori-${category.id}-${oldId}`);
                     uploadedPath = `assets/images/products/${uploaded}`;
                 }
-                category.subCategories = category.subCategories.map((id) => id === oldId ? newId : id);
-                if (category.subCategoryImages?.[oldId]) {
-                    category.subCategoryImages[newId] = category.subCategoryImages[oldId];
-                    if (newId !== oldId) delete category.subCategoryImages[oldId];
-                }
+                // Alt kategori kimliği sabit kalır; yalnızca görünen ad güncellenir.
+                category.subCategoryNames = category.subCategoryNames || {};
+                category.subCategoryNames[oldId] = cleanName;
                 if (uploadedPath) {
                     category.subCategoryImages = category.subCategoryImages || {};
-                    category.subCategoryImages[newId] = uploadedPath;
+                    category.subCategoryImages[oldId] = uploadedPath;
                 }
-                state.products.forEach((product) => {
-                    if (product.anaKategori === categoryId && product.altKategori === oldId) product.altKategori = newId;
-                });
                 renderCategories();
-                toast("Hazır", "Alt kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet ve Ürünleri Kaydet seçeneklerini kullanın.", "success");
+                toast("Hazır", "Alt kategori adı güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
                 close();
             } catch (error) {
                 console.error(error);
