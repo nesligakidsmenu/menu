@@ -664,7 +664,7 @@
             return;
         }
 
-        state.categories.forEach((category) => {
+        state.categories.forEach((category, index) => {
             const card = document.createElement("article");
             card.className = "categoryCard";
 
@@ -679,11 +679,22 @@
                 image.alt = `${category.name} görseli`;
                 header.append(image);
             }
+
+            const moveUpButton = createButton("↑", "moveCategoryUp", () => moveCategory(category.id, -1));
+            moveUpButton.disabled = index === 0;
+            moveUpButton.title = "Bir sıra yukarı taşı";
+            moveUpButton.setAttribute("aria-label", `${category.name} kategorisini yukarı taşı`);
+
+            const moveDownButton = createButton("↓", "moveCategoryDown", () => moveCategory(category.id, 1));
+            moveDownButton.disabled = index === state.categories.length - 1;
+            moveDownButton.title = "Bir sıra aşağı taşı";
+            moveDownButton.setAttribute("aria-label", `${category.name} kategorisini aşağı taşı`);
+
             const editCategoryButton = createButton("Düzenle", "editCategory", () => editCategory(category.id));
             editCategoryButton.setAttribute("aria-label", `${category.name} kategorisini düzenle`);
             const deleteCategoryButton = createButton("Sil", "deleteCategory", () => deleteCategory(category.id));
             deleteCategoryButton.setAttribute("aria-label", `${category.name} kategorisini sil`);
-            header.append(title, editCategoryButton, deleteCategoryButton);
+            header.append(title, moveUpButton, moveDownButton, editCategoryButton, deleteCategoryButton);
 
             const subCategoryList = document.createElement("div");
             subCategoryList.className = "subCategoryList";
@@ -712,6 +723,18 @@
             card.append(header, subCategoryList, addSubButton);
             elements.categoryList.append(card);
         });
+    }
+
+    function moveCategory(categoryId, direction) {
+        const index = state.categories.findIndex((category) => category.id === categoryId);
+        const targetIndex = index + direction;
+        if (index < 0 || targetIndex < 0 || targetIndex >= state.categories.length) return;
+
+        [state.categories[index], state.categories[targetIndex]] =
+            [state.categories[targetIndex], state.categories[index]];
+
+        renderCategories();
+        toast("Sıralama değişti", "Yeni sırayı kalıcı yapmak için Kategorileri Kaydet düğmesine basın.", "success");
     }
 
     function editCategory(categoryId) {
@@ -750,23 +773,24 @@
             event.preventDefault();
             const name = String(form.elements.categoryName.value || "").trim();
             if (!name) return;
-            if (state.categories.some((item) =>
-    item.id !== category.id &&
-    item.name.toLocaleLowerCase("tr-TR") === name.toLocaleLowerCase("tr-TR")
-)) {
-    toast("Uyarı", "Bu isimde başka bir kategori var.", "error");
-    return;
-}
+            const newId = slugify(name);
+            if (newId !== category.id && state.categories.some((item) => item.id === newId)) {
+                toast("Uyarı", "Bu isimde başka bir kategori var.", "error"); return;
+            }
             const submit = modal.querySelector(".categoryCreateSubmit");
             submit.disabled = true; submit.textContent = "Kaydediliyor...";
             try {
                 const file = fileInput.files?.[0];
                 if (file) {
-                    const uploaded = await apiUploadImage(file, `kategori-${category.id}`);
+                    const uploaded = await apiUploadImage(file, `kategori-${newId}`);
                     category.image = `assets/images/products/${uploaded}`;
                 }
                 category.name = name;
-                
+                if (newId !== category.id) {
+                    const oldId = category.id;
+                    category.id = newId;
+                    state.products.forEach((product) => { if (product.anaKategori === oldId) product.anaKategori = newId; });
+                }
                 renderCategories(); populateCategoryOptions(category.id); renderProducts();
                 toast("Hazır", "Kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
                 close();
