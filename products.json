@@ -2002,9 +2002,9 @@
     "order": 101,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
-    "isim": "Sucuklu-Kaşarlı Gözleme",
+    "isim": "Sucuklu Kaşarlı Gözleme",
     "fiyat": 250,
-    "resim": "images/sucuklu-kasarli-gozleme.webp",
+    "resim": "sucuklu-kasarli-gozleme.webp",
     "aciklama": "Sucuk ve kaşarlı gözleme.",
     "kalori": 690,
     "icerik": [
@@ -2018,7 +2018,8 @@
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 54,
