@@ -13,6 +13,9 @@ const DIREKT_URUN_KATEGORILERI = [
     "soguk-icecekler"
 ];
 
+// Alt kategori görünen adları categories.json içindeki subCategoryNames alanından gelir.
+const ALT_KATEGORI_ADLARI = {};
+
 const ALT_KATEGORILER = {
 
     "espresso-bazli": {
@@ -128,23 +131,13 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
     if (!alan) return;
 
     const kayitliKategoriler = Array.isArray(kategoriler) ? kategoriler : [];
-    const urunKategorileri = Array.isArray(urunler)
-        ? urunler
-            .map((urun) => String(urun?.anaKategori || "").trim())
-            .filter(Boolean)
-            .map((id) => ({ id, name: kategoriKodunuGuzellestir(id) }))
-        : [];
-
-    // categories.json tek doğruluk kaynağıdır. Ürünlerden türetilen adlar,
-    // kayıtlı kategorilerin Türkçe karakterli adlarının üzerine yazamaz.
+    // categories.json tek doğruluk kaynağıdır. Ürünlerden kategori türetmek,
+    // panelden silinen kategorilerin ana sayfada yeniden belirmesine neden olur.
     const kategoriHaritasi = new Map();
     kayitliKategoriler.forEach((k) => {
         const id = String(k?.id || "").trim();
         const name = String(k?.name || "").trim();
         if (id && name) kategoriHaritasi.set(id, { ...k, id, name });
-    });
-    urunKategorileri.forEach((k) => {
-        if (!kategoriHaritasi.has(k.id)) kategoriHaritasi.set(k.id, k);
     });
 
     const ikonYollari = {
@@ -239,6 +232,17 @@ const urunler = urunleriSirala(await cevap.json()).filter(urun => urun.aktif !==
 
 const kategoriCevap = await fetch("categories.json");
 const kategoriler = await kategoriCevap.json();
+Object.keys(ALT_KATEGORI_ADLARI).forEach((key) => delete ALT_KATEGORI_ADLARI[key]);
+if (Array.isArray(kategoriler)) {
+    kategoriler.forEach((kategori) => {
+        const isimler = kategori?.subCategoryNames;
+        if (isimler && typeof isimler === "object") {
+            Object.entries(isimler).forEach(([kod, ad]) => {
+                if (String(kod).trim() && String(ad).trim()) ALT_KATEGORI_ADLARI[kod] = String(ad).trim();
+            });
+        }
+    });
+}
 dinamikAnaKategorileriGoster(kategoriler, urunler);
 
 document.getElementById("arama") &&
@@ -494,7 +498,7 @@ function altKategoriIcon(kod) {
 }
 
 function altKategoriAdi(kod) {
-    return ALT_KATEGORILER[kod]?.ad || kod;
+    return ALT_KATEGORI_ADLARI[kod] || ALT_KATEGORILER[kod]?.ad || kod;
 }
 
 function normalizeTR(text) {
