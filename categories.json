@@ -10,15 +10,6 @@
     ]
   },
   {
-    "id": "yiyecekler",
-    "name": "Yiyecekler",
-    "subCategories": [
-      "atistirmaliklar",
-      "gunluk-lezzetler",
-      "ilaveler"
-    ]
-  },
-  {
     "id": "tatlilar",
     "name": "Tatlılar",
     "subCategories": [
@@ -28,31 +19,12 @@
     ]
   },
   {
-    "id": "soguk-icecekler",
-    "name": "Soğuk İçecekler",
+    "id": "yiyecekler",
+    "name": "Yiyecekler",
     "subCategories": [
-      "ayran",
-      "mesrubat",
-      "meyve-suyu",
-      "meyveli-soda",
-      "soda",
-      "su"
-    ]
-  },
-  {
-    "id": "caylar",
-    "name": "Çaylar",
-    "subCategories": [
-      "bitki-cayi",
-      "cay",
-      "meyve-cayi"
-    ]
-  },
-  {
-    "id": "sicak-icecekler",
-    "name": "Sıcak İçecekler",
-    "subCategories": [
-      "sicak"
+      "atistirmaliklar",
+      "gunluk-lezzetler",
+      "ilaveler"
     ]
   },
   {
@@ -71,6 +43,34 @@
     "subCategories": [
       "cocuk-icecekleri",
       "cocuk-menuleri"
+    ]
+  },
+  {
+    "id": "soguk-icecekler",
+    "name": "Soğuk İçecekler",
+    "subCategories": [
+      "ayran",
+      "mesrubat",
+      "meyve-suyu",
+      "meyveli-soda",
+      "soda",
+      "su"
+    ]
+  },
+  {
+    "id": "sicak-icecekler",
+    "name": "Sıcak İçecekler",
+    "subCategories": [
+      "sicak"
+    ]
+  },
+  {
+    "id": "caylar",
+    "name": "Çaylar",
+    "subCategories": [
+      "bitki-cayi",
+      "cay",
+      "meyve-cayi"
     ]
   }
 ]
