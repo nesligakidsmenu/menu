@@ -28,11 +28,13 @@
     ]
   },
   {
-    "id": "cocuk",
-    "name": "Çocuklar için",
+    "id": "soguk-special",
+    "name": "Soguk Special İçecekler",
     "subCategories": [
-      "cocuk-icecekleri",
-      "cocuk-menuleri"
+      "frappe",
+      "frozen",
+      "milkshake",
+      "smoothie"
     ]
   },
   {
@@ -55,22 +57,20 @@
     ]
   },
   {
+    "id": "cocuk",
+    "name": "Çocuklar için",
+    "subCategories": [
+      "cocuk-icecekleri",
+      "cocuk-menuleri"
+    ]
+  },
+  {
     "id": "caylar",
     "name": "Çaylar",
     "subCategories": [
       "bitki-cayi",
       "cay",
       "meyve-cayi"
-    ]
-  },
-  {
-    "id": "soguk-special",
-    "name": "Soguk Special İçecekler",
-    "subCategories": [
-      "frappe",
-      "frozen",
-      "milkshake",
-      "smoothie"
     ]
   }
 ]
