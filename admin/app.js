@@ -766,11 +766,7 @@
                     category.image = `assets/images/products/${uploaded}`;
                 }
                 category.name = name;
-                if (newId !== category.id) {
-                    const oldId = category.id;
-                    category.id = newId;
-                    state.products.forEach((product) => { if (product.anaKategori === oldId) product.anaKategori = newId; });
-                }
+                
                 renderCategories(); populateCategoryOptions(category.id); renderProducts();
                 toast("Hazır", "Kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
                 close();
