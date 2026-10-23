@@ -773,8 +773,12 @@
             event.preventDefault();
             const name = String(form.elements.categoryName.value || "").trim();
             if (!name) return;
-            const newId = slugify(name);
-            if (newId !== category.id && state.categories.some((item) => item.id === newId)) {
+            // Düzenleme sırasında kategori kimliği sabit kalır; yalnızca görünen ad değişir.
+            // Aynı ada sahip başka bir kategori varsa yanlışlıkla yinelenmesini önle.
+            if (state.categories.some((item) =>
+                item.id !== category.id &&
+                item.name.toLocaleLowerCase("tr-TR") === name.toLocaleLowerCase("tr-TR")
+            )) {
                 toast("Uyarı", "Bu isimde başka bir kategori var.", "error"); return;
             }
             const submit = modal.querySelector(".categoryCreateSubmit");
@@ -782,15 +786,10 @@
             try {
                 const file = fileInput.files?.[0];
                 if (file) {
-                    const uploaded = await apiUploadImage(file, `kategori-${newId}`);
+                    const uploaded = await apiUploadImage(file, `kategori-${category.id}`);
                     category.image = `assets/images/products/${uploaded}`;
                 }
                 category.name = name;
-                if (newId !== category.id) {
-                    const oldId = category.id;
-                    category.id = newId;
-                    state.products.forEach((product) => { if (product.anaKategori === oldId) product.anaKategori = newId; });
-                }
                 renderCategories(); populateCategoryOptions(category.id); renderProducts();
                 toast("Hazır", "Kategori güncellendi. Kalıcı hale getirmek için Kategorileri Kaydet'e basın.", "success");
                 close();
