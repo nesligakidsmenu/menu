@@ -56,14 +56,6 @@
     ]
   },
   {
-    "id": "cocuklar-icin",
-    "name": "Cocuklar İçin",
-    "subCategories": [
-      "cocuk-icecekleri",
-      "cocuk-menuleri"
-    ]
-  },
-  {
     "id": "soguk-special",
     "name": "Soguk Special",
     "subCategories": [
@@ -71,6 +63,14 @@
       "frozen",
       "milkshake",
       "smoothie"
+    ]
+  },
+  {
+    "id": "cocuk",
+    "name": "Cocuk",
+    "subCategories": [
+      "cocuk-icecekleri",
+      "cocuk-menuleri"
     ]
   }
 ]
