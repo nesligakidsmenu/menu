@@ -2779,3 +2779,22 @@ html body .premiumCard {
     background: linear-gradient(180deg, #242526 0%, #202122 100%) !important;
     border-color: rgba(212, 175, 55, 0.40) !important;
 }
+
+/* Kart yüksekliğini azalt: kalori ve vejetaryen yan yana */
+.premiumRight .rozetler {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.premiumRight .rozetler .badge:first-child {
+    flex: 0 0 auto;
+}
+
+/* En Çok Tercih Edilen rozeti tek satırda üstte kalsın */
+.premiumRight .rozetler .badge:first-child:not(:only-child) {
+    /* Diğer rozetlerle aynı satıra zorlanmasını engelle */
+    margin-right: 100%;
+}
+
