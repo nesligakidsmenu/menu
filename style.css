@@ -2445,3 +2445,31 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         gap: 12px !important;
     }
 }
+
+
+/* Mobil ana sayfa: bannerları tek sütunda göster */
+@media screen and (max-width: 600px) {
+  #anaKategoriListesi.categories {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 16px !important;
+  }
+
+  #anaKategoriListesi .category {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+
+  #anaKategoriListesi .category img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
+    display: block;
+  }
+}
+
