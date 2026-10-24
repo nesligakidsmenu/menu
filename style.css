@@ -2472,3 +2472,41 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     display: block;
   }
 }
+
+/* FİYAT ETİKETİ — MOBİL TAŞMA DÜZELTMESİ */
+.premiumTop {
+    min-width: 0;
+    gap: 12px;
+}
+
+.premiumTop .urunBaslik {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.premiumTop .urunBaslik h3 {
+    overflow-wrap: break-word;
+}
+
+.premiumTop .fiyat {
+    position: static;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    margin: 0;
+    max-width: 45%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .premiumTop {
+        gap: 10px;
+    }
+
+    .premiumTop .fiyat {
+        max-width: 46%;
+        padding: 10px 12px;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
