@@ -2245,3 +2245,60 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         margin-bottom: 14px;
     }
 }
+
+/* CATEGORY BANNERS — yalnızca yeni banner görselleri bulunan kategori kartları */
+.category.category-banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #17120d;
+    border: 1px solid rgba(212,175,55,.65);
+    box-shadow: 0 3px 14px rgba(0,0,0,.18);
+}
+.category.category-banner .icon {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    background: transparent;
+    display: block;
+}
+.category.category-banner .icon img,
+.category.category-banner img.altKategoriIcon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+.category.category-banner > span,
+.category.category-banner .categoryInfo {
+    display: none !important;
+}
+.category.category-banner:hover {
+    transform: translateY(-2px);
+    border-color: #D4AF37;
+    box-shadow: 0 8px 22px rgba(212,175,55,.18);
+}
+@media (max-width: 768px) {
+    .categories > .category.category-banner,
+    .premium-list > .category.category-banner {
+        aspect-ratio: 3 / 1;
+        min-height: 0;
+        padding: 0;
+    }
+}
+

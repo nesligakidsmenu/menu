@@ -20,22 +20,22 @@ const ALT_KATEGORILER = {
 
     "espresso-bazli": {
         ad: "Espresso Bazlı Kahveler",
-        ikon: "assets/icons-alt/espresso.webp"
+        ikon: "assets/subcategory-banners/espresso-bazli.png"
     },
 
     "sutlu": {
         ad: "Sütlü Kahveler",
-        ikon: "assets/icons-alt/sutlu.webp"
+        ikon: "assets/subcategory-banners/sutlu.png"
     },
 
     "soguk": {
         ad: "Soğuk Kahveler",
-        ikon: "assets/icons-alt/soguk.webp"
+        ikon: "assets/subcategory-banners/soguk.png"
     },
 
     "geleneksel": {
         ad: "Geleneksel Kahveler",
-        ikon: "assets/icons-alt/geleneksel.webp"
+        ikon: "assets/subcategory-banners/geleneksel.png"
     },
 
     "waffle": {
@@ -50,22 +50,22 @@ const ALT_KATEGORILER = {
 
     "milkshake": {
         ad: "Milkshake",
-        ikon: "assets/icons-alt/milkshake.webp"
+        ikon: "assets/subcategory-banners/milkshake.png"
     },
 
     "frappe": {
         ad: "Frappe",
-        ikon: "assets/icons-alt/frappe.webp"
+        ikon: "assets/subcategory-banners/frappe.png"
     },
 
     "smoothie": {
         ad: "Smoothie",
-        ikon: "assets/icons-alt/smoothie.webp"
+        ikon: "assets/subcategory-banners/smoothie.png"
     },
 
     "frozen": {
         ad: "Frozen",
-        ikon: "assets/icons-alt/frozen.webp"
+        ikon: "assets/subcategory-banners/frozen.png"
     },
 
     "cay": {
@@ -80,27 +80,27 @@ const ALT_KATEGORILER = {
 
     "gunluk-lezzetler": {
         ad: "Günlük Lezzetler",
-        ikon: "assets/icons-alt/gunluk-lezzetler.webp"
+        ikon: "assets/subcategory-banners/gunluk-lezzetler.png"
     },
 
     "atistirmaliklar": {
         ad: "Atıştırmalıklar",
-        ikon: "assets/icons-alt/atistirmaliklar.webp"
+        ikon: "assets/subcategory-banners/atistirmaliklar.png"
     },
 
     "ilaveler": {
         ad: "İlaveler",
-        ikon: "assets/icons-alt/ilaveler.webp"
+        ikon: "assets/subcategory-banners/ilaveler.png"
     },
 
     "cocuk-menuleri": {
     ad: "Çocuk Menüleri",
-    ikon: "assets/icons-alt/cocuk-menuleri.webp"
+    ikon: "assets/subcategory-banners/cocuk-menuleri.png"
 },
 
 "cocuk-icecekleri": {
     ad: "Çocuk İçecekleri",
-    ikon: "assets/icons-alt/cocuk-icecekleri.webp"
+    ikon: "assets/subcategory-banners/cocuk-icecekleri.png"
 }
 
 };
@@ -141,14 +141,14 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
     });
 
     const ikonYollari = {
-        "kahveler": "./assets/icons/kahveler.webp",
-        "yiyecekler": "./assets/icons/yiyecekler.webp",
-        "tatlilar": "./assets/icons/tatlilar.webp",
-        "soguk-icecekler": "./assets/icons/soguk-icecekler.webp",
-        "caylar": "./assets/icons/caylar.webp",
-        "sicak-icecekler": "./assets/icons/sicak-icecekler.webp",
-        "soguk-special": "./assets/icons/soguk-special-icecekler.webp",
-        "cocuk": "./assets/icons/cocuk-menuleri.webp"
+        "kahveler": "./assets/category-banners/kahveler.png",
+        "yiyecekler": "./assets/category-banners/yiyecekler.png",
+        "tatlilar": "./assets/category-banners/tatlilar.png",
+        "soguk-icecekler": "./assets/category-banners/soguk-icecekler.png",
+        "caylar": "./assets/category-banners/caylar.png",
+        "sicak-icecekler": "./assets/category-banners/sicak-icecekler.png",
+        "soguk-special": "./assets/category-banners/soguk-special-icecekler.png",
+        "cocuk": "./assets/category-banners/cocuklar-icin.png"
     };
 
     const mevcutKartlar = new Map(
@@ -196,8 +196,9 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
             ikonAlani.prepend(resim);
         }
 
-        const gorsel = String(bilgi.image || bilgi.ikon || ikonYollari[id] || "./assets/images/logo/gorsel-yok.png").trim();
+        const gorsel = String(ikonYollari[id] || bilgi.image || bilgi.ikon || "./assets/images/logo/gorsel-yok.png").trim();
         const yol = `./${gorsel.replace(/^\.\//, "")}`;
+        kart.classList.toggle("category-banner", gorsel.includes("assets/category-banners/"));
         resim.alt = ad;
         resim.onerror = function () {
             this.onerror = null;
@@ -402,7 +403,7 @@ if (!altKategori && !DIREKT_URUN_KATEGORILERI.includes(kategori)){
             ).length;
 
             return `
-                <a class="category" href="kategori.html?kat=${kategori}&alt=${kod}">
+                <a class="category${ALT_KATEGORILER[kod]?.ikon?.includes("assets/subcategory-banners/") ? " category-banner" : ""}" href="kategori.html?kat=${kategori}&alt=${kod}">
 
                     <div class="icon">
                         ${(() => {
