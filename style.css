@@ -2798,3 +2798,21 @@ html body .premiumCard {
     margin-right: 100%;
 }
 
+/* Kalori ve Vejetaryen rozetleri daima yan yana */
+.premiumRight .rozetler {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    column-gap: 6px !important;
+    row-gap: 6px !important;
+    align-items: center !important;
+}
+
+.premiumRight .rozetler .badge {
+    flex: 0 0 auto !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+}
+
+
