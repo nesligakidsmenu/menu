@@ -316,6 +316,7 @@ console.log("kartOlustur çalıştı", u.isim);
 </div>
 
        
+
 <div class="rozetler">
 
     ${u.onerilen
@@ -339,6 +340,7 @@ console.log("kartOlustur çalıştı", u.isim);
         : ""}
 
 </div>
+
 
         <div class="urunAccordion">
 
