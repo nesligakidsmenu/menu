@@ -286,13 +286,15 @@ console.log("kartOlustur çalıştı", u.isim);
    <img
     src="${urunResmi(u.isim)}"
     alt="${u.isim}"
-    onerror="console.log('RESİM YOLU:', this.src); this.src='./assets/images/products/default.webp';"
+    onerror="this.src='./assets/images/products/default.webp';"
     class="urunResmi"
     loading="lazy"
     decoding="async"
     onclick="fotoAc(this.src,this.alt)"
-    onload="this.parentElement.classList.add('yuklendi')"
-    onerror="this.src='./assets/images/products/default.webp';">
+    onload="this.parentElement.classList.add('yuklendi')">
+    <div class="premiumPriceRow">
+        <div class="fiyat">${u.fiyat} ₺</div>
+    </div>
 </div>
 
 <div class="premiumRight">
@@ -336,12 +338,6 @@ console.log("kartOlustur çalıştı", u.isim);
                 : ""}
 
         </div>
-        <div class="premiumPriceRow">
-    <div class="fiyat">
-        ${u.fiyat} ₺
-    </div>
-</div>
-
         <div class="urunAccordion">
 
             <button class="accordionBtn">

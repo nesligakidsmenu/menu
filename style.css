@@ -2622,3 +2622,99 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         padding: 9px 20px !important;
     }
 }
+
+/* ===== SON DÜZENLEME: fiyat fotoğrafın altında ===== */
+.premiumCard {
+    border: 1.5px solid rgba(212, 175, 55, 0.68) !important;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+}
+
+.premiumLeft {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    width: 104px !important;
+    flex: 0 0 104px !important;
+    overflow: visible !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+.premiumLeft img {
+    width: 104px !important;
+    height: 104px !important;
+    flex: 0 0 auto !important;
+    border: 2px solid rgba(212, 175, 55,  0.38) !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
+}
+
+.premiumPriceRow {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.premiumPriceRow .fiyat {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 42px;
+    padding: 8px 5px !important;
+    margin: 0 !important;
+    border: 1px solid #E7C25A !important;
+    border-radius: 999px !important;
+    background: linear-gradient(135deg, #D4AF37 0%, #F8E78B 52%, #D4AF37 100%) !important;
+    color: #111111 !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.24) !important;
+    box-sizing: border-box !important;
+}
+
+@media screen and (max-width: 768px) {
+    .premiumCard {
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+
+    .premiumLeft {
+        width: 80px !important;
+        flex-basis: 80px !important;
+        gap: 8px !important;
+    }
+
+    .premiumLeft img {
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 15px !important;
+    }
+
+    .premiumPriceRow .fiyat {
+        min-height: 36px;
+        padding: 7px 3px !important;
+        font-size: 14px !important;
+    }
+
+    .premiumRight {
+        min-width: 0 !important;
+    }
+
+    .premiumTop {
+        display: block !important;
+        width: 100% !important;
+    }
+}
