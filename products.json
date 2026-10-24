@@ -2090,7 +2090,7 @@
     "order": 105,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
-    "isim": "Mini Tost Menü",
+    "isim": "Mini Tost",
     "fiyat": 220,
     "resim": "images/mini-tost-menu.webp",
     "aciklama": "Çocuklara özel kaşarlı tost menüsü.",
@@ -2105,7 +2105,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 58,
