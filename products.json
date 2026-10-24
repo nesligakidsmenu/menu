@@ -2388,10 +2388,11 @@
   },
   {
     "id": 76,
+    "order": 125,
     "anaKategori": "caylar",
     "altKategori": "cay",
     "isim": "Siyah Çay (Bardak)",
-    "fiyat": 35,
+    "fiyat": 1000,
     "resim": "images/siyah-cay-bardak.webp",
     "aciklama": "Demleme siyah çay.",
     "kalori": 2,
@@ -2402,7 +2403,7 @@
     "kafein": true,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 125
+    "aktif": true
   },
   {
     "id": 77,
