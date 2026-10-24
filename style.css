@@ -2473,3 +2473,37 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
   }
 }
 
+
+/* Yalnızca mobil ürün kartlarında fiyat etiketinin taşmasını düzelt */
+@media screen and (max-width: 768px) {
+  .premiumRight {
+    min-width: 0;
+    flex: 1 1 0;
+  }
+
+  .premiumTop {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+
+  .premiumTop h3,
+  .premiumTop .urunBaslik {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .premiumTop .fiyat {
+    position: static;
+    flex: 0 0 auto;
+    max-width: 46%;
+    box-sizing: border-box;
+    margin-right: 4px;
+    padding: 10px 14px;
+    font-size: 17px;
+    white-space: nowrap;
+  }
+}
+
+
