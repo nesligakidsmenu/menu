@@ -2510,3 +2510,38 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         letter-spacing: 0;
     }
 }
+
+
+/* MOBİL FİYAT ETİKETİ — SON DÜZELTME */
+@media screen and (max-width: 768px) {
+    .premiumTop {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+        column-gap: 12px;
+    }
+
+    .premiumTop .urunBaslik {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .premiumTop .urunBaslik h3 {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .premiumTop .fiyat {
+        position: static !important;
+        justify-self: end;
+        align-self: start;
+        width: max-content;
+        max-width: 100%;
+        margin: 0 !important;
+        padding: 10px 14px;
+        font-size: 16px;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+}
+
