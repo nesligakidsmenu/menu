@@ -2779,3 +2779,22 @@ html body .premiumCard {
     background: linear-gradient(180deg, #242526 0%, #202122 100%) !important;
     border-color: rgba(212, 175, 55, 0.40) !important;
 }
+
+/* ROZET DÜZENİ: TERCIH EDİLEN ÜSTTE */
+.premiumRight .rozetler {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    gap: 7px !important;
+}
+
+/* Tercih Edilen rozeti tam satırda */
+.premiumRight .rozetler .badge:first-child {
+    flex-basis: 100%;
+    width: fit-content;
+}
+
+/* Kalori ve Vejetaryen rozetleri yan yana */
+.premiumRight .rozetler .badge:not(:first-child) {
+    flex: 0 0 auto;
+}
