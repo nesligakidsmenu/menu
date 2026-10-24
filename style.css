@@ -2718,3 +2718,53 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         width: 100% !important;
     }
 }
+/* Fiyatı fotoğrafın altında göster */
+.premiumLeft {
+    width: 104px !important;
+    flex: 0 0 104px !important;
+    overflow: visible !important;
+    background: transparent !important;
+    border-radius: 18px;
+}
+
+.premiumPriceRow {
+    display: flex !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    justify-content: stretch !important;
+}
+
+.premiumPriceRow .fiyat {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    padding: 10px 4px !important;
+    background: linear-gradient(135deg, #D4AF37, #F8E78B) !important;
+    color: #111 !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 999px !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, .25) !important;
+}
+
+@media (max-width: 768px) {
+    .premiumLeft {
+        width: 92px !important;
+        flex: 0 0 92px !important;
+    }
+
+    .premiumLeft img {
+        width: 92px !important;
+        height: 92px !important;
+    }
+
+    .premiumPriceRow .fiyat {
+        font-size: 15px !important;
+        padding: 9px 2px !important;
+    }
+}
