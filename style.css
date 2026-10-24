@@ -2234,3 +2234,14 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
   .categories > .category .categoryTitle { font-size:16px; }
   .bottom-nav a { font-size:10px; }
 }
+/* Mobil ana sayfa: arama ile menü arasındaki boşluğu azalt */
+@media (max-width: 768px) {
+    body:has(#anaKategoriListesi) .searchBox {
+        padding-bottom: 4px;
+    }
+
+    body:has(#anaKategoriListesi) .title {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+}
