@@ -17,26 +17,25 @@ const DIREKT_URUN_KATEGORILERI = [
 const ALT_KATEGORI_ADLARI = {};
 
 const ALT_KATEGORILER = {
+"espresso-bazli": {
+    ad: "Espresso Bazlı Kahveler",
+    ikon: "assets/subcategory-banners/espresso-bazli-kahveler.webp"
+},
 
-    "espresso-bazli": {
-        ad: "Espresso Bazlı Kahveler",
-        ikon: "assets/subcategory-banners/espresso-bazli.png"
-    },
+"sutlu": {
+    ad: "Sütlü Kahveler",
+    ikon: "assets/subcategory-banners/sutlu-kahveler.webp"
+},
 
-    "sutlu": {
-        ad: "Sütlü Kahveler",
-        ikon: "assets/subcategory-banners/sutlu.png"
-    },
+"soguk": {
+    ad: "Soğuk Kahveler",
+    ikon: "assets/subcategory-banners/soguk-kahveler.webp"
+},
 
-    "soguk": {
-        ad: "Soğuk Kahveler",
-        ikon: "assets/subcategory-banners/soguk.png"
-    },
-
-    "geleneksel": {
-        ad: "Geleneksel Kahveler",
-        ikon: "assets/subcategory-banners/geleneksel.png"
-    },
+"geleneksel": {
+    ad: "Geleneksel Kahveler",
+    ikon: "assets/subcategory-banners/geleneksel-kahveler.webp"
+},
 
     "waffle": {
         ad: "Waffle",
