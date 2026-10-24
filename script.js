@@ -315,29 +315,31 @@ console.log("kartOlustur çalıştı", u.isim);
 
 </div>
 
-        <div class="rozetler">
+       
+<div class="rozetler">
 
-            ${u.onerilen
-                ? `<span class="badge">⭐ En Çok Tercih Edilen</span>`
-                : ""}
+    ${u.onerilen
+        ? `<span class="badge onerilenRozet">⭐ En Çok Tercih Edilen</span>`
+        : ""}
 
-            <span class="badge">
-                🔥 ${u.kalori} kcal
-            </span>
+    <div class="temelRozetler">
+        <span class="badge">🔥 ${u.kalori} kcal</span>
 
-            ${u.vejetaryen
-                ? `<span class="badge">🌱 Vejetaryen</span>`
-                : ""}
+        ${u.vejetaryen
+            ? `<span class="badge">🌱 Vejetaryen</span>`
+            : ""}
+    </div>
 
-            ${u.gluten !== undefined
-                ? `<span class="badge">${u.gluten ? "🌾 Gluten" : "🌾 Glutensiz"}</span>`
-                : ""}
+    ${u.gluten !== undefined
+        ? `<span class="badge">${u.gluten ? "🌾 Gluten" : "🌾 Glutensiz"}</span>`
+        : ""}
 
-            ${u.laktoz !== undefined
-                ? `<span class="badge">${u.laktoz ? "🥛 Laktoz" : "🥛 Laktozsuz"}</span>`
-                : ""}
+    ${u.laktoz !== undefined
+        ? `<span class="badge">${u.laktoz ? "🥛 Laktoz" : "🥛 Laktozsuz"}</span>`
+        : ""}
 
-        </div>
+</div>
+
         <div class="urunAccordion">
 
             <button class="accordionBtn">
