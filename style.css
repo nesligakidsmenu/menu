@@ -2352,3 +2352,87 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     transform: none;
     box-shadow: none !important;
 }
+
+/* NESLIGA KIDS — ANA / ALT KATEGORİ BANNER GRID EŞİTLEME
+   Yalnızca kategori bannerlarının yerleşimini etkiler. */
+#anaKategoriListesi.categories,
+#anaKategoriListesi {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: start;
+}
+
+#anaKategoriListesi > a.category.category-banner,
+#kategoriListesi > a.category.subcategory-banner {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: hidden;
+    line-height: 0;
+    transform: none;
+}
+
+#anaKategoriListesi .categoryBannerImage,
+#kategoriListesi .subcategoryBannerImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    outline: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+#kategoriListesi {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: start;
+}
+
+#anaKategoriListesi > a.category.category-banner:hover,
+#kategoriListesi > a.category.subcategory-banner:hover {
+    transform: none;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+    #anaKategoriListesi,
+    #kategoriListesi {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #anaKategoriListesi,
+    #kategoriListesi {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px 14px 18px;
+    }
+}
