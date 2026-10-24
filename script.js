@@ -309,9 +309,7 @@ console.log("kartOlustur çalıştı", u.isim);
 
     </div>
 
-    <div class="fiyat">
-        ${u.fiyat} ₺
-    </div>
+
 
 </div>
 
@@ -338,6 +336,11 @@ console.log("kartOlustur çalıştı", u.isim);
                 : ""}
 
         </div>
+        <div class="premiumPriceRow">
+    <div class="fiyat">
+        ${u.fiyat} ₺
+    </div>
+</div>
 
         <div class="urunAccordion">
 
