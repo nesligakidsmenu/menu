@@ -2048,12 +2048,13 @@
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Tavuk",
     "fiyat": 240,
-    "resim": "images/mini-tavuk-menu.webp",
+    "resim": "mini-tavuk.webp",
     "aciklama": "Çocuklara özel çıtır tavuk.",
     "kalori": 540,
     "icerik": [
       "Çıtır Tavuk",
-      "Patates"
+      "Patates",
+      "Pilav"
     ],
     "alerjen": [
       "Gluten"
