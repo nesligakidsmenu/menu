@@ -2780,61 +2780,17 @@ html body .premiumCard {
     border-color: rgba(212, 175, 55, 0.40) !important;
 }
 
-/* Kart yüksekliğini azalt: kalori ve vejetaryen yan yana */
-.premiumRight .rozetler {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    gap: 6px !important;
-}
 
-.premiumRight .rozetler .badge:first-child {
-    flex: 0 0 auto;
-}
+/* ROZET DÜZENİ — MASAÜSTÜNÜ KORU, MOBİLİ DÜZELT */
 
-/* En Çok Tercih Edilen rozeti tek satırda üstte kalsın */
-.premiumRight .rozetler .badge:first-child:not(:only-child) {
-    /* Diğer rozetlerle aynı satıra zorlanmasını engelle */
-    margin-right: 100%;
-}
-
-/* ROZETLER: KART YÜKSEKLİĞİNİ AZALT */
-.premiumRight .rozetler {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 6px !important;
-}
-
-.premiumRight .rozetler .onerilenRozet {
-    align-self: flex-start !important;
-    white-space: nowrap !important;
-}
-
-.premiumRight .rozetler .temelRozetler {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    gap: 6px !important;
-    width: max-content !important;
-    max-width: 100% !important;
-}
-
-.premiumRight .rozetler .temelRozetler .badge {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-    width: auto !important;
-    max-width: none !important;
-}
-
-/* MASAÜSTÜ: ÖNCEKİ ROZET DÜZENİNİ KORU */
+/* Masaüstü: mevcut doğal rozet akışı */
 @media (min-width: 769px) {
     .premiumRight .rozetler {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
         align-items: center !important;
+        gap: 10px !important;
     }
 
     .premiumRight .rozetler .temelRozetler {
@@ -2842,7 +2798,7 @@ html body .premiumCard {
     }
 }
 
-/* MOBİL: KALORİ VE VEJETARYEN YAN YANA */
+/* Mobil: önerilen üstte, kalori ve vejetaryen yan yana */
 @media (max-width: 768px) {
     .premiumRight .rozetler {
         display: flex !important;
@@ -2851,24 +2807,32 @@ html body .premiumCard {
         gap: 6px !important;
     }
 
+    .premiumRight .rozetler .onerilenRozet {
+        align-self: flex-start !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
     .premiumRight .rozetler .temelRozetler {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
         align-items: center !important;
         gap: 5px !important;
-        width: 100% !important;
+        width: auto !important;
         max-width: 100% !important;
+        min-width: 0 !important;
     }
 
     .premiumRight .rozetler .temelRozetler .badge {
-        flex: 0 0 auto !important;
-        white-space: nowrap !important;
+        display: inline-flex !important;
+        flex: 0 1 auto !important;
         width: auto !important;
-        max-width: none !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding: 5px 6px !important;
         font-size: 11px !important;
-        padding: 4px 6px !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
     }
 }
-
-
