@@ -2071,12 +2071,13 @@
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Köfte",
     "fiyat": 270,
-    "resim": "images/mini-kofte-menu.webp",
+    "resim": "mini-kofte.webp",
     "aciklama": "Çocuklara özel köfte menüsü.",
     "kalori": 610,
     "icerik": [
       "Köfte",
-      "Patates"
+      "Patates",
+      "Pilav"
     ],
     "alerjen": [
       "Gluten"
