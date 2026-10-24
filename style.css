@@ -2769,18 +2769,6 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     }
 }
 
-/* NESLIGA KIDS — MAT ANTRASİT PREMIUM ARKA PLAN */
-html body {
-    background-color: #171819 !important;
-    background-image: none !important;
-}
-
-html body .premiumCard {
-    background: linear-gradient(180deg, #242526 0%, #202122 100%) !important;
-    border-color: rgba(212, 175, 55, 0.40) !important;
-}
-
-
 /* ROZET DÜZENİ — MASAÜSTÜNÜ KORU, MOBİLİ DÜZELT */
 
 /* Masaüstü: mevcut doğal rozet akışı */
