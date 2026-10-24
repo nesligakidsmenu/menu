@@ -2798,3 +2798,34 @@ html body .premiumCard {
     margin-right: 100%;
 }
 
+/* ROZETLER: KART YÜKSEKLİĞİNİ AZALT */
+.premiumRight .rozetler {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+}
+
+.premiumRight .rozetler .onerilenRozet {
+    align-self: flex-start !important;
+    white-space: nowrap !important;
+}
+
+.premiumRight .rozetler .temelRozetler {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+    width: max-content !important;
+    max-width: 100% !important;
+}
+
+.premiumRight .rozetler .temelRozetler .badge {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+
