@@ -2246,59 +2246,109 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     }
 }
 
-/* CATEGORY BANNERS — yalnızca yeni banner görselleri bulunan kategori kartları */
-.category.category-banner {
-    position: relative;
+
+/* NESLIGA KIDS — CATEGORY BANNERS (WebP assets) */
+#anaKategoriListesi > a.category.category-banner {
+    display:block;
+    min-width:0;
+    min-height:0;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    border:0;
+    border-radius:16px;
+    background:transparent;
+    box-shadow:none;
+    line-height:0;
+    transform:none;
+}
+#anaKategoriListesi > a.category.category-banner:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+#anaKategoriListesi .categoryBannerImage {
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio: 3 / 1;
+    object-fit:contain;
+    border:0;
+    border-radius:16px;
+    margin:0;
+    padding:0;
+}
+#kategoriListesi > a.category.subcategory-banner {
+    display:block;
+    min-width:0;
+    min-height:0;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    border:0;
+    border-radius:16px;
+    background:transparent;
+    box-shadow:none;
+    line-height:0;
+    transform:none;
+}
+#kategoriListesi > a.category.subcategory-banner:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+#kategoriListesi .subcategoryBannerImage {
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:3 / 1;
+    object-fit:contain;
+    border:0;
+    border-radius:16px;
+    margin:0;
+    padding:0;
+}
+@media (max-width:768px) {
+    #anaKategoriListesi > a.category.category-banner,
+    #kategoriListesi > a.category.subcategory-banner { width:100%; }
+    #anaKategoriListesi .categoryBannerImage,
+    #kategoriListesi .subcategoryBannerImage { width:100%; aspect-ratio:3 / 1; }
+}
+
+
+/* NESLIGA KIDS — banner frame cleanup v2 */
+#anaKategoriListesi > a.category.category-banner,
+#kategoriListesi > a.category.subcategory-banner {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: hidden;
+}
+#anaKategoriListesi > a.category.category-banner::before,
+#anaKategoriListesi > a.category.category-banner::after,
+#kategoriListesi > a.category.subcategory-banner::before,
+#kategoriListesi > a.category.subcategory-banner::after {
+    content: none !important;
+    display: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+#anaKategoriListesi .categoryBannerImage,
+#kategoriListesi .subcategoryBannerImage {
     display: block;
     width: 100%;
     aspect-ratio: 3 / 1;
-    min-height: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 16px;
-    background: #17120d;
-    border: 1px solid rgba(212,175,55,.65);
-    box-shadow: 0 3px 14px rgba(0,0,0,.18);
-}
-.category.category-banner .icon {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: inherit;
-    background: transparent;
-    display: block;
-}
-.category.category-banner .icon img,
-.category.category-banner img.altKategoriIcon {
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    max-height: none;
+    height: auto;
     object-fit: cover;
     object-position: center;
-    border-radius: inherit;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0;
+    padding: 0;
 }
-.category.category-banner > span,
-.category.category-banner .categoryInfo {
-    display: none !important;
+#anaKategoriListesi > a.category.category-banner:hover,
+#kategoriListesi > a.category.subcategory-banner:hover {
+    transform: none;
+    box-shadow: none !important;
 }
-.category.category-banner:hover {
-    transform: translateY(-2px);
-    border-color: #D4AF37;
-    box-shadow: 0 8px 22px rgba(212,175,55,.18);
-}
-@media (max-width: 768px) {
-    .categories > .category.category-banner,
-    .premium-list > .category.category-banner {
-        aspect-ratio: 3 / 1;
-        min-height: 0;
-        padding: 0;
-    }
-}
-
