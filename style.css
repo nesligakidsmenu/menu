@@ -2924,3 +2924,49 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
         min-width: 0 !important;
     }
 }
+
+/* NESLIGA KIDS — KATEGORİ SAYFASI KARTLARINI EKRANA YAY */
+@media screen and (max-width: 768px) {
+    body:has(#kategoriListesi) {
+        overflow-x: hidden !important;
+    }
+
+    body:has(#kategoriListesi) .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        box-sizing: border-box !important;
+    }
+
+    body:has(#kategoriListesi) #kategoriListesi {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        box-sizing: border-box !important;
+    }
+
+    body:has(#kategoriListesi) #kategoriListesi .urun-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    body:has(#kategoriListesi) #kategoriListesi .premiumCard {
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
