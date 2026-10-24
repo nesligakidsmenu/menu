@@ -2862,26 +2862,40 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
 }
 
 
-/* NESLIGA KIDS — MOBİL KATEGORİ KARTLARI */
+/* NESLIGA KIDS — MOBİL KATEGORİ ÜRÜN KARTLARI */
 @media screen and (max-width: 768px) {
 
-    /* Ürün listesini ekran genişliğine yay */
+    /* Kategori sayfasında dış kapsayıcı kartların genişlemesini sınırlamasın */
+    body:has(#kategoriListesi) .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Listeyi ebeveynin tam kullanılabilir genişliğine al.
+       100vw + left/translate kullanılmıyor; bu kombinasyon listeyi
+       tekrar ortalayıp dar görünmesine neden olabiliyordu. */
     #kategoriListesi {
-        width: 100vw !important;
-        max-width: 100vw !important;
-        position: relative !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        padding: 0 3px 18px !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        padding: 0 !important;
         margin: 0 !important;
         box-sizing: border-box !important;
     }
 
-    /* Kartlar mevcut listenin tamamını kullansın */
     #kategoriListesi .urun-grid {
         display: flex !important;
         flex-direction: column !important;
         width: 100% !important;
+        max-width: none !important;
         gap: 14px !important;
         padding: 0 !important;
         margin: 0 !important;
@@ -2889,13 +2903,14 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     }
 
     #kategoriListesi .premiumCard {
+        display: flex !important;
         width: 100% !important;
         max-width: none !important;
+        min-width: 0 !important;
         margin: 0 !important;
         box-sizing: border-box !important;
     }
 
-    /* İçerik daralmasın, açıklama daha az satıra bölünsün */
     #kategoriListesi .premiumRight {
         flex: 1 1 0 !important;
         min-width: 0 !important;
@@ -2908,7 +2923,4 @@ html, body { min-height:100%; background-color:var(--bg, #0d0d0d); }
     #kategoriListesi .urunBaslik {
         min-width: 0 !important;
     }
-
 }
-
-
