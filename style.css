@@ -2836,3 +2836,25 @@ html body .premiumCard {
         box-sizing: border-box !important;
     }
 }
+
+/* MOBİL ROZETLER — VEJETARYEN ROZETİNİ GÖRÜNÜR TUT */
+@media (max-width: 768px) {
+    .premiumRight .rozetler .temelRozetler {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow: visible !important;
+        gap: 5px !important;
+    }
+
+    .premiumRight .rozetler .temelRozetler .badge {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
+        padding: 5px 6px !important;
+        font-size: 11px !important;
+    }
+}
