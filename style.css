@@ -2828,4 +2828,47 @@ html body .premiumCard {
     max-width: none !important;
 }
 
+/* MASAÜSTÜ: ÖNCEKİ ROZET DÜZENİNİ KORU */
+@media (min-width: 769px) {
+    .premiumRight .rozetler {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+
+    .premiumRight .rozetler .temelRozetler {
+        display: contents !important;
+    }
+}
+
+/* MOBİL: KALORİ VE VEJETARYEN YAN YANA */
+@media (max-width: 768px) {
+    .premiumRight .rozetler {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+    }
+
+    .premiumRight .rozetler .temelRozetler {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 5px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .premiumRight .rozetler .temelRozetler .badge {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+        width: auto !important;
+        max-width: none !important;
+        font-size: 11px !important;
+        padding: 4px 6px !important;
+    }
+}
+
 
