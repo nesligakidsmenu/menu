@@ -49,22 +49,22 @@ const ALT_KATEGORILER = {
 
     "milkshake": {
         ad: "Milkshake",
-        ikon: "assets/subcategory-banners/milkshake.png"
+        ikon: "assets/subcategory-banners/milkshake.webp"
     },
 
     "frappe": {
         ad: "Frappe",
-        ikon: "assets/subcategory-banners/frappe.png"
+        ikon: "assets/subcategory-banners/frappe.webp"
     },
 
     "smoothie": {
         ad: "Smoothie",
-        ikon: "assets/subcategory-banners/smoothie.png"
+        ikon: "assets/subcategory-banners/smoothie.webp"
     },
 
     "frozen": {
         ad: "Frozen",
-        ikon: "assets/subcategory-banners/frozen.png"
+        ikon: "assets/subcategory-banners/frozen.webp"
     },
 
     "cay": {
@@ -79,27 +79,27 @@ const ALT_KATEGORILER = {
 
     "gunluk-lezzetler": {
         ad: "Günlük Lezzetler",
-        ikon: "assets/subcategory-banners/gunluk-lezzetler.png"
+        ikon: "assets/subcategory-banners/gunluk-lezzetler.webp"
     },
 
     "atistirmaliklar": {
         ad: "Atıştırmalıklar",
-        ikon: "assets/subcategory-banners/atistirmaliklar.png"
+        ikon: "assets/subcategory-banners/atistirmaliklar.webp"
     },
 
     "ilaveler": {
         ad: "İlaveler",
-        ikon: "assets/subcategory-banners/ilaveler.png"
+        ikon: "assets/subcategory-banners/ilaveler.webp"
     },
 
     "cocuk-menuleri": {
     ad: "Çocuk Menüleri",
-    ikon: "assets/subcategory-banners/cocuk-menuleri.png"
+    ikon: "assets/subcategory-banners/cocuk-menuleri.webp"
 },
 
 "cocuk-icecekleri": {
     ad: "Çocuk İçecekleri",
-    ikon: "assets/subcategory-banners/cocuk-icecekleri.png"
+    ikon: "assets/subcategory-banners/cocuk-icecekleri.webp"
 }
 
 };
@@ -130,8 +130,6 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
     if (!alan) return;
 
     const kayitliKategoriler = Array.isArray(kategoriler) ? kategoriler : [];
-    // categories.json tek doğruluk kaynağıdır. Ürünlerden kategori türetmek,
-    // panelden silinen kategorilerin ana sayfada yeniden belirmesine neden olur.
     const kategoriHaritasi = new Map();
     kayitliKategoriler.forEach((k) => {
         const id = String(k?.id || "").trim();
@@ -140,14 +138,14 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
     });
 
     const ikonYollari = {
-        "kahveler": "./assets/category-banners/kahveler.png",
-        "yiyecekler": "./assets/category-banners/yiyecekler.png",
-        "tatlilar": "./assets/category-banners/tatlilar.png",
-        "soguk-icecekler": "./assets/category-banners/soguk-icecekler.png",
-        "caylar": "./assets/category-banners/caylar.png",
-        "sicak-icecekler": "./assets/category-banners/sicak-icecekler.png",
-        "soguk-special": "./assets/category-banners/soguk-special-icecekler.png",
-        "cocuk": "./assets/category-banners/cocuklar-icin.png"
+        "kahveler": "./assets/category-banners/kahveler.webp",
+        "yiyecekler": "./assets/category-banners/yiyecekler.webp",
+        "tatlilar": "./assets/category-banners/tatlilar.webp",
+        "soguk-icecekler": "./assets/category-banners/soguk-icecekler.webp",
+        "caylar": "./assets/category-banners/caylar.webp",
+        "sicak-icecekler": "./assets/category-banners/sicak-icecekler.webp",
+        "soguk-special": "./assets/category-banners/soguk-special-icecekler.webp",
+        "cocuk": "./assets/category-banners/cocuklar-icin.webp"
     };
 
     const mevcutKartlar = new Map(
@@ -158,7 +156,6 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         }).filter(([id]) => Boolean(id))
     );
 
-    // Eski veya artık categories.json içinde olmayan kartları kaldır.
     const gecerliIdler = new Set(kategoriHaritasi.keys());
     mevcutKartlar.forEach((kart, id) => {
         if (!gecerliIdler.has(id)) {
@@ -171,41 +168,42 @@ function dinamikAnaKategorileriGoster(kategoriler, urunler) {
         const id = bilgi.id;
         const ad = bilgi.name;
         let kart = mevcutKartlar.get(id);
-
         if (!kart) {
             kart = document.createElement("a");
-            kart.className = "category";
-            kart.innerHTML = `
-                <div class="icon"><img alt=""></div>
-                <span></span>
-            `;
             alan.appendChild(kart);
             mevcutKartlar.set(id, kart);
         }
 
+        const gorsel = String(ikonYollari[id] || bilgi.image || bilgi.ikon || "./assets/images/logo/gorsel-yok.png").trim();
+        const banner = gorsel.includes("assets/category-banners/");
+        kart.className = banner ? "category category-banner" : "category";
         kart.href = `kategori.html?kat=${encodeURIComponent(id)}`;
 
-        const adAlani = kart.querySelector("span");
-        if (adAlani) adAlani.textContent = ad;
-
-        const ikonAlani = kart.querySelector(".icon") || kart;
-        let resim = ikonAlani.querySelector("img");
-        if (!resim) {
-            resim = document.createElement("img");
-            ikonAlani.prepend(resim);
+        if (banner) {
+            kart.innerHTML = `<img class="categoryBannerImage" alt="">`;
+            const resim = kart.querySelector("img");
+            resim.alt = ad;
+            resim.onerror = function () {
+                this.onerror = null;
+                this.src = "./assets/images/logo/gorsel-yok.png";
+            };
+            const yol = `./${gorsel.replace(/^\.\//, "")}`;
+            if (resim.getAttribute("src") !== yol) resim.src = yol;
+        } else {
+            kart.innerHTML = `<div class="icon"><img alt=""></div><span></span>`;
+            kart.querySelector("span").textContent = ad;
+            const resim = kart.querySelector(".icon img");
+            resim.alt = ad;
+            resim.onerror = function () {
+                this.onerror = null;
+                this.src = "./assets/images/logo/gorsel-yok.png";
+            };
+            const yol = `./${gorsel.replace(/^\.\//, "")}`;
+            if (resim.getAttribute("src") !== yol) resim.src = yol;
         }
-
-        const gorsel = String(ikonYollari[id] || bilgi.image || bilgi.ikon || "./assets/images/logo/gorsel-yok.png").trim();
-        const yol = `./${gorsel.replace(/^\.\//, "")}`;
-        kart.classList.toggle("category-banner", gorsel.includes("assets/category-banners/"));
-        resim.alt = ad;
-        resim.onerror = function () {
-            this.onerror = null;
-            this.src = "./assets/images/logo/gorsel-yok.png";
-        };
-        if (resim.getAttribute("src") !== yol) resim.src = yol;
     });
 }
+
 function kategoriAltKategorileriniGetir(veriler, kategoriler, kategoriKodu) {
 
     const kayitliKategori = Array.isArray(kategoriler)
@@ -401,9 +399,18 @@ if (!altKategori && !DIREKT_URUN_KATEGORILERI.includes(kategori)){
                 u.altKategori === kod
             ).length;
 
-            return `
-                <a class="category${ALT_KATEGORILER[kod]?.ikon?.includes("assets/subcategory-banners/") ? " category-banner" : ""}" href="kategori.html?kat=${kategori}&alt=${kod}">
+            const ikonYolu = String(ALT_KATEGORILER[kod]?.ikon || "");
+            const banner = ikonYolu.includes("assets/subcategory-banners/");
+            if (banner) {
+                return `
+                    <a class="category subcategory-banner" href="kategori.html?kat=${encodeURIComponent(kategori)}&alt=${encodeURIComponent(kod)}">
+                        <img class="subcategoryBannerImage" src="./${ikonYolu.replace(/^\.\//, "")}" alt="${altKategoriAdi(kod).replace(/["&<>]/g, "")}" loading="lazy" decoding="async"
+                             onerror="this.onerror=null;this.src='./assets/icons/default.webp';">
+                    </a>`;
+            }
 
+            return `
+                <a class="category" href="kategori.html?kat=${encodeURIComponent(kategori)}&alt=${encodeURIComponent(kod)}">
                     <div class="icon">
                         ${(() => {
                             const parent = Array.isArray(kategoriler) ? kategoriler.find(item => String(item?.id || "") === kategori) : null;
@@ -413,21 +420,11 @@ if (!altKategori && !DIREKT_URUN_KATEGORILERI.includes(kategori)){
                                 : altKategoriIcon(kod);
                         })()}
                     </div>
-
                     <div class="categoryInfo">
-
-                        <div class="categoryTitle">
-                            ${altKategoriAdi(kod)}
-                        </div>
-
-                        <div class="categoryCount">
-                            ${adet} Ürün
-                        </div>
-
+                        <div class="categoryTitle">${altKategoriAdi(kod)}</div>
+                        <div class="categoryCount">${adet} Ürün</div>
                     </div>
-
-                </a>
-            `;
+                </a>`;
 
         }).join("");
 
