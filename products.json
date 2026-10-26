@@ -1902,7 +1902,7 @@
     "altKategori": "atistirmaliklar",
     "isim": "Atıştırma Tabağı",
     "fiyat": 385,
-    "resim": "images/atistirma-tabagi.webp",
+    "resim": "atistirma-tabagi.webp",
     "aciklama": "Karışık sıcak atıştırmalık tabağı.",
     "kalori": 760,
     "icerik": [
@@ -1916,7 +1916,8 @@
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 48,
