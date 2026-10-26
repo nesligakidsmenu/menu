@@ -936,7 +936,7 @@
     "altKategori": "espresso-bazli",
     "isim": "Filter Coffee",
     "fiyat": 140,
-    "resim": "images/filter-coffee.webp",
+    "resim": "filter-coffee.webp",
     "aciklama": "Taze demlenmiş filtre kahve.",
     "kalori": 5,
     "icerik": [
@@ -945,7 +945,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 5,
