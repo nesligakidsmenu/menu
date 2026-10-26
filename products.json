@@ -1247,7 +1247,7 @@
     "altKategori": "soguk",
     "isim": "White Chocolate Iced Latte",
     "fiyat": 210,
-    "resim": "images/white-chocolate-iced-latte.webp",
+    "resim": "white-chocolate-iced-latte.webp",
     "aciklama": "Beyaz çikolatalı buzlu latte.",
     "kalori": 290,
     "icerik": [
@@ -1261,7 +1261,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 19,
