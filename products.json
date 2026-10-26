@@ -916,7 +916,7 @@
     "altKategori": "espresso-bazli",
     "isim": "Americano",
     "fiyat": 140,
-    "resim": "images/americano.webp",
+    "resim": "americano.webp",
     "aciklama": "Double shot espresso ve sıcak su.",
     "kalori": 5,
     "icerik": [
@@ -926,7 +926,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 4,
