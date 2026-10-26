@@ -1290,7 +1290,7 @@
     "altKategori": "geleneksel",
     "isim": "Double Türk Kahvesi",
     "fiyat": 175,
-    "resim": "images/double-turk-kahvesi.webp",
+    "resim": "double-turk-kahvesi.webp",
     "aciklama": "Double porsiyon Türk kahvesi.",
     "kalori": 14,
     "icerik": [
@@ -1299,7 +1299,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 21,
