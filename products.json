@@ -1175,7 +1175,7 @@
     "altKategori": "soguk",
     "isim": "Caramel Iced Latte",
     "fiyat": 190,
-    "resim": "images/caramel-iced-latte.webp",
+    "resim": "caramel-iced-latte.webp",
     "aciklama": "Karamelli buzlu latte.",
     "kalori": 250,
     "icerik": [
@@ -1189,7 +1189,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 16,
