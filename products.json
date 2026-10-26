@@ -1151,7 +1151,7 @@
     "altKategori": "soguk",
     "isim": "Vanilla Iced Latte",
     "fiyat": 190,
-    "resim": "images/vanilla-iced-latte.webp",
+    "resim": "vanilla-iced-latte.webp",
     "aciklama": "Vanilya aromalı buzlu latte.",
     "kalori": 245,
     "icerik": [
@@ -1165,7 +1165,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 15,
