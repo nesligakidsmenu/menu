@@ -897,7 +897,7 @@
     "altKategori": "espresso-bazli",
     "isim": "Double Espresso",
     "fiyat": 175,
-    "resim": "images/double-espresso.webp",
+    "resim": "double-espresso.webp",
     "aciklama": "Double shot espresso.",
     "kalori": 4,
     "icerik": [
@@ -906,7 +906,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 3,
