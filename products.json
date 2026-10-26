@@ -1872,11 +1872,12 @@
   },
   {
     "id": 46,
+    "order": 94,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
     "isim": "Çıtır Tavuk",
     "fiyat": 345,
-    "resim": "images/citir-tavuk.webp",
+    "resim": "citir-tavuk.webp",
     "aciklama": "Patates kızartması ile servis edilen çıtır tavuk.",
     "kalori": 720,
     "icerik": [
@@ -1891,7 +1892,7 @@
     "kafein": false,
     "vejetaryen": false,
     "onerilen": true,
-    "order": 94
+    "aktif": true
   },
   {
     "id": 47,
