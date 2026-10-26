@@ -999,7 +999,7 @@
     "altKategori": "sutlu",
     "isim": "Caramel Latte",
     "fiyat": 180,
-    "resim": "images/caramel-latte.webp",
+    "resim": "caramel-latte.webp",
     "aciklama": "Karamel şuruplu latte.",
     "kalori": 245,
     "icerik": [
@@ -1012,7 +1012,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 8,
