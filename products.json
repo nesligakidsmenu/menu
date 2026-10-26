@@ -2012,7 +2012,7 @@
     "altKategori": "atistirmaliklar",
     "isim": "Kaşarlı Gözleme",
     "fiyat": 210,
-    "resim": "images/kasarli-gozleme.webp",
+    "resim": "kasarli-gozleme.webp",
     "aciklama": "İnce hamurlu kaşarlı gözleme.",
     "kalori": 520,
     "icerik": [
@@ -2025,7 +2025,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 53,
