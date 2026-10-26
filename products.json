@@ -2242,11 +2242,12 @@
   },
   {
     "id": 68,
+    "order": 116,
     "anaKategori": "tatlilar",
     "altKategori": "donut",
     "isim": "Donut",
     "fiyat": 100,
-    "resim": "images/donut.webp",
+    "resim": "donut.webp",
     "aciklama": "Yumuşak hamurlu donut.",
     "kalori": 310,
     "icerik": [
@@ -2260,7 +2261,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 116
+    "aktif": true
   },
   {
     "id": 69,
