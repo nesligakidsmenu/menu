@@ -1271,7 +1271,7 @@
     "altKategori": "geleneksel",
     "isim": "Türk Kahvesi",
     "fiyat": 125,
-    "resim": "images/turk-kahvesi.webp",
+    "resim": "turk-kahvesi.webp",
     "aciklama": "Geleneksel Türk kahvesi.",
     "kalori": 7,
     "icerik": [
@@ -1280,7 +1280,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 20,
