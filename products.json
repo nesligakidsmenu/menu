@@ -1853,7 +1853,7 @@
     "altKategori": "atistirmaliklar",
     "isim": "Nesliga Paylaşım Tabağı",
     "fiyat": 485,
-    "resim": "images/nesliga-paylasim-tabagi.webp",
+    "resim": "nesliga-paylasim-tabagi.webp",
     "aciklama": "Paylaşmalık zengin atıştırmalık tabağı. 2 Kişiliktir.",
     "kalori": 980,
     "icerik": [
@@ -1868,7 +1868,8 @@
     ],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 46,
