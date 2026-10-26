@@ -878,7 +878,7 @@
     "altKategori": "espresso-bazli",
     "isim": "Espresso",
     "fiyat": 125,
-    "resim": "images/espresso.webp",
+    "resim": "espresso.webp",
     "aciklama": "Yoğun aromalı tek shot espresso.",
     "kalori": 2,
     "icerik": [
@@ -887,7 +887,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 2,
