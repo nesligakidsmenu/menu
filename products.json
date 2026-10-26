@@ -977,7 +977,7 @@
     "altKategori": "sutlu",
     "isim": "Latte",
     "fiyat": 170,
-    "resim": "images/latte.webp",
+    "resim": "latte.webp",
     "aciklama": "Yumuşak içimli espresso ve süt.",
     "kalori": 210,
     "icerik": [
@@ -989,7 +989,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 7,
