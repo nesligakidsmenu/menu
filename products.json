@@ -2161,7 +2161,7 @@
     "altKategori": "pastalar",
     "isim": "Cheesecake",
     "fiyat": 300,
-    "resim": "images/cheesecake.webp",
+    "resim": "cheesecake.webp",
     "aciklama": "Kremamsı cheesecake.",
     "kalori": 520,
     "icerik": [
@@ -2179,7 +2179,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 64,
