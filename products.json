@@ -1,23 +1,24 @@
 [
   {
-    "id": "ac610f36-c600-4f8f-b622-538d7e8a7f5f",
+    "id": "12d149be-6fbb-4fb8-b6af-5a0c7c3f9a6b",
     "order": 1,
-    "anaKategori": "yiyecekler",
-    "altKategori": "ilaveler",
-    "isim": "Mini Kasede Zeytin",
-    "fiyat": 40,
-    "resim": "mini-kasede-zeytin.webp",
-    "aciklama": "Kahvaltı ve tostların yanında tercih edebileceğiniz, küçük kasede sunulan yeşil ve siyah zeytin.",
-    "kalori": 0,
+    "anaKategori": "tatlilar",
+    "altKategori": "pastalar",
+    "isim": "Affogato",
+    "fiyat": 210,
+    "resim": "affogato.webp",
+    "aciklama": "2 top vanilyalı dondurma ve 1 shot taze espresso ile hazırlanan İtalyan klasiği.",
+    "kalori": 202,
     "icerik": [
-      "Yeşil zeytin",
-      "siyah zeytin",
-      "salamura."
+      "Vanilyalı dondurma",
+      "espresso kahve"
     ],
-    "alerjen": [],
-    "kafein": false,
+    "alerjen": [
+      "süt"
+    ],
+    "kafein": true,
     "vejetaryen": true,
-    "onerilen": false,
+    "onerilen": true,
     "aktif": true
   },
   {
@@ -49,25 +50,24 @@
     "aktif": true
   },
   {
-    "id": "12d149be-6fbb-4fb8-b6af-5a0c7c3f9a6b",
+    "id": "ac610f36-c600-4f8f-b622-538d7e8a7f5f",
     "order": 5,
-    "anaKategori": "tatlilar",
-    "altKategori": "pastalar",
-    "isim": "Affogato",
-    "fiyat": 210,
-    "resim": "affogato.webp",
-    "aciklama": "2 top vanilyalı dondurma ve 1 shot taze espresso ile hazırlanan İtalyan klasiği.",
-    "kalori": 202,
+    "anaKategori": "yiyecekler",
+    "altKategori": "ilaveler",
+    "isim": "Mini Kasede Zeytin",
+    "fiyat": 40,
+    "resim": "mini-kasede-zeytin.webp",
+    "aciklama": "Kahvaltı ve tostların yanında tercih edebileceğiniz, küçük kasede sunulan yeşil ve siyah zeytin.",
+    "kalori": 0,
     "icerik": [
-      "Vanilyalı dondurma",
-      "espresso kahve"
+      "Yeşil zeytin",
+      "siyah zeytin",
+      "salamura."
     ],
-    "alerjen": [
-      "süt"
-    ],
-    "kafein": true,
+    "alerjen": [],
+    "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
+    "onerilen": false,
     "aktif": true
   },
   {
