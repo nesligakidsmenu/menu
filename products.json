@@ -2055,11 +2055,12 @@
   },
   {
     "id": 54,
+    "order": 102,
     "anaKategori": "yiyecekler",
     "altKategori": "ilaveler",
     "isim": "Yoğurt (Orta Boy)",
     "fiyat": 60,
-    "resim": "images/yogurt.webp",
+    "resim": "yogurt-orta-boy.webp",
     "aciklama": "Orta boy yoğurt.",
     "kalori": 120,
     "icerik": [
@@ -2071,7 +2072,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 102
+    "aktif": true
   },
   {
     "id": 55,
