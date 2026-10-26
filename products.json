@@ -1067,7 +1067,7 @@
     "altKategori": "sutlu",
     "isim": "Chocolate Mocha",
     "fiyat": 190,
-    "resim": "images/chocolate-mocha.webp",
+    "resim": "chocolate-mocha.webp",
     "aciklama": "Çikolatalı mocha.",
     "kalori": 295,
     "icerik": [
@@ -1080,7 +1080,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 11,
