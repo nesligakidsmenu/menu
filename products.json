@@ -1924,9 +1924,9 @@
     "order": 96,
     "anaKategori": "yiyecekler",
     "altKategori": "atistirmaliklar",
-    "isim": "Köfte & Pilav",
+    "isim": "Izgara Köfte",
     "fiyat": 380,
-    "resim": "images/kofte-pilav.webp",
+    "resim": "izgara-kofte.webp",
     "aciklama": "Izgara köfte, tereyağlı pilav, patates kızartması",
     "kalori": 780,
     "icerik": [
@@ -1936,7 +1936,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 49,
