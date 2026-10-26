@@ -1711,7 +1711,7 @@
     "altKategori": "gunluk-lezzetler",
     "isim": "Anne Çorbası",
     "fiyat": 150,
-    "resim": "images/anne-corbasi.webp",
+    "resim": "anne-corbasi.webp",
     "aciklama": "Günün ev yapımı çorbası.",
     "kalori": 180,
     "icerik": [
@@ -1720,7 +1720,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": false,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 39,
