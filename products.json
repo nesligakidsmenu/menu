@@ -1043,7 +1043,7 @@
     "altKategori": "sutlu",
     "isim": "Strawberry Latte",
     "fiyat": 180,
-    "resim": "images/strawberry-latte.webp",
+    "resim": "vanilla-latte.webp",
     "aciklama": "Çilek şuruplu latte.",
     "kalori": 260,
     "icerik": [
@@ -1056,7 +1056,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 10,
