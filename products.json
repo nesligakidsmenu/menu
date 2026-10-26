@@ -955,7 +955,7 @@
     "altKategori": "sutlu",
     "isim": "Cappuccino",
     "fiyat": 170,
-    "resim": "images/cappuccino.webp",
+    "resim": "cappuccino.webp",
     "aciklama": "Bol süt köpüklü cappuccino.",
     "kalori": 185,
     "icerik": [
@@ -967,7 +967,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 6,
