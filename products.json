@@ -1128,7 +1128,7 @@
     "altKategori": "soguk",
     "isim": "Iced Latte",
     "fiyat": 180,
-    "resim": "images/iced-latte.webp",
+    "resim": "iced-latte.webp",
     "aciklama": "Buzlu latte.",
     "kalori": 210,
     "icerik": [
@@ -1141,7 +1141,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 14,
