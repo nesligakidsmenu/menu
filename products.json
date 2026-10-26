@@ -1946,7 +1946,7 @@
     "altKategori": "atistirmaliklar",
     "isim": "Patates Kızartması",
     "fiyat": 150,
-    "resim": "images/patates-kizartmasi.webp",
+    "resim": "patates-kizartmasi.webp",
     "aciklama": "Çıtır patates kızartması.",
     "kalori": 430,
     "icerik": [
@@ -1955,7 +1955,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 50,
