@@ -1965,7 +1965,7 @@
     "altKategori": "atistirmaliklar",
     "isim": "Kaşarlı Tost",
     "fiyat": 170,
-    "resim": "images/kasarli-tost.webp",
+    "resim": "kasarli-tost.webp",
     "aciklama": "Bol kaşarlı tost.",
     "kalori": 470,
     "icerik": [
@@ -1978,7 +1978,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 51,
