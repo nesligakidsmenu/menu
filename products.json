@@ -2189,7 +2189,7 @@
     "altKategori": "pastalar",
     "isim": "Çikolatalı Mozaik Pasta",
     "fiyat": 270,
-    "resim": "images/cikolatali-mozaik-pasta.webp",
+    "resim": "cikolatali-mozaik-pasta.webp",
     "aciklama": "Ev yapımı çikolata kaplı bol cevizli mozaik pasta. 1 top vanilyalı dondurma ile servis edilir.",
     "kalori": 510,
     "icerik": [
@@ -2209,7 +2209,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 65,
