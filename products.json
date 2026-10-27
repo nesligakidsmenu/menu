@@ -2427,7 +2427,7 @@
     "altKategori": "mesrubat",
     "isim": "Meşrubat",
     "fiyat": 90,
-    "resim": "images/mesrubat.webp",
+    "resim": "mesrubat.webp",
     "aciklama": "Gazlı içecek çeşitleri.",
     "kalori": 140,
     "icerik": [
@@ -2436,7 +2436,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 72,
