@@ -1409,7 +1409,7 @@
     "altKategori": "milkshake",
     "isim": "Caramel Milkshake",
     "fiyat": 210,
-    "resim": "images/caramel-milkshake.webp",
+    "resim": "caramel-milkshake.webp",
     "aciklama": "Karamel aromalı yoğun kıvamlı milkshake.",
     "kalori": 435,
     "icerik": [
@@ -1423,7 +1423,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 23,
