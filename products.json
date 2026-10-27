@@ -1457,7 +1457,7 @@
     "altKategori": "milkshake",
     "isim": "Chocolate Milkshake",
     "fiyat": 200,
-    "resim": "images/chocolate-milkshake.webp",
+    "resim": "chocolate-milkshake.webp",
     "aciklama": "Çikolatalı milkshake.",
     "kalori": 445,
     "icerik": [
@@ -1471,7 +1471,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 25,
