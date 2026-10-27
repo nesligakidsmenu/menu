@@ -833,7 +833,7 @@
     "altKategori": "milkshake",
     "isim": "Chocolate Caramel Milkshake",
     "fiyat": 240,
-    "resim": "urun.webp",
+    "resim": "chocolate-caramel-milkshake.webp",
     "aciklama": "Çikolata ve karamelin zengin aromalarını buluşturan, dolgun gövdeli premium milkshake.",
     "kalori": 470,
     "icerik": [
@@ -846,7 +846,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": "426be234-1ef5-4901-911b-569bd6451af3",
