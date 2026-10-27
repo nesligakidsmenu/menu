@@ -1690,7 +1690,7 @@
     "altKategori": "frozen",
     "isim": "Strawberry Frozen",
     "fiyat": 200,
-    "resim": "images/strawberry-frozen.webp",
+    "resim": "strawberry-frozen.webp",
     "aciklama": "Ferahlatıcı çilek frozen.",
     "kalori": 210,
     "icerik": [
@@ -1701,7 +1701,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 35,
