@@ -810,7 +810,7 @@
     "altKategori": "milkshake",
     "isim": "Chocolate Vanilla Milkshake",
     "fiyat": 220,
-    "resim": "urun.webp",
+    "resim": "chocolate-vanilla-milkshake.webp",
     "aciklama": "Çikolata ve vanilyanın klasik uyumunu öne çıkaran kadifemsi içimli milkshake",
     "kalori": 450,
     "icerik": [
@@ -823,7 +823,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "c51c4fff-dfc0-4601-a30f-4b9fc6c59843",
