@@ -1711,7 +1711,7 @@
     "altKategori": "frozen",
     "isim": "Mango Frozen",
     "fiyat": 200,
-    "resim": "images/mango-frozen.webp",
+    "resim": "mango-frozen.webp",
     "aciklama": "Ferahlatıcı mango frozen.",
     "kalori": 215,
     "icerik": [
@@ -1722,7 +1722,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 36,
