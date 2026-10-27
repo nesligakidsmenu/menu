@@ -2367,7 +2367,7 @@
     "altKategori": "soda",
     "isim": "Sade Soda",
     "fiyat": 50,
-    "resim": "images/sade-soda.webp",
+    "resim": "sade-soda.webp",
     "aciklama": "Doğal maden suyu.",
     "kalori": 0,
     "icerik": [
@@ -2376,7 +2376,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 70,
