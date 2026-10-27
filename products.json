@@ -1511,7 +1511,7 @@
     "altKategori": "frappe",
     "isim": "Frappe",
     "fiyat": 200,
-    "resim": "images/frappe.webp",
+    "resim": "frappe.webp",
     "aciklama": "Soğuk kahve bazlı frappe.",
     "kalori": 260,
     "icerik": [
@@ -1525,7 +1525,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 28,
