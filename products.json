@@ -1634,7 +1634,7 @@
     "altKategori": "frappe",
     "isim": "White Chocolate Frappe",
     "fiyat": 220,
-    "resim": "images/white-chocolate-frappe.webp",
+    "resim": "white-chocolate-frappe.webp",
     "aciklama": "Beyaz çikolatalı frappe.",
     "kalori": 355,
     "icerik": [
@@ -1649,7 +1649,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 33,
