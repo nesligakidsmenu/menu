@@ -1775,7 +1775,7 @@
     "altKategori": "smoothie",
     "isim": "Mango Smoothie",
     "fiyat": 200,
-    "resim": "images/mango-smoothie.webp",
+    "resim": "mango-smoothie.webp",
     "aciklama": "Mangolu smoothie.",
     "kalori": 240,
     "icerik": [
@@ -1788,7 +1788,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 38,
