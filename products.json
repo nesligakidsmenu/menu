@@ -856,7 +856,7 @@
     "altKategori": "milkshake",
     "isim": "White Chocolate Strawberry Milkshake",
     "fiyat": 230,
-    "resim": "urun.webp",
+    "resim": "white-chocolate-strawberry-milkshake.webp",
     "aciklama": "Beyaz çikolata ve çilek aromalarının buluştuğu yumuşak ve ferahlatıcı milkshake.",
     "kalori": 455,
     "icerik": [
@@ -869,7 +869,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "74f37493-d40b-4d33-bb99-6ea4d1ace8e2",
