@@ -1752,7 +1752,7 @@
     "altKategori": "smoothie",
     "isim": "Strawberry Smoothie",
     "fiyat": 200,
-    "resim": "images/strawberry-smoothie.webp",
+    "resim": "strawberry-smoothie.webp",
     "aciklama": "Çilekli smoothie.",
     "kalori": 235,
     "icerik": [
@@ -1765,7 +1765,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 37,
