@@ -1585,7 +1585,7 @@
     "altKategori": "frappe",
     "isim": "Strawberry Frappe",
     "fiyat": 210,
-    "resim": "images/strawberry-frappe.webp",
+    "resim": "strawberry-frappe.webp",
     "aciklama": "Çilek aromalı frappe.",
     "kalori": 315,
     "icerik": [
@@ -1600,7 +1600,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 31,
