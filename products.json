@@ -925,7 +925,7 @@
     "altKategori": "milkshake",
     "isim": "White Chocolate Vanilla Milkshake",
     "fiyat": 230,
-    "resim": "urun.webp",
+    "resim": "white-chocolate-vanilla-milkshake.webp",
     "aciklama": "Beyaz çikolata ve vanilyanın kusursuz uyumuyla hazırlanan, yumuşak içimli ve kremsi milkshake.",
     "kalori": 460,
     "icerik": [
@@ -938,7 +938,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 1,
