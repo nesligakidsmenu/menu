@@ -2485,7 +2485,7 @@
     "altKategori": "su",
     "isim": "Su (500 ml)",
     "fiyat": 30,
-    "resim": "images/su-500.webp",
+    "resim": "su-500-ml.webp",
     "aciklama": "500 ml içme suyu.",
     "kalori": 0,
     "icerik": [
@@ -2494,7 +2494,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 75,
