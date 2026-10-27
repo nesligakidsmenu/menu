@@ -714,7 +714,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "b6ba6ca0-9d00-482c-9a9a-7816b4518579",
