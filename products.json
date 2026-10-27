@@ -1660,7 +1660,7 @@
     "altKategori": "frappe",
     "isim": "Oreo Frappe",
     "fiyat": 230,
-    "resim": "images/oreo-frappe.webp",
+    "resim": "oreo-frappe.webp",
     "aciklama": "Oreo parçacıklı frappe.",
     "kalori": 365,
     "icerik": [
@@ -1676,7 +1676,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 34,
