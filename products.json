@@ -1481,7 +1481,7 @@
     "altKategori": "milkshake",
     "isim": "White Chocolate Milkshake",
     "fiyat": 220,
-    "resim": "images/white-chocolate-milkshake.webp",
+    "resim": "white-chocolate-milkshake.webp",
     "aciklama": "Beyaz çikolatalı milkshake.",
     "kalori": 455,
     "icerik": [
@@ -1495,7 +1495,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 26,
