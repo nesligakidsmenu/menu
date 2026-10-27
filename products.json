@@ -1535,7 +1535,7 @@
     "altKategori": "frappe",
     "isim": "Caramel Frappe",
     "fiyat": 210,
-    "resim": "images/caramel-frappe.webp",
+    "resim": "caramel-frappe.webp",
     "aciklama": "Karamel aromalı frappe.",
     "kalori": 310,
     "icerik": [
@@ -1550,7 +1550,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 29,
