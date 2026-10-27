@@ -879,7 +879,7 @@
     "altKategori": "milkshake",
     "isim": "White Chocolate Mango Milkshake",
     "fiyat": 230,
-    "resim": "urun.webp",
+    "resim": "white-chocolate-mango-milkshake.webp",
     "aciklama": "Beyaz çikolatanın yumuşak lezzetini mango aromasıyla buluşturan tropikal milkshake.",
     "kalori": 455,
     "icerik": [
@@ -892,7 +892,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "ebf480bf-2c9a-40c3-9f61-14c585e3cfa1",
