@@ -2417,7 +2417,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 71,
