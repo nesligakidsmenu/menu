@@ -1385,7 +1385,7 @@
     "altKategori": "milkshake",
     "isim": "Strawberry Milkshake",
     "fiyat": 200,
-    "resim": "images/strawberry-milkshake.webp",
+    "resim": "strawberry-milkshake.webp",
     "aciklama": "Çilek aromalı yoğun kıvamlı milkshake.",
     "kalori": 420,
     "icerik": [
@@ -1399,7 +1399,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true
+    "onerilen": true,
+    "aktif": true
   },
   {
     "id": 22,
