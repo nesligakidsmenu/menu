@@ -787,7 +787,7 @@
     "altKategori": "milkshake",
     "isim": "Mango Vanilla Milkshake",
     "fiyat": 210,
-    "resim": "urun.webp",
+    "resim": "mango-vanilla-milkshake.webp",
     "aciklama": "Mango ve vanilya aromasıyla hazırlanan hafif ve tropikal lezzet.",
     "kalori": 435,
     "icerik": [
@@ -800,7 +800,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "13c30a43-595b-4dfb-b503-62303466f36c",
