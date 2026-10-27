@@ -2446,7 +2446,7 @@
     "altKategori": "meyve-suyu",
     "isim": "Meyve Suyu",
     "fiyat": 90,
-    "resim": "images/meyve-suyu.webp",
+    "resim": "meyve-suyu.webp",
     "aciklama": "Meyve suyu çeşitleri.",
     "kalori": 110,
     "icerik": [
@@ -2455,7 +2455,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 73,
