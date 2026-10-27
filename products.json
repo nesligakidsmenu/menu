@@ -2465,7 +2465,7 @@
     "altKategori": "ayran",
     "isim": "Ayran",
     "fiyat": 60,
-    "resim": "images/ayran.webp",
+    "resim": "ayran.webp",
     "aciklama": "Soğuk ev yapımı ayran.",
     "kalori": 70,
     "icerik": [
@@ -2476,7 +2476,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 74,
