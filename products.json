@@ -764,7 +764,7 @@
     "altKategori": "milkshake",
     "isim": "Strawberry Vanilla Milkshake",
     "fiyat": 210,
-    "resim": "urun.webp",
+    "resim": "strawberry-vanilla-milkshake.webp",
     "aciklama": "Çilek ve vanilya aromasıyla hazırlanan yumuşak içimli milkshake.",
     "kalori": 435,
     "icerik": [
@@ -777,7 +777,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "834236a8-975c-4a9b-9313-01baf65e58f5",
