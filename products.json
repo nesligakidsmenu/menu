@@ -1433,7 +1433,7 @@
     "altKategori": "milkshake",
     "isim": "Vanilla Milkshake",
     "fiyat": 200,
-    "resim": "images/vanilla-milkshake.webp",
+    "resim": "vanilla-milkshake.webp",
     "aciklama": "Vanilya aromalı milkshake.",
     "kalori": 425,
     "icerik": [
@@ -1447,7 +1447,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 24,
