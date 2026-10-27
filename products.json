@@ -902,7 +902,7 @@
     "altKategori": "milkshake",
     "isim": "Caramel Vanilla Milkshake",
     "fiyat": 220,
-    "resim": "urun.webp",
+    "resim": "caramel-vanilla-milkshake.webp",
     "aciklama": "Karamel ve vanilyanın dengeli uyumunu yansıtan, yumuşak içimli milkshake.",
     "kalori": 445,
     "icerik": [
@@ -915,7 +915,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "dc623ce3-8a13-4fe4-affc-1a8f4cb1da72",
