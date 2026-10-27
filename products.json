@@ -1610,7 +1610,7 @@
     "altKategori": "frappe",
     "isim": "Mocha Frappe",
     "fiyat": 220,
-    "resim": "images/mocha-frappe.webp",
+    "resim": "mocha-frappe.webp",
     "aciklama": "Çikolatalı frappe.",
     "kalori": 340,
     "icerik": [
@@ -1625,7 +1625,8 @@
     ],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 32,
