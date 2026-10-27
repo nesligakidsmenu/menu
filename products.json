@@ -2504,7 +2504,7 @@
     "altKategori": "su",
     "isim": "Su (Bardak)",
     "fiyat": 25,
-    "resim": "images/su-bardak.webp",
+    "resim": "su-bardak.webp",
     "aciklama": "Bardak su.",
     "kalori": 0,
     "icerik": [
@@ -2513,7 +2513,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 76,
