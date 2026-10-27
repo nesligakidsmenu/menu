@@ -2386,7 +2386,7 @@
     "altKategori": "meyveli-soda",
     "isim": "Meyveli Soda",
     "fiyat": 75,
-    "resim": "images/meyveli-soda.webp",
+    "resim": "meyveli-soda.webp",
     "aciklama": "Meyve aromalı soda.",
     "kalori": 45,
     "icerik": [
@@ -2396,7 +2396,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": "99409b24-a338-4fd0-92c4-b0945b6d89f7",
