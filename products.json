@@ -2541,7 +2541,7 @@
     "altKategori": "cay",
     "isim": "Siyah Çay (Fincan)",
     "fiyat": 50,
-    "resim": "images/siyah-cay-fincan.webp",
+    "resim": "siyah-cay-fincan.webp",
     "aciklama": "Fincanda servis edilen siyah çay.",
     "kalori": 2,
     "icerik": [
@@ -2550,7 +2550,8 @@
     "alerjen": [],
     "kafein": true,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 78,
