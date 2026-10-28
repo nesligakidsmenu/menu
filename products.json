@@ -2661,11 +2661,12 @@
   },
   {
     "id": 84,
+    "order": 135,
     "anaKategori": "sicak-icecekler",
     "altKategori": "sicak",
     "isim": "Sade Süt",
     "fiyat": 60,
-    "resim": "images/sade-sut.webp",
+    "resim": "sade-sut.webp",
     "aciklama": "Sıcak veya soğuk sade süt.",
     "kalori": 120,
     "icerik": [
@@ -2677,6 +2678,6 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 135
+    "aktif": true
   }
 ]
