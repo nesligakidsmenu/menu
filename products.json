@@ -2541,7 +2541,7 @@
     "altKategori": "meyve-cayi",
     "isim": "Meyve Çayı",
     "fiyat": 70,
-    "resim": "images/meyve-cayi.webp",
+    "resim": "meyve-cayi.webp",
     "aciklama": "Granül meyve çayı. (Elma / Kuşburnu / Portakal)",
     "kalori": 5,
     "icerik": [
@@ -2550,7 +2550,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 79,
