@@ -2600,7 +2600,7 @@
     "altKategori": "sicak",
     "isim": "Sıcak Çikolata",
     "fiyat": 190,
-    "resim": "images/sicak-cikolata.webp",
+    "resim": "sicak-cikolata.webp",
     "aciklama": "Yoğun sıcak çikolata.",
     "kalori": 310,
     "icerik": [
@@ -2612,7 +2612,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 82,
