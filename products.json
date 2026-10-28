@@ -2577,7 +2577,7 @@
     "altKategori": "sicak",
     "isim": "Salep",
     "fiyat": 180,
-    "resim": "images/salep.webp",
+    "resim": "salep.webp",
     "aciklama": "Tarçınlı sıcak salep.",
     "kalori": 240,
     "icerik": [
@@ -2590,7 +2590,8 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 81,
