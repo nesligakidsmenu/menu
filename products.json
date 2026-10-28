@@ -50,27 +50,6 @@
     "aktif": true
   },
   {
-    "id": "ac610f36-c600-4f8f-b622-538d7e8a7f5f",
-    "order": 5,
-    "anaKategori": "yiyecekler",
-    "altKategori": "ilaveler",
-    "isim": "Mini Kasede Zeytin",
-    "fiyat": 40,
-    "resim": "mini-kasede-zeytin.webp",
-    "aciklama": "Kahvaltı ve tostların yanında tercih edebileceğiniz, küçük kasede sunulan yeşil ve siyah zeytin.",
-    "kalori": 0,
-    "icerik": [
-      "Yeşil zeytin",
-      "siyah zeytin",
-      "salamura."
-    ],
-    "alerjen": [],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
     "id": "a0d80324-ec57-4888-81ab-90cc6347dfa6",
     "order": 7,
     "anaKategori": "cocuk",
