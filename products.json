@@ -2560,7 +2560,7 @@
     "altKategori": "bitki-cayi",
     "isim": "Bitki Çayı",
     "fiyat": 90,
-    "resim": "images/bitki-cayi.webp",
+    "resim": "bitki-cayi.webp",
     "aciklama": "Bitki çayı çeşitleri (Adaçayı / Kuşburnu / Yeşil Çay / Ihlamur) French press ile servis edilir.",
     "kalori": 5,
     "icerik": [
@@ -2569,7 +2569,8 @@
     "alerjen": [],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": false
+    "onerilen": false,
+    "aktif": true
   },
   {
     "id": 80,
