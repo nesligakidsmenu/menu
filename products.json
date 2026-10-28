@@ -2639,11 +2639,12 @@
   },
   {
     "id": 83,
+    "order": 134,
     "anaKategori": "sicak-icecekler",
     "altKategori": "sicak",
     "isim": "Caramel Hot Milk",
     "fiyat": 120,
-    "resim": "images/caramel-hot-milk.webp",
+    "resim": "caramel-hot-milk.webp",
     "aciklama": "Karamel aromalı sıcak süt.",
     "kalori": 190,
     "icerik": [
@@ -2656,7 +2657,7 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
-    "order": 134
+    "aktif": true
   },
   {
     "id": 84,
