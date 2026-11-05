@@ -923,7 +923,7 @@
     ],
     "kafein": false,
     "vejetaryen": true,
-    "onerilen": true,
+    "onerilen": false,
     "aktif": true
   },
   {
