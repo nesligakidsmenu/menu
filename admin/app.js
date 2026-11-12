@@ -203,7 +203,7 @@
             .map((category) => ({
                 id: String(category.id),
                 name: String(category.name || category.id),
-                subCategories: uniqueStrings(category.subCategories || []),
+                subCategories: uniqueStringsPreserveOrder(category.subCategories || []),
                 ...(category.image ? { image: String(category.image) } : {}),
                 ...(category.subCategoryImages && typeof category.subCategoryImages === "object"
                     ? { subCategoryImages: { ...category.subCategoryImages } } : {}),
@@ -236,7 +236,7 @@
         });
 
         state.categories.forEach((category) => {
-            category.subCategories = uniqueStrings(category.subCategories);
+            category.subCategories = uniqueStringsPreserveOrder(category.subCategories);
         });
     }
 
@@ -704,10 +704,11 @@
 
             const subCategoryList = document.createElement("div");
             subCategoryList.className = "subCategoryList";
-            category.subCategories.forEach((subCategory) => {
+            category.subCategories.forEach((subCategory, subIndex) => {
                 const row = document.createElement("div");
                 row.className = "subCategoryRow";
                 const label = document.createElement("span");
+                label.className = "subCategoryLabel";
                 label.textContent = category.subCategoryNames?.[subCategory] || subCategory;
                 const subImagePath = category.subCategoryImages?.[subCategory];
                 if (subImagePath) {
@@ -717,11 +718,22 @@
                     thumb.alt = `${subCategory} görseli`;
                     row.append(thumb);
                 }
+
+                const moveSubUpButton = createButton("↑", "moveSubCategoryUp", () => moveSubCategory(category.id, subCategory, -1));
+                moveSubUpButton.disabled = subIndex === 0;
+                moveSubUpButton.title = "Alt kategoriyi bir sıra yukarı taşı";
+                moveSubUpButton.setAttribute("aria-label", `${subCategory} alt kategorisini yukarı taşı`);
+
+                const moveSubDownButton = createButton("↓", "moveSubCategoryDown", () => moveSubCategory(category.id, subCategory, 1));
+                moveSubDownButton.disabled = subIndex === category.subCategories.length - 1;
+                moveSubDownButton.title = "Alt kategoriyi bir sıra aşağı taşı";
+                moveSubDownButton.setAttribute("aria-label", `${subCategory} alt kategorisini aşağı taşı`);
+
                 const editSubButton = createButton("Düzenle", "editSubCategory", () => editSubCategory(category.id, subCategory));
                 editSubButton.setAttribute("aria-label", `${subCategory} alt kategorisini düzenle`);
                 const deleteSubButton = createButton("Sil", "deleteSubCategory", () => deleteSubCategory(category.id, subCategory));
                 deleteSubButton.setAttribute("aria-label", `${subCategory} alt kategorisini sil`);
-                row.append(label, editSubButton, deleteSubButton);
+                row.append(label, moveSubUpButton, moveSubDownButton, editSubButton, deleteSubButton);
                 subCategoryList.append(row);
             });
 
@@ -741,6 +753,21 @@
 
         renderCategories();
         toast("Sıralama değişti", "Yeni sırayı kalıcı yapmak için Kategorileri Kaydet düğmesine basın.", "success");
+    }
+
+    function moveSubCategory(categoryId, subCategory, direction) {
+        const category = state.categories.find((item) => item.id === categoryId);
+        if (!category || !Array.isArray(category.subCategories)) return;
+
+        const index = category.subCategories.indexOf(subCategory);
+        const targetIndex = index + direction;
+        if (index < 0 || targetIndex < 0 || targetIndex >= category.subCategories.length) return;
+
+        [category.subCategories[index], category.subCategories[targetIndex]] =
+            [category.subCategories[targetIndex], category.subCategories[index]];
+
+        renderCategories();
+        toast("Sıralama değişti", "Alt kategori sırasını kalıcı yapmak için Kategorileri Kaydet düğmesine basın.", "success");
     }
 
     function editCategory(categoryId) {
@@ -1072,6 +1099,7 @@
         if (!window.confirm("Ürünlerdeki kategori bilgilerine göre kategori listesi güncellensin mi?")) return;
 
         const existing = new Map(state.categories.map((category) => [category.id, category.name]));
+        const existingCategories = new Map(state.categories.map((category) => [category.id, category]));
         const grouped = new Map();
 
         state.products.forEach((product) => {
@@ -1086,7 +1114,10 @@
         state.categories = [...grouped.entries()].map(([id, subCategories]) => ({
             id,
             name: existing.get(id) || prettifySlug(id),
-            subCategories: [...subCategories].sort(localeCompare)
+            subCategories: uniqueStringsPreserveOrder([
+                ...(existingCategories.get(id)?.subCategories || []),
+                ...subCategories
+            ])
         }));
 
         renderCategories();
@@ -1190,6 +1221,10 @@
 
     function uniqueStrings(values) {
         return [...new Set(values.map((value) => String(value).trim()).filter(Boolean))].sort(localeCompare);
+    }
+
+    function uniqueStringsPreserveOrder(values) {
+        return [...new Set(values.map((value) => String(value).trim()).filter(Boolean))];
     }
 
     function normaliseSearch(value) {

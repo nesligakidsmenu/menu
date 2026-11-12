@@ -761,6 +761,30 @@ button:disabled {
     border-radius: 7px;
 }
 
+.subCategoryRow .moveSubCategoryUp,
+.subCategoryRow .moveSubCategoryDown {
+    color: var(--primary-dark);
+    background: var(--primary-soft);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.subCategoryRow .moveSubCategoryUp:hover,
+.subCategoryRow .moveSubCategoryDown:hover {
+    background: #d8e8d1;
+}
+
+.subCategoryRow button:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.subCategoryLabel {
+    flex: 1;
+    min-width: 0;
+}
+
 .subCategoryList {
     display: grid;
     gap: 7px;
