@@ -3,10 +3,10 @@
     "id": "kahveler",
     "name": "Kahveler",
     "subCategories": [
+      "espresso-bazli",
       "sutlu",
       "geleneksel",
-      "soguk",
-      "espresso-bazli"
+      "soguk"
     ]
   },
   {
