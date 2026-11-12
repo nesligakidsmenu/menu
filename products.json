@@ -1,29 +1,7 @@
 [
   {
-    "id": "12d149be-6fbb-4fb8-b6af-5a0c7c3f9a6b",
-    "order": 1,
-    "anaKategori": "tatlilar",
-    "altKategori": "pastalar",
-    "isim": "Affogato",
-    "fiyat": 210,
-    "resim": "affogato.webp",
-    "aciklama": "2 top vanilyalı dondurma ve 1 shot taze espresso ile hazırlanan İtalyan klasiği.",
-    "kalori": 202,
-    "icerik": [
-      "Vanilyalı dondurma",
-      "espresso kahve"
-    ],
-    "alerjen": [
-      "süt"
-    ],
-    "kafein": true,
-    "vejetaryen": true,
-    "onerilen": true,
-    "aktif": true
-  },
-  {
     "id": "c9a6fb66-f1e2-46e0-83d2-a3ecacd40332",
-    "order": 2,
+    "order": 1,
     "anaKategori": "yiyecekler",
     "altKategori": "ilaveler",
     "isim": "Karışık Turşu",
@@ -51,7 +29,7 @@
   },
   {
     "id": "a0d80324-ec57-4888-81ab-90cc6347dfa6",
-    "order": 7,
+    "order": 2,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-menuleri",
     "isim": "Mini Hamburger Menü",
@@ -77,7 +55,7 @@
   },
   {
     "id": "45435823-67ac-48a2-a95c-8eac78f0914f",
-    "order": 8,
+    "order": 7,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Kremalı Havuçlu Kek",
@@ -107,6 +85,38 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": "effc3143-f744-46a2-8530-252088485e23",
+    "order": 8,
+    "anaKategori": "tatlilar",
+    "altKategori": "pastalar",
+    "isim": "Sufle",
+    "fiyat": 300,
+    "resim": "sufle.webp",
+    "aciklama": "Yoğun bitter çikolata lezzeti ve akışkan iç dokusuyla hazırlanan sıcak sufle, 1 top vanilyalı dondurma ile servis edilir.",
+    "kalori": 650,
+    "icerik": [
+      "Yumurta",
+      "bitter çikolata",
+      "şeker",
+      "bitkisel yağ",
+      "kakao",
+      "buğday unu",
+      "tereyağı",
+      "tuz",
+      "vanilyalı dondurma."
+    ],
+    "alerjen": [
+      "Süt ve süt ürünleri",
+      "gluten",
+      "yumurta",
+      "soya."
+    ],
+    "kafein": false,
+    "vejetaryen": true,
+    "onerilen": true,
     "aktif": true
   },
   {
@@ -240,40 +250,8 @@
     "aktif": true
   },
   {
-    "id": "effc3143-f744-46a2-8530-252088485e23",
-    "order": 14,
-    "anaKategori": "tatlilar",
-    "altKategori": "pastalar",
-    "isim": "Sufle",
-    "fiyat": 300,
-    "resim": "sufle.webp",
-    "aciklama": "Yoğun bitter çikolata lezzeti ve akışkan iç dokusuyla hazırlanan sıcak sufle, 1 top vanilyalı dondurma ile servis edilir.",
-    "kalori": 650,
-    "icerik": [
-      "Yumurta",
-      "bitter çikolata",
-      "şeker",
-      "bitkisel yağ",
-      "kakao",
-      "buğday unu",
-      "tereyağı",
-      "tuz",
-      "vanilyalı dondurma."
-    ],
-    "alerjen": [
-      "Süt ve süt ürünleri",
-      "gluten",
-      "yumurta",
-      "soya."
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": true,
-    "aktif": true
-  },
-  {
     "id": "c3076e83-2d29-41df-919e-af893978aa13",
-    "order": 15,
+    "order": 14,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Pink Panda",
@@ -294,7 +272,7 @@
   },
   {
     "id": "697eb8f0-60c3-48e3-9d44-05590947e7f7",
-    "order": 17,
+    "order": 15,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Choco Bear",
@@ -315,7 +293,7 @@
   },
   {
     "id": "99ed501b-6ba1-422f-97ee-03af2d03ae87",
-    "order": 19,
+    "order": 17,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Mango Bunny",
@@ -336,7 +314,7 @@
   },
   {
     "id": "5a27f11e-ac51-485c-8cc2-ab7490c18e5e",
-    "order": 20,
+    "order": 19,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Cotton Cloud",
@@ -357,7 +335,7 @@
   },
   {
     "id": "fcc9866f-92b8-49f8-8985-46ef3ede7ec5",
-    "order": 21,
+    "order": 20,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Toffee Tiger",
@@ -378,7 +356,7 @@
   },
   {
     "id": "13ea686b-d359-41ed-b76d-22d617b94433",
-    "order": 22,
+    "order": 21,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "White Pearl",
@@ -399,7 +377,7 @@
   },
   {
     "id": "9da14329-b5ac-4add-ac35-bbacfea6172d",
-    "order": 23,
+    "order": 22,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Unicorn Dream",
@@ -421,7 +399,7 @@
   },
   {
     "id": "46dfa666-3a21-49e3-9dac-a01ab27e8199",
-    "order": 24,
+    "order": 23,
     "anaKategori": "cocuk",
     "altKategori": "cocuk-icecekleri",
     "isim": "Magic Mango",
@@ -443,7 +421,7 @@
   },
   {
     "id": "a59d35e3-1610-475b-9d9b-edc7ff9f29eb",
-    "order": 25,
+    "order": 24,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Chocolate Strawberry Frappe",
@@ -467,7 +445,7 @@
   },
   {
     "id": "de5a0b72-ccdb-4521-bc87-1c782931410b",
-    "order": 26,
+    "order": 25,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "Chocolate Caramel Frappe",
@@ -491,7 +469,7 @@
   },
   {
     "id": "e27f6f13-ca4f-42c5-bd94-e84a3b307f03",
-    "order": 27,
+    "order": 26,
     "anaKategori": "soguk-special",
     "altKategori": "frappe",
     "isim": "White Chocolate Caramel Frappe",
@@ -515,7 +493,7 @@
   },
   {
     "id": "cd2d4e8a-cb45-4807-bf77-c62caa05ff9c",
-    "order": 28,
+    "order": 27,
     "anaKategori": "soguk-special",
     "altKategori": "frozen",
     "isim": "Strawberry Mango Frozen",
@@ -534,6 +512,28 @@
     "kafein": false,
     "vejetaryen": true,
     "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": "12d149be-6fbb-4fb8-b6af-5a0c7c3f9a6b",
+    "order": 28,
+    "anaKategori": "tatlilar",
+    "altKategori": "pastalar",
+    "isim": "Affogato",
+    "fiyat": 210,
+    "resim": "affogato.webp",
+    "aciklama": "2 top vanilyalı dondurma ve 1 shot taze espresso ile hazırlanan İtalyan klasiği.",
+    "kalori": 202,
+    "icerik": [
+      "Vanilyalı dondurma",
+      "espresso kahve"
+    ],
+    "alerjen": [
+      "süt"
+    ],
+    "kafein": true,
+    "vejetaryen": true,
+    "onerilen": true,
     "aktif": true
   },
   {
@@ -2118,122 +2118,8 @@
     "aktif": true
   },
   {
-    "id": 53,
-    "order": 104,
-    "anaKategori": "yiyecekler",
-    "altKategori": "atistirmaliklar",
-    "isim": "Sucuklu Kaşarlı Gözleme",
-    "fiyat": 250,
-    "resim": "sucuklu-kasarli-gozleme.webp",
-    "aciklama": "Sucuk ve kaşarlı gözleme.",
-    "kalori": 690,
-    "icerik": [
-      "Sucuk",
-      "Kaşar",
-      "Yufka"
-    ],
-    "alerjen": [
-      "Süt",
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
-    "id": 55,
-    "order": 105,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-menuleri",
-    "isim": "Mini Tavuk",
-    "fiyat": 240,
-    "resim": "mini-tavuk.webp",
-    "aciklama": "Çocuklara özel çıtır tavuk.  Pilav ve patates kızartması ile servis edilir.",
-    "kalori": 540,
-    "icerik": [
-      "Çıtır Tavuk",
-      "Patates",
-      "Pilav"
-    ],
-    "alerjen": [
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
-    "id": 56,
-    "order": 106,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-menuleri",
-    "isim": "Mini Köfte",
-    "fiyat": 270,
-    "resim": "mini-kofte.webp",
-    "aciklama": "Çocuklara özel köfte menüsü. Pilav ve patates kızartması ile servis edilir.",
-    "kalori": 610,
-    "icerik": [
-      "Köfte",
-      "Patates",
-      "Pilav"
-    ],
-    "alerjen": [
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": false,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
-    "id": 57,
-    "order": 107,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-menuleri",
-    "isim": "Mini Tost",
-    "fiyat": 220,
-    "resim": "mini-tost.webp",
-    "aciklama": "Çocuklara özel kaşarlı tost menüsü.",
-    "kalori": 480,
-    "icerik": [
-      "Kaşar Peyniri",
-      "Tost Ekmeği"
-    ],
-    "alerjen": [
-      "Süt",
-      "Gluten"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false,
-    "aktif": true
-  },
-  {
-    "id": 58,
-    "order": 108,
-    "anaKategori": "cocuk",
-    "altKategori": "cocuk-icecekleri",
-    "isim": "Babyccino",
-    "fiyat": 100,
-    "resim": "urun.webp",
-    "aciklama": "Yoğun süt köpüğü ve hafif kakao dokunuşuyla hazırlanan, çocuklara özel yumuşak içimli klasik babyccino.",
-    "kalori": 135,
-    "icerik": [
-      "Tam yağlı süt",
-      "kakao"
-    ],
-    "alerjen": [
-      "Süt"
-    ],
-    "kafein": false,
-    "vejetaryen": true,
-    "onerilen": false
-  },
-  {
     "id": 67,
-    "order": 109,
+    "order": 104,
     "anaKategori": "tatlilar",
     "altKategori": "pastalar",
     "isim": "Cheesecake",
@@ -2258,6 +2144,120 @@
     "vejetaryen": true,
     "onerilen": true,
     "aktif": true
+  },
+  {
+    "id": 53,
+    "order": 105,
+    "anaKategori": "yiyecekler",
+    "altKategori": "atistirmaliklar",
+    "isim": "Sucuklu Kaşarlı Gözleme",
+    "fiyat": 250,
+    "resim": "sucuklu-kasarli-gozleme.webp",
+    "aciklama": "Sucuk ve kaşarlı gözleme.",
+    "kalori": 690,
+    "icerik": [
+      "Sucuk",
+      "Kaşar",
+      "Yufka"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": false,
+    "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": 55,
+    "order": 106,
+    "anaKategori": "cocuk",
+    "altKategori": "cocuk-menuleri",
+    "isim": "Mini Tavuk",
+    "fiyat": 240,
+    "resim": "mini-tavuk.webp",
+    "aciklama": "Çocuklara özel çıtır tavuk.  Pilav ve patates kızartması ile servis edilir.",
+    "kalori": 540,
+    "icerik": [
+      "Çıtır Tavuk",
+      "Patates",
+      "Pilav"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": false,
+    "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": 56,
+    "order": 107,
+    "anaKategori": "cocuk",
+    "altKategori": "cocuk-menuleri",
+    "isim": "Mini Köfte",
+    "fiyat": 270,
+    "resim": "mini-kofte.webp",
+    "aciklama": "Çocuklara özel köfte menüsü. Pilav ve patates kızartması ile servis edilir.",
+    "kalori": 610,
+    "icerik": [
+      "Köfte",
+      "Patates",
+      "Pilav"
+    ],
+    "alerjen": [
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": false,
+    "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": 57,
+    "order": 108,
+    "anaKategori": "cocuk",
+    "altKategori": "cocuk-menuleri",
+    "isim": "Mini Tost",
+    "fiyat": 220,
+    "resim": "mini-tost.webp",
+    "aciklama": "Çocuklara özel kaşarlı tost menüsü.",
+    "kalori": 480,
+    "icerik": [
+      "Kaşar Peyniri",
+      "Tost Ekmeği"
+    ],
+    "alerjen": [
+      "Süt",
+      "Gluten"
+    ],
+    "kafein": false,
+    "vejetaryen": true,
+    "onerilen": false,
+    "aktif": true
+  },
+  {
+    "id": 58,
+    "order": 109,
+    "anaKategori": "cocuk",
+    "altKategori": "cocuk-icecekleri",
+    "isim": "Babyccino",
+    "fiyat": 100,
+    "resim": "urun.webp",
+    "aciklama": "Yoğun süt köpüğü ve hafif kakao dokunuşuyla hazırlanan, çocuklara özel yumuşak içimli klasik babyccino.",
+    "kalori": 135,
+    "icerik": [
+      "Tam yağlı süt",
+      "kakao"
+    ],
+    "alerjen": [
+      "Süt"
+    ],
+    "kafein": false,
+    "vejetaryen": true,
+    "onerilen": false
   },
   {
     "id": 64,
